@@ -1,0 +1,26 @@
+{
+  "name": "whim-docs",
+  "version": "1.0.0",
+  "description": "技术知识汇总",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify serve . --port 10000",
+    "convert": "node_modules/.bin/docsify-to-pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:whsin/whim-docs.git"
+  },
+  "keywords": [
+    "Web",
+    "Python",
+    "新技术",
+    "面试",
+    "学习"
+  ],
+  "author": "whsin",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.8.2"
+  }
+}

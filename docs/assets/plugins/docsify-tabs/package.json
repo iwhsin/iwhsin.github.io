@@ -1,0 +1,99 @@
+{
+  "_from": "docsify-tabs",
+  "_id": "docsify-tabs@1.4.3",
+  "_inBundle": false,
+  "_integrity": "sha1-kYLcPNWxM8BO3mo+21JbdTrUa7Y=",
+  "_location": "/docsify-tabs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-tabs",
+    "name": "docsify-tabs",
+    "escapedName": "docsify-tabs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://incicd.xiaopuuat.com:8081/artifactory/api/npm/npm-taobao/docsify-tabs/download/docsify-tabs-1.4.3.tgz",
+  "_shasum": "9182dc3cd5b133c04ede6a3edb525b753ad46bb6",
+  "_spec": "docsify-tabs",
+  "_where": "C:\\Users\\uatxw991758\\Desktop\\whsin\\repos\\project\\personal\\javaOwner",
+  "author": {
+    "name": "John Hildenbiddle"
+  },
+  "browserslist": [
+    "ie >= 10"
+  ],
+  "bugs": {
+    "url": "https://github.com/jhildenbiddle/docsify-tabs/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A docsify.js plugin for rendering tabbed content from markdown",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-json": "^4.0.3",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.3",
+    "compression": "^1.7.3",
+    "eslint": "^7.0.0",
+    "lodash.merge": "^4.6.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-import": "^12.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.8.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-postcss": "^3.1.1",
+    "rollup-plugin-sass": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://jhildenbiddle.github.io/docsify-tabs/",
+  "keywords": [
+    "docs",
+    "docsify",
+    "docsify.js",
+    "documentation",
+    "generator",
+    "javascript",
+    "js",
+    "markdown",
+    "md",
+    "plugin",
+    "tab",
+    "tabs"
+  ],
+  "license": "MIT",
+  "main": "dist/docsify-tabs.js",
+  "name": "docsify-tabs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jhildenbiddle@github.com/jhildenbiddle/docsify-tabs.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf dist/*",
+    "prepare": "run-s clean build",
+    "serve": "node server.js",
+    "start": "run-p watch serve",
+    "version": "run-s build",
+    "watch": "run-p 'build -- -w'"
+  },
+  "unpkg": "dist/docsify-tabs.min.js",
+  "version": "1.4.3"
+}

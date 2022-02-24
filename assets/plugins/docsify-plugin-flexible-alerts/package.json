@@ -1,0 +1,82 @@
+{
+  "_from": "docsify-plugin-flexible-alerts",
+  "_id": "docsify-plugin-flexible-alerts@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-VJVev7zOth/qoKXt1hHWht+2nZI=",
+  "_location": "/docsify-plugin-flexible-alerts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-plugin-flexible-alerts",
+    "name": "docsify-plugin-flexible-alerts",
+    "escapedName": "docsify-plugin-flexible-alerts",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/docsify-plugin-flexible-alerts/download/docsify-plugin-flexible-alerts-1.0.4.tgz",
+  "_shasum": "54955ebfbcceb61feaa0a5edd611d686dfb69d92",
+  "_spec": "docsify-plugin-flexible-alerts",
+  "_where": "E:\\whsin\\repos\\project\\personal\\javaOwner",
+  "author": {
+    "name": "Fabian Zankl"
+  },
+  "bugs": {
+    "url": "https://github.com/zanfab/docsify-plugin-flexible-alerts/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "docsify plugin to convert blockquotes into beautiful and configurable alerts using preconfigured or own styles and alert types.",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@fortawesome/fontawesome-free": "^5.11.1",
+    "@fortawesome/free-regular-svg-icons": "^5.11.1",
+    "autoprefixer": "^8.2.0",
+    "eslint": "^5.16.0",
+    "lodash.merge": "^4.6.2",
+    "rimraf": "^2.7.1",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-eslint": "^5.1.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-uglify": "^6.0.3",
+    "rollup-plugin-url": "^2.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/zanfab/docsify-plugin-flexible-alerts#readme",
+  "keywords": [
+    "docsify",
+    "plugin",
+    "alert",
+    "blockquotes",
+    "quote",
+    "hint",
+    "callout"
+  ],
+  "license": "MIT",
+  "main": "dist/docsify-plugin-flexible-alerts.js",
+  "name": "docsify-plugin-flexible-alerts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanfab/docsify-plugin-flexible-alerts.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf dist/*",
+    "prepare": "npm run clean && npm run build",
+    "start": "npm run build -- -w"
+  },
+  "unpkg": "dist/docsify-plugin-flexible-alerts.min.js",
+  "version": "1.0.4"
+}

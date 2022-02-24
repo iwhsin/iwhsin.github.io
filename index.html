@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Java Owner</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="技术小站">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/images/logo.ico" type="image/x-icon" />
+  <!-- 默认主题 -->
+  <link id='theme' rel="stylesheet" href="assets/plugins/docsify/themes/vue.css" themeName="docsify/themes/vue.css">
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 导航栏样式表 -->
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.14.0/css/pro.min.css">
+  <script src="assets/js/jquery/jquery.min.js"></script>
+  <!-- 看板娘引入 -->
+  <link rel="stylesheet" href="assets/plugins/live2d/assets/waifu.css">
+</head>
+
+<body>
+  <!-- 配置站点加载提示信息 -->
+  <div id="app">内容加载中...</div>
+
+  <!-- docsify插件引入 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
+  <script src="assets/plugins/docsify/lib/docsify.min.js"></script>
+
+  <!-- 在Github上编辑 -->
+  <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+  <script src="assets/plugins/docsify-edit-on-github/index.js"></script>
+  
+  <script>
+    var themeLink = Docsify.dom.find('#theme');
+    // 主题换肤功能加载
+    function themeSwitchLoader() {
+      var themes = Docsify.dom.find('.theme-skin');
+      if (themes == null) return;
+
+      themes.onclick = function (e) {
+        var name = e.target.getAttribute('data-theme-name')
+        if (name == null || themeLink.themeName === name) return;
+        themeLink.href = 'assets/plugins/' + name;
+      };
+      isLoaded = true;
+    }
+
+    // 侧边导航栏点击事件
+    function sidebarToggle() {
+      var sidebarToggle = Docsify.dom.find('.sidebar-toggle');
+      if (sidebarToggle != null) {
+        sidebarToggle.onclick = function (e) {
+          alert(1);
+        };
+      }
+    }
+
+    window.$docsify = {
+      name: '☕ 技术小站', // 站点名称
+      nameLink: '#/',  // 侧边导航栏图标点击后的跳转地址，默认为根路径，路径以`#`开头
+      repo: 'https://gitee.com/whsin/javaOwner', // 会在站点右上角渲染定义的github corner
+      
+      loadSidebar: 'sidebar', // 定义侧边导航栏，值为`true`默认名为`_sidebar.md` ，支持自定义名称
+      // logo: 'assets/images/logo.ico', // 侧边导航栏的站点图标，默认侧边导航栏显示为`name`配置的内容，配置此选项后不再渲染`name`配置的内容为侧边导航栏站点导航链接
+      maxLevel: 6,  // 默认值6，配置最大渲染的标题层级，默认渲染所有标题为目录
+      subMaxLevel: 6, // 自定义侧边栏后默认不会再渲染文档中标题为目，配置此选项将文档中的标题层级以上的标题链接展示侧边导航栏中
+      // hideSidebar: true,  // 全局隐藏侧边导航栏渲染
+      autoHeader: true, // // 配置了`loadSidebar: true`选项，再配置此选项会将导航栏内容追加到页面标题，如果页面中有一级标题`# XXX`，则不会再进行追加
+      
+      loadNavbar: 'navbar', // 站点导航栏配置 配置同侧边导航栏
+
+      coverpage: 'coverpage', // 首页封面设置
+      // onlyCover: true,  // 配置首页封面不展示内容
+      
+      // basePath: '/',  // 文档加载的根路径,可以指定到其它域名文档`https://github.com/iwhsin/javaOwner/`
+      homepage: 'README.md', // 设置首页文件加载路径,`#/`或`#/README`映射到`/home.md`文件，要想访问根目录下的README.md可以通过'#/./README'
+
+      auto2top: true, // 切换文档后自动跳转到页面顶部
+      mergeNavbar: true,  // 移动端等小屏设备可以合并站点导航栏到侧标导航栏显示
+      // noEmoji: true,  // 禁用emoji表情解析
+      // formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}:{ss}', // 配置`{docsify-updated}`日期显示格式
+      formatUpdated: function(time) {
+        return new Date(time).toLocaleString('zh');
+      },  // 通过自定义配置日期显示格式
+      
+      // notFoundPage: '/404', // 定制404页面,默认查找`#/_404.md`
+      // 定制404页面,默认查找`#/_404.md`,可以通过如下方式配置本地化的404页面
+      // notFoundPage: {
+      //   '/': '404.md',
+      //   '/en': 'en/404.md',
+      // },
+      topMargin: 10, // 配置导航栏定位文档标题位置距离顶部的预留空间
+
+      // externalLinkTarget: '_self',  // 外部链接打开方式，默认`_blank`在新窗口打开
+      // cornerExternalLinkTarget: '_self',  // 右上角链接打开方式，默认`_blank`在新窗口打开
+      // noCompileLinks: ['/basic/README.md', '/basic/.*'],  // 不渲染文档中配置的指定的链接，文档中的指定名称的链接不进行渲染处理
+      // 配置请求资源头信息
+      requestHeaders: {
+          'cache-control': 'max-age=600',
+          'author': 'whsin'
+      },
+      ext: '.md', // 资源文件扩展名后缀
+
+      alias: {
+        // 映射跳转配置
+        '/docs/.*/sidebar': '/docs/sidebar', // 配置统一侧标导航栏
+        '/docs/.*/navbar': '/navbar' // 配置统一站点导航栏
+      },
+
+      // 搜索插件配置
+      search: {
+        maxAge: 43200000, // 过期时间，单位毫秒，默认一天 '86400000'
+        paths: 'auto',  // or 'auto' []
+        // placeholder: '🔍 搜索关键词',
+        placeholder: {
+            '/zh-cn/': '搜索',
+            '/': '🔍 搜索关键词'
+        },
+        // noData: '没有找到哦！',
+        noData: {
+            '/zh-cn/': '哎呀，没有找到呀！',
+            '/': '没有找到哦！'
+        },
+        depth: 4, // 搜索标题的最大层级, 1 - 6
+      },
+
+      // 代码块复制插件
+      copyCode: {
+        buttonText: '点击复制',
+        errorText: '错误！',
+        successText: '复制成功'
+      },
+
+      // 分页插件
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇'
+      },
+
+      // 字数统计插件
+      count: {
+        countable: true,  // 是否开启显示
+        position: 'top',  // 设置展示位置`top` or `bottom`
+        margin: '10px', // 设置与临近`el`元素的间距
+        float: 'left',  // 设置元素对齐方式，`right` or `top` or `left`
+        fontsize: '0.9em',  // 显示的字体大小
+        color: 'rgb(90,90,90)', // 显示的字体颜色
+        language: 'chinese',  // 语言
+        // 本地化配置，优先级高于`language`
+        localization: {
+          words: "单词",
+          minute: "分钟"
+        },
+        isExpected: true  // 是否显示预计阅读时长
+      },
+
+      // TAB选项卡插件
+      tabs: {
+        // 相同标签名的TAB选项卡同步匹配
+        sync: true, // default
+        // TAB选项卡主题样式选择，默认`classic`，支持`classic`、`material`或禁用主题样式（false）
+        theme: `classic`,
+        // 是否支持`标题标签+粗体title`配置TAB选项卡,默认为true
+        tabHeadings: true
+      },
+
+      // 章节目录导航
+      'page-toc': {
+        tocMaxLevel: 6,
+        target: 'h2, h3, h3, h4, h5, h6',
+        title: '章节目录'
+      },
+
+      // plant UML支持
+      plantuml: {
+        skin: 'default',
+        // renderSvgAsObject: true,
+      },
+
+      // 提醒框增强插件
+      'flexible-alerts': {
+        style: 'flat', // 支持`flat`、`callout`
+        note: {
+          label: "注意"
+        },
+        tip: {
+          label: "提示"
+        },
+        warning: {
+          label: "警告"
+        },
+        danger: {
+          label: "危险"
+        },
+        comment: {
+          label: "评注",
+          // Assuming that we use Font Awesome
+          icon: "fas fa-comment",
+          className: "info"
+        }
+      },
+
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            // 每次路由切换时数据全部加载完成后调用，没有参数。
+            // 主题换肤
+            themeSwitchLoader();
+          });
+        },
+        EditOnGithubPlugin.create('https://gitee.com/whsin/javaOwner/edit/master/', null, '编辑文章')
+      ],
+      
+      markdown: {
+
+      }
+    }
+  </script>
+
+
+  <!--全文搜索插件-->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script> -->
+  <script src="assets/plugins/docsify/lib/plugins/search.min.js"></script>
+
+  <!-- emoji解析插件 -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script> -->
+  <script src="assets/plugins/docsify/lib/plugins/emoji.min.js"></script>
+
+  <!-- 外联脚本执行插件 -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script> -->
+  <script src="assets/plugins/docsify/lib/plugins/external-script.min.js"></script>
+
+  <!-- 在Github上编辑 -->
+  <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+  <!-- <script src="assets/plugins/docsify-edit-on-github/index.js"></script> -->
+
+  <!-- 图片缩放插件 -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script> -->
+  <script src="assets/plugins/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!--代码块复制插件-->
+  <!-- <script src="//unpkg.com/docsify-copy-code/dist/docsify-copy-code.min.js"></script> -->
+  <script src="assets/plugins/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+    <!--字数统计插件 -->
+  <!-- <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script> -->
+  <script src="assets/plugins/docsify-count/dist/countable.min.js"></script>
+
+  <!--分页插件-->
+  <!-- <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
+  <script src="assets/plugins/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!--TAB选项插件 -->
+  <!-- <script src="//unpkg.com/docsify-tabs/dist/docsify-tabs.min.js"></script> -->
+  <script src="assets/plugins/docsify-tabs/dist/docsify-tabs.min.js"></script>
+
+  <!-- 分栏插件 -->
+  <!-- <script src="//unpkg.com/docsify-example-panels/dist/docsify-example-panels.min.js"></script> -->
+  <script src="assets/plugins/docsify-example-panels/dist/docsify-example-panels.min.js"></script>
+
+  <!-- PlantUML 插件 -->
+  <script src="assets/plugins/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
+
+  <!-- 提醒框增强插件 -->
+  <script src="assets/plugins/docsify-plugin-flexible-alerts/dist/docsify-plugin-flexible-alerts.min.js"></script>
+
+  <!--统计访问量插件-->
+  <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  <script async src="assets/plugins/busuanzi/bsz.pure.mini.js"></script>
+
+  <!-- markdown 语法高亮插件 -->
+  <!-- <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script> -->
+  <script src="assets/plugins/prismjs/components/prism-markdown.min.js"></script>
+
+  <!-- bash 语法高亮插件 -->
+  <!-- <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script> -->
+  <script src="assets/plugins/prismjs/components/prism-bash.min.js"></script>
+
+  <!-- java 语法高亮插件 -->
+  <!-- <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script> -->
+  <script src="assets/plugins/prismjs/components/prism-java.min.js"></script>
+  <script src="assets/plugins/prismjs/components/prism-git.min.js"></script>
+  <script src="assets/plugins/prismjs/components/prism-yaml.min.js"></script>
+  <script src="assets/plugins/prismjs/components/prism-properties.min.js"></script>
+
+  <!-- TOC导航生成插件 -->
+  <!-- <link rel="stylesheet" href="assets/plugins/docsify-toc/dist/toc.css"> -->
+  <!-- <script src="assets/plugins/docsify-toc/dist/toc.js"></script> -->
+  <!-- <script src="assets/plugins/docsify-plugin-toc/dist/docsify-plugin-toc.min.js"></script> -->
+  <script src="assets/plugins/docsify-page-toc/dist/docsify-page-toc.js"></script>
+
+  <!-- PDF内置预览插件 -->
+  <script src="assets/plugins/pdfobject/pdfobject.min.js"></script>
+  <script src="assets/plugins/docsify-pdf-embed-plugin/docsify-pdf-embed.js"></script>
+  
+  <!-- 快速回到顶部 -->
+  <script src="assets/plugins/jquery-goup/dist/jquery.goup.min.js"></script>
+  <!-- 页面点击弹出爱心 -->
+  <script src="assets/js/click_heart.js"></script>
+  <!-- 复制内容弹窗提示 -->
+  <script src="assets/js/sweetalert.min.js"></script>
+  <script src="assets/js/site.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
+
+   <!--Gitalk插件-->
+  <!-- <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '2f8ea31b245bff255533',
+      clientSecret: 'c3a8b08de248b22fad91731129921ed407884da8',
+      // 存放issue评论的仓库名称
+      repo: 'java-owner',
+      owner: 'iwhsin',
+      admin: ['iwhsin'],
+      // facebook-like distraction free mode
+      distractionFreeMode: true
+    })
+  </script> -->
+
+  <!-- 看板娘配置 -->
+  <div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" class="live2d"></canvas>
+    <div class="waifu-tool">
+      <span class="fui-home"></span>
+      <span class="fui-chat"></span>
+      <span class="fui-eye"></span>
+      <span class="fui-user"></span>
+      <span class="fui-photo"></span>
+      <span class="fui-info-circle"></span>
+      <span class="fui-cross"></span>
+    </div>
+  </div>
+  <script src="assets/plugins/live2d/assets/waifu-tips.js"></script>
+  <script src="assets/plugins/live2d/assets/live2d.js"></script>
+  <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    const live2d = false;
+    if (live2d) {
+      $('.waifu').show();
+      live2d_settings['modelId'] = 1;
+      live2d_settings['modelTexturesId'] = 87;
+      live2d_settings['showCopyMessage'] = true;//内容被复制触发提醒，true | false
+      live2d_settings['waifuMinWidth'] = '768px';//面页小于 指定宽度 隐藏看板娘，例如 'disable' (停用)，'768px'
+      live2d_settings['waifuEdgeSide'] = 'right:30';//看板娘贴边方向，例如 'left:0' (靠左 0px)，'right:30' (靠右 30px)
+      live2d_settings['waifuDraggable'] = 'unlimited';//拖拽样式，可选 'disable' (禁用)，'axis-x' (只能水平拖拽)，'unlimited' (自由拖拽)
+      live2d_settings['waifuDraggableRevert'] = 'false';//松开鼠标还原拖拽位置
+      initModel("assets/plugins/live2d/assets/waifu-tips.json")
+    } else {
+      $('.waifu').hide();
+    }
+  </script>
+</body>
+
+</html>

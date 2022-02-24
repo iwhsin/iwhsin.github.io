@@ -1,0 +1,42 @@
+[core]
+	excludesFile = C:/Users/xin.wang5/.gitignore
+	autocrlf = false
+	quotepath = false
+	longpaths = true
+[alias]
+	br = branch
+	brD = branch -D
+	cad = commit --amend
+	cam = commit -am
+	ci = commit --m
+	cl = clone
+	cm = commit -m
+	co = checkout
+	cob = checkout -b
+	last = log -1 HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset - %C(bold blue)(%an<%ae>)%Creset - %Cgreen(%ci) %n   %s %Cgreen(%cr)%Creset' --abbrev-commit
+	po = push origin
+	pom = push origin master
+	st = status
+	unstage = reset HEAD --
+	aust = !git add -u . && git status
+	ast = !git add . && git status
+	acm = !git add . && git commit -m
+	acp = !git add . && git commit && git push
+[user]
+	name = xin.wang
+	email = xin.wang5@yintech.cn
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[gui]
+	encoding = utf-8
+[i18n]
+	commitencoding = utf-8
+	logoutputencoding = utf-8
+[svn]
+	pathnameencoding = gbk

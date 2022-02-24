@@ -1,0 +1,54 @@
+## Git Ignore Template ##
+
+# Customized Ignore Rule Start #
+HELP.md
+# Customized Ignore Rule End #
+
+# General Ignore Rule Start #
+#Java
+*.class
+#日志文件
+*.log
+#打包文件
+*.jar
+*.war
+*.ear
+#SVN
+.svn
+#Maven模板
+target
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+# General Ignore Rule End #
+
+# IDEA Ignore Rule Start #
+#Eclipse STS
+.classpath
+.project
+.settings
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+#IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+#NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+#VsCode
+.vscode/
+# IDEA Ignore Rule End #
+
+# Other Ignore Rule #
+#Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,7 @@
+#sidebar li {
+    list-style:none;
+}
+
+#sidebar li a {
+    text-decoration: none;
+}

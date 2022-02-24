@@ -1,0 +1,54 @@
+{
+  "_from": "docsify-count",
+  "_id": "docsify-count@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-z2mXlMHoXHEkimC15CqBKiuZWps=",
+  "_location": "/docsify-count",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-count",
+    "name": "docsify-count",
+    "escapedName": "docsify-count",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://incicd.xiaopuuat.com:8081/artifactory/api/npm/npm-taobao/docsify-count/download/docsify-count-1.1.0.tgz",
+  "_shasum": "cf699794c1e85c71248a60b5e42a812a2b995a9b",
+  "_spec": "docsify-count",
+  "_where": "C:\\Users\\uatxw991758\\Desktop\\whsin\\repos\\project\\personal\\javaOwner",
+  "author": {
+    "name": "Junking"
+  },
+  "bugs": {
+    "url": "https://github.com/mrpotatoes/docsify-count/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "a countable plugin for markdown",
+  "homepage": "https://github.com/mrpotatoes/docsify-count",
+  "keywords": [
+    "countable",
+    "words",
+    "docsify",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "docsify-count",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/827652549/docsify-count.git"
+  },
+  "scripts": {
+    "build": "uglifyjs ./dist/countable.js -c -m -o ./dist/countable.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.0"
+}

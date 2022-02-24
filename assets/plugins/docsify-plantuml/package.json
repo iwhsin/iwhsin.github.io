@@ -1,0 +1,71 @@
+{
+  "_from": "docsify-plantuml",
+  "_id": "docsify-plantuml@1.3.2",
+  "_inBundle": false,
+  "_integrity": "sha1-/Z4HCGswvwQoac5NxVWvxMyY38s=",
+  "_location": "/docsify-plantuml",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-plantuml",
+    "name": "docsify-plantuml",
+    "escapedName": "docsify-plantuml",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/docsify-plantuml/download/docsify-plantuml-1.3.2.tgz",
+  "_shasum": "fd9e07086b30bf042869ce4dc555afc4cc98dfcb",
+  "_spec": "docsify-plantuml",
+  "_where": "E:\\whsin\\repos\\project\\personal\\javaOwner",
+  "author": {
+    "name": "yelo"
+  },
+  "bugs": {
+    "url": "https://github.com/imyelo/docsify-plantuml/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "plantuml-encoder": "^1.2.5"
+  },
+  "deprecated": false,
+  "description": "plantuml plugin of docsify",
+  "devDependencies": {
+    "anywhere": "^1.5.0",
+    "get-port-cli": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.5.4"
+  },
+  "files": [
+    "src",
+    "dist",
+    "example",
+    "README.md"
+  ],
+  "homepage": "https://github.com/imyelo/docsify-plantuml#readme",
+  "keywords": [
+    "docsify",
+    "plantuml"
+  ],
+  "license": "MIT",
+  "main": "src",
+  "name": "docsify-plantuml",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/imyelo/docsify-plantuml.git"
+  },
+  "scripts": {
+    "build": "webpack . dist/docsify-plantuml.js && webpack . -p dist/docsify-plantuml.min.js",
+    "prepublishOnly": "npm run build",
+    "start": "run-p start:*",
+    "start:compile": "webpack . dist/docsify-plantuml.js -w",
+    "start:serve": "anywhere -p $(npx get-port)"
+  },
+  "version": "1.3.2"
+}

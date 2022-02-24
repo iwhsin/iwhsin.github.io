@@ -1,0 +1,107 @@
+{
+  "_from": "docsify-themeable",
+  "_id": "docsify-themeable@0.8.1",
+  "_inBundle": false,
+  "_integrity": "sha1-WviOJkSGqjvhzBCu3Cd3Vsy+4u8=",
+  "_location": "/docsify-themeable",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-themeable",
+    "name": "docsify-themeable",
+    "escapedName": "docsify-themeable",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://incicd.xiaopuuat.com:8081/artifactory/api/npm/npm-taobao/docsify-themeable/download/docsify-themeable-0.8.1.tgz",
+  "_shasum": "5af88e264486aa3be1cc10aedc277756ccbee2ef",
+  "_spec": "docsify-themeable",
+  "_where": "C:\\Users\\uatxw991758\\Desktop\\whsin\\repos\\project\\personal\\javaOwner",
+  "author": {
+    "name": "John Hildenbiddle"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
+  "bugs": {
+    "url": "https://github.com/jhildenbiddle/docsify-themeable/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A delightfully simple theme system for docsify.js. Features multiple themes with rich customization options, an improved desktop and mobile experience, and legacy browser support (IE10+).",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-json": "^4.0.3",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.3",
+    "compression": "^1.7.3",
+    "css-vars-ponyfill": "^2.3.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-html": "^6.0.2",
+    "include-media": "^1.4.9",
+    "lodash.merge": "^4.6.1",
+    "node-sass": "^4.14.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.28",
+    "postcss-cli": "^7.1.1",
+    "postcss-discard-empty": "^4.0.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-remove-null": "^1.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "sass-utilities": "0.0.4"
+  },
+  "files": [
+    "dist",
+    "src/scss"
+  ],
+  "homepage": "https://jhildenbiddle.github.io/docsify-themeable/",
+  "keywords": [
+    "css",
+    "custom",
+    "docs",
+    "docsify",
+    "documentation",
+    "properties",
+    "theme",
+    "themes",
+    "themeable",
+    "variables"
+  ],
+  "license": "MIT",
+  "main": "dist/js/docsify-themeable.js",
+  "name": "docsify-themeable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jhildenbiddle@github.com/jhildenbiddle/docsify-themeable.git"
+  },
+  "scripts": {
+    "build": "npm-run-all build:scss --parallel build:js build:pcss",
+    "build:js": "rollup -c",
+    "build:pcss": "postcss build/css/**/*.css --dir dist/css --use postcss-remove-null postcss-discard-empty postcss-flexbugs-fixes autoprefixer --map",
+    "build:scss": "node-sass --output-style compressed src/scss/themes -o build/css --source-map true --source-map-contents true --include-path node_modules",
+    "clean": "rimraf build/* dist/* docs/css docs/js",
+    "prepare": "run-s clean build",
+    "prewatch": "npm run build:scss",
+    "serve": "node server.js",
+    "start": "run-p watch serve",
+    "version": "npm run prepare",
+    "watch": "run-p 'build:* -- -w'"
+  },
+  "unpkg": "dist/js/docsify-themeable.min.js",
+  "version": "0.8.1"
+}
