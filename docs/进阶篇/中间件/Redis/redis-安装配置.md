@@ -1,9 +1,8 @@
 # 1. Redis 安装配置
 
-## 1.1. 单节点安装
+## 1.1. Docker 安装
 
-### Docker 安装
-``` bash
+```bash
 # 下载Redis镜像
 docker pull redis
 # 安装Redis
@@ -12,9 +11,21 @@ docker run --name myRedis -d -p6379:localPort redis
 docker exec -it myRedis redis-cli
 ```
 
+## 1.2. 直接安装
 
-- Linux 安装 单节点 Redis
+```bash
+# mac
+brew install redis
+# ubuntu
+apt-get install redis
+# redhat
+yum install redis
+```
+
+### 1.2.1. Linux 安装
+
 这里以`redis-5.0.9.tar.gz`版本为例。
+
 ```sh
 # 解压安装包
 tar zxf /app/redis-5.0.9.tar.gz
@@ -46,7 +57,8 @@ config set requirepass passwd
 auth password
 ```
 
-- Windows 安装 Redis
+### 1.2.2. Windows 安装
+
 ```sh
 # 启动服务
 redis-server.exe redis.windows.conf
@@ -60,4 +72,4 @@ redis-server --service-start
 redis-server --service-stop
 ```
 
-## 1.2. Redis 集群安装
+## 1.3. Redis 集群安装

@@ -22,6 +22,8 @@
     - **5.1. Redis**
         - [5.1.1. redis-安装配置](/docs/进阶篇/中间件/Redis/redis-安装配置.md)
         - [5.1.1. redis-基本概念及命令使用](/docs/进阶篇/中间件/Redis/redis-基本概念及命令使用.md)
+        - [5.1.2. redis-数据结构详解](/docs/进阶篇/中间件/Redis/redis-数据结构详解.md)
+
 
 </details>
 
