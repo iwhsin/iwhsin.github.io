@@ -2,6 +2,17 @@
 
 ## 1.1. 单节点安装
 
+### Docker 安装
+``` bash
+# 下载Redis镜像
+docker pull redis
+# 安装Redis
+docker run --name myRedis -d -p6379:localPort redis
+# 进入Redis控制台
+docker exec -it myRedis redis-cli
+```
+
+
 - Linux 安装 单节点 Redis
 这里以`redis-5.0.9.tar.gz`版本为例。
 ```sh
