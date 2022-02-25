@@ -63,24 +63,28 @@ sadd smembers sismenber scard spop
 ```
 
 ### SortedSet(Zset) 有序列表
-&emsp;&emsp;Redis中的有序列表相当于Java中的SortedSet和HashMap的结合体, 内部维护了有序且唯一的数组元素,同时每个元素对象可以绑定一个权重值 score.
+
+&emsp;&emsp;Redis 中的有序列表相当于 Java 中的 SortedSet 和 HashMap 的结合体, 内部维护了有序且唯一的数组元素,同时每个元素对象可以绑定一个权重值 score.
 
 - 数据存储形式
-    - 内部实现: 采用了压缩列表 ziplist 和跳跃表 skiplist 的方式进行数据存储和查找
+
+  - 内部实现: 采用了压缩列表 ziplist 和跳跃表 skiplist 的方式进行数据存储和查找
 
 - 跳跃表
-    - 类似金字塔的形式: zset为了能够迅速得进行随机访问,采用了类似二分法的思想,引入了跳跃表,最多可以分为31层
+
+  - 类似金字塔的形式: zset 为了能够迅速得进行随机访问,采用了类似二分法的思想,引入了跳跃表,最多可以分为 31 层
 
 - 命令操作
-``` bash
+
+```bash
 zadd zrange zrevrange zcard zscore zrangebyscore zrem
 ```
 
 ### 总结
 
 - list/set/hash/zset
-    - 在进行元素操作当容器存在时自动进行创建
-    - 当容器中的元素为空时自动进行删除
+  - 在进行元素操作当容器存在时自动进行创建
+  - 当容器中的元素为空时自动进行删除
 
 ## 扩展数据结构
 
@@ -142,8 +146,6 @@ tx-os-redis:0>bitpos bit 1 1
 
 &emsp;&emsp;HyperLogLog 这种高级数据结构常用于基数统计并能进行自动去重如页面 PV,但数据的准确性存在一定的误差.是替代 set 数据结构进行数据统计的利器.
 
-#### 基本操作
-
 - 命令操作
 
 ```bash
@@ -175,21 +177,23 @@ tx-os-redis:0>pfcount pv pv1 pv2
 "10"
 ```
 
-#### 注意事项
+- 注意事项
 
 &emsp;&emsp;HyperLogLog 数据结构需要占据 12k 的存储空间,因此不适合存储单个用户相关的数据(用户量过多,空间成本是很大的)。<br>
 &emsp;&emsp;Redis 对 HyperLogLog 的存储进行了优化，在计数比较小时，它的存储空间采用稀疏矩阵存储，空间占用很小，仅仅在计数慢慢变大，稀疏矩阵占用空间渐渐超过了阈值时才会一次性转变成稠密矩阵，才会占用 12k 的空间
 
-#### 实现原理
+- 实现原理
 
 ### Geo 地理位置经纬度
-&emsp;&emsp;Redis中的Geo数据结构用于记录地址的经纬度信息, 通过GeoHash算法进行转换为一维编码位置,进行位置相关的数据操作.
+
+&emsp;&emsp;Redis 中的 Geo 数据结构用于记录地址的经纬度信息, 通过 GeoHash 算法进行转换为一维编码位置,进行位置相关的数据操作.
 
 - 数据存储形式
-    - 内部存储了地址元素的精度和维护通过转换为zset数据结构,对应的score是通过GeoHash编码计算所得的一维整数值.
+
+  - 内部存储了地址元素的精度和维护通过转换为 zset 数据结构,对应的 score 是通过 GeoHash 编码计算所得的一维整数值.
 
 - 命令操作
-``` bash
+
+```bash
 geoadd geodist geopos geohash georadiusbymember georadius
 ```
-

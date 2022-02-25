@@ -6,7 +6,7 @@
 # 下载Redis镜像
 docker pull redis
 # 安装Redis
-docker run --name myRedis -d -p6379:localPort redis
+docker run --name myRedis -d -phostPort:port redis
 # 进入Redis控制台
 docker exec -it myRedis redis-cli
 ```
