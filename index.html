@@ -66,7 +66,7 @@
       loadSidebar: 'sidebar', // 定义侧边导航栏，值为`true`默认名为`_sidebar.md` ，支持自定义名称
       // logo: 'assets/images/logo.ico', // 侧边导航栏的站点图标，默认侧边导航栏显示为`name`配置的内容，配置此选项后不再渲染`name`配置的内容为侧边导航栏站点导航链接
       maxLevel: 6,  // 默认值6，配置最大渲染的标题层级，默认渲染所有标题为目录
-      subMaxLevel: 6, // 自定义侧边栏后默认不会再渲染文档中标题为目，配置此选项将文档中的标题层级以上的标题链接展示侧边导航栏中
+      subMaxLevel: 0, // 自定义侧边栏后默认不会再渲染文档中标题为目，配置此选项将文档中的标题层级以上的标题链接展示侧边导航栏中
       // hideSidebar: true,  // 全局隐藏侧边导航栏渲染
       autoHeader: true, // // 配置了`loadSidebar: true`选项，再配置此选项会将导航栏内容追加到页面标题，如果页面中有一级标题`# XXX`，则不会再进行追加
       
@@ -340,7 +340,7 @@
   <script src="assets/plugins/live2d/assets/live2d.js"></script>
   <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
   <script type="text/javascript">
-    const live2d = false;
+    const live2d = true;
     if (live2d) {
       $('.waifu').show();
       live2d_settings['modelId'] = 1;

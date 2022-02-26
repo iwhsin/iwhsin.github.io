@@ -43,7 +43,7 @@ body.close .markdown-section {
     padding: 4% 1% 0 0;
     height: 100%;
     /* 默认不进行显示 */
-    transform: translateX(300px);
+    /* transform: translateX(300px); */
   }
 
 /* 添加侧边栏联动,侧边栏显示则不限章节目录 */
@@ -89,10 +89,15 @@ details summary::-moz-list-bullet {
     /* font-size: 1.5em; */
 }
 
+/* 修改detail标签前面的三角形 */
+details summary:first-of-type {
+    list-style: none;
+}
+
 details[open] {
-    background-color: rgba(245, 244, 234, 0.24);
+    /* background-color: #f3f3f3; */
     border-radius: 5px;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+    /* box-shadow: 0 3px 3px 0 rgba(0,0,0,.3); */
 }
 
 details[open] summary {

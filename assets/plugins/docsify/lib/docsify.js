@@ -1928,7 +1928,7 @@
   }
 
   var isAbsolutePath = cached(function (path) {
-    return /(:|(\/{2}))/g.test(path);
+    return /(:|(\/{2})|(^\/))/g.test(path);
   });
 
   var removeParams = cached(function (path) {
