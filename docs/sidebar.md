@@ -22,10 +22,13 @@
 - **5. 中间件**
   - **5.1. Redis**
     - [5.1.1. redis-安装配置](/docs/进阶篇/中间件/Redis/redis-安装配置.md)
-    - [5.1.1. redis-概念基础](/docs/进阶篇/中间件/Redis/redis-概念基础.md)
-    - [5.1.1. redis-命令使用](/docs/进阶篇/中间件/Redis/redis-命令使用.md)
-    - [5.1.2. redis-数据结构详解](/docs/进阶篇/中间件/Redis/redis-数据结构详解.md)
-    - [5.1.2. redis-实践应用场景](/docs/进阶篇/中间件/Redis/redis-实践应用场景.md)
+    - [5.1.2. redis-概念基础](/docs/进阶篇/中间件/Redis/redis-概念基础.md)
+    - [5.1.3. redis-命令使用](/docs/进阶篇/中间件/Redis/redis-命令使用.md)
+    - [5.1.4. redis-模块系统](/docs/进阶篇/中间件/Redis/redis-模块系统.md)
+    - [5.1.5. redis-数据结构详解](/docs/进阶篇/中间件/Redis/redis-数据结构详解.md)
+    - [5.1.6. redis-开发编码规范](/docs/进阶篇/中间件/Redis/redis-开发编码规范.md)
+    - [5.1.7. redis-实践应用场景](/docs/进阶篇/中间件/Redis/redis-实践应用场景.md)
+    - [5.1.8. redis-问题总结](/docs/进阶篇/中间件/Redis/redis-问题总结.md)
 
 </details>
 

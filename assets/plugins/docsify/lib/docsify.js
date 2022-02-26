@@ -1928,7 +1928,7 @@
   }
 
   var isAbsolutePath = cached(function (path) {
-    return /(:|(\/{2})|(^\/))/g.test(path);
+    return /(:|(\/{2}))/g.test(path);
   });
 
   var removeParams = cached(function (path) {
@@ -4248,7 +4248,10 @@
       }
 
       if (!isAbsolutePath(href)) {
-        url = getPath(contentBase, getParentPath(router.getCurrentPath()), href);
+        if (!/^\//g.test(href)) {
+          url = getPath(contentBase, getParentPath(router.getCurrentPath()), href);
+        }
+        
       }
 
       if (attrs.length > 0) {
