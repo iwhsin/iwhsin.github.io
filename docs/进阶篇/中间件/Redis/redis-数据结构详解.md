@@ -45,11 +45,20 @@
 
 - 数据存储形式
   - 数组+链表: 内部维护了一个字典数组,当键值发生哈希碰撞时,将元素存储到数组节点中链表的下一个位置处.
+  - 新建一个 hash 对象时开始是用ziplist 来存储，如果 field 或者 value 的大小超出一定限制后，redis 会在内部自动将 ziplist 替换成正常的 hashtable 实现.
   - 扩容时进行 rehash 时和 Java 中`HashMap`不同, HashMap 采用的一次性进行 rehash 操作,是个耗时的操作,Redis 中的字典为了高性能,避免阻塞服务,采用了渐进式 rehash 的操作;
 
 - 注意
   - 渐进式 rehash: 渐进式 rehash 会在 rehash 的同时，保留新旧两个 hash 结构，查询时会同时查询两个 hash 结构，然后在后续的定时任务中以及 hash 的子指令中，循序渐进地将旧 hash 的内容一点点迁移到新的 hash 结构中.
   - 字典中存储的值只能是字符串
+
+- ziplist使用限制
+  ```conf
+  # 最多 512 个 fields
+  hash-max-ziplist-entries 512
+  # 最多 64 字节的 value 长度
+  hash-max-ziplist-value 64
+  ```
 
 - 命令操作
   ```bash
@@ -121,7 +130,11 @@ rpush rpop lpush lpop ltrim lrange llen
 
 ### 1.1.4. Set 集合
 
-&emsp;&emsp;Redis 中的集合相当于 Java 中的 `HashSet`, 其内部维护的键值是无序且唯一的,内部实现相当于一个特殊的字典,字典中的值都是 NULL
+&emsp;&emsp;Redis 中的集合相当于 Java 中的 `HashSet`, 其内部维护的键值是无序且唯一的,内部实现相当于一个特殊的字典,字典中的值都是 NULL.
+
+- 数据存储形式
+  - inset
+  - hashtable
 
 - 命令操作
 
