@@ -21,6 +21,9 @@
   - **1.2 MySQL**
 
     - [1.2.1 mysql-安装配置](/docs/进阶篇/数据库开发/MySQL/mysql-安装配置.md)
+    - [1.2.2 mysql-存储引擎](/docs/进阶篇/数据库开发/MySQL/mysql-存储引擎.md)
+    - [1.2.3 mysql-问题汇总](/docs/进阶篇/数据库开发/MySQL/mysql-问题汇总.md)
+    - [1.2.4 mysql-面试专题](/docs/进阶篇/数据库开发/MySQL/mysql-面试专题.md)
 
   - **1.3 Oracle**
 

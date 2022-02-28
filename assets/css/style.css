@@ -10,6 +10,19 @@ body.close .markdown-section {
     margin: 0.5em 0;
 }
 
+.img-center {
+    display: block;
+    margin: auto;
+}
+
+.markdown-section h2,h3 {
+    border-top: 2px solid rgb(163, 163, 164) !important;
+}
+
+.markdown-section {
+    width: 75% !important;
+}
+
 .sidebar ul li a {
     color: var(--theme-color, #42b983);
     font-weight: 600;
