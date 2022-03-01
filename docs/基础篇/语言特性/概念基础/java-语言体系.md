@@ -78,8 +78,8 @@
     - Java支持多线程，JavaScript不支持。
 
 <!-- 资源链接 -->
-[1]: ./../../../assets/images/java-conceptual-diagram.png
+[1]: /docs/assets/images/basic/java-conceptual-diagram.png
 [2]: https://docs.oracle.com/javase/8/docs/index.html
 [3]: https://www.oracle.com/java/technologies/language-environment.html
 [4]: http://horstmann.com/corejava/java-an-overview/7Gosling.pdf
-[5]: ./../../../assets/images/java-language-brief-history.png
+[5]: /docs/assets/images/basic/java-language-brief-history.png

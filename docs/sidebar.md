@@ -6,84 +6,84 @@
 
   - **1.1. 概念基础 🏷️**
 
-    - [1.1.1. Java 语言体系](docs/basic/java-language-feature/introduction/java-language-conceptual.md)
-    - [1.1.2. Java 语言运行环境-JVM](docs/basic/java-language-feature/introduction/java-language-environment.md)
-    - [1.1.3. Java 中的技术术语](docs/basic/java-language-feature/introduction/technical-terms-in-java.md)
+    - [1.1.1. Java 语言体系](/docs/基础篇/语言特性/概念基础/java-语言体系.md)
+    - [1.1.2. Java 语言运行环境](/docs/基础篇/语言特性/概念基础/java-语言环境.md)
+    - [1.1.3. Java 中的技术术语](/docs/基础篇/语言特性/概念基础/java-技术术语.md)
 
   - **1.2. 面向对象 🏷️**
 
-    - [1.2.1. 面向对象与面向过程](docs/basic/java-language-feature/object-oriented/object-oriented-And-process-oriented.md)
-    - [1.2.2. 面向对象的设计准则](docs/basic/java-language-feature/object-oriented/object-oriented-criteria.md)
+    - [1.2.1. 面向对象与面向过程](/docs/基础篇/语言特性/面向对象/object-面向对象与面向过程.md)
+    - [1.2.2. 面向对象的设计准则](/docs/基础篇/语言特性/面向对象/object-面向对象的设计准则.md)
 
   - **1.3 基本特性 🏷️**
-    - [1.3.1. 平台无关性](docs/basic/java-language-feature/base-feature/platform-independence.md)
-    - [1.3.2. 值传递和引用传递](docs/basic/java-language-feature/base-feature/passes-object-by-reference-or-value.md)
-    - [1.3.3. Java 中的闭包概念](docs/basic/java-language-feature/base-feature/java-closure-explain.md)
-    - [1.3.4. CRP-组合复用原则](docs/basic/java-language-feature/base-feature/composite-reuse-principle.md)
-    - [1.3.5. 重写 VS 重载](docs/basic/java-language-feature/base-feature/overriding-and-overloading.md)
-    - [1.3.6. Java 为什么设计为单继承？](docs/basic/java-language-feature/base-feature/java-single-inheritance.md)
-    - [1.3.7. Java 中几种引用对象类型(强、弱、软、虚)](docs/basic/java-language-feature/base-feature/object-reference-type.md)
+    - [1.3.1. 平台无关性](/docs/基础篇/语言特性/基本特性/feature-平台无关性.md)
+    - [1.3.2. 值传递和引用传递](/docs/基础篇/语言特性/基本特性/feature-值传递和引用传递.md)
+    - [1.3.3. 闭包概念](/docs/基础篇/语言特性/基本特性/feature-Java中的闭包概念.md)
+    - [1.3.4. CRP-组合复用原则](/docs/基础篇/语言特性/基本特性/feature-CRP-组合复用原则.md)
+    - [1.3.5. 重写 VS 重载](/docs/基础篇/语言特性/基本特性/feature-overriding-and-overloading.md)
+    - [1.3.6. Java 为什么设计为单继承？](/docs/基础篇/语言特性/基本特性/feature-Java为什么设计为单继承.md)
+    - [1.3.7. Java 中几种引用对象类型(强、弱、软、虚)](/docs/基础篇/语言特性/基本特性/feature-引用对象的几种类型.md)
 
 - **2. 基础知识 🏷️**
 
-  - [2.1. Java 中的数据类型结构](docs/basic/base-java/java-data-type.md)
-  - [2.2. Java 中的句法结构](docs/basic/base-java/java-syntactic-structure.md)
-  - [2.3. 内部类和合成类](docs/basic/base-java/inner-and-composite-class.md)
-  - [2.4. 枚举类型](docs/basic/base-java/java-enum-class.md)
-  - [2.5. 注解类型](docs/basic/base-java/java-annotation-class.md)
-  - [2.6. 接口类型](docs/basic/base-java/java-interface-class.md)
-  - [2.7. 泛型类型和泛型方法](docs/basic/base-java/java-generic-class.md)
-  - [2.8. 对象创建的几种方式](docs/basic/base-java/object-oriented-basic.md#对象创建的几种方式)
-  - [2.9. equals VS ==](docs/basic/base-java/object-oriented-basic.md#Equals和==的区别)
-  - [2.10. 类变量、成员变量和局部变量](docs/basic/base-java/object-oriented-basic.md#类变量、成员变量和局部变量)
-  - [2.11. 构造函数](docs/basic/base-java/object-oriented-basic.md#构造函数)
-  - [2.12. Java 中的修饰符](docs/basic/base-java/modifier-in-java.md)
+  - [2.1. Java 数据类型](/docs/基础篇/基础知识/basic-数据类型.md)
+  - [2.2. Java 句法结构](/docs/基础篇/基础知识/basic-句法结构.md)
+  - [2.3. 内部类和合成类](/docs/基础篇/基础知识/basic-内部类和合成类.md)
+  - [2.4. 枚举类型](/docs/基础篇/基础知识/basic-枚举类型.md)
+  - [2.5. 注解类型](/docs/基础篇/基础知识/basic-注解类型.md)
+  - [2.6. 接口类型](/docs/基础篇/基础知识/basic-接口类型.md)
+  - [2.7. 泛型类型和泛型方法](/docs/基础篇/基础知识/basic-泛型类型和泛型方法.md)
+  - [2.8. 对象创建的几种方式](/docs/基础篇/基础知识/basic-面向对象基础.md#对象创建的几种方式)
+  - [2.9. equals VS ==](/docs/基础篇/基础知识/basic-面向对象基础.md#Equals和==的区别)
+  - [2.10. 类变量、成员变量和局部变量](/docs/基础篇/基础知识/basic-面向对象基础.md#类变量、成员变量和局部变量)
+  - [2.11. 构造函数](/docs/基础篇/基础知识/basic-面向对象基础.md#构造函数)
+  - [2.12. Java 中的修饰符](/docs/基础篇/基础知识/basic-修饰符.md)
 
 - **3. 面向对象编程 🏷️**
 
   - **3.1. 反射技术** ✏️
 
-    - [3.1.1 Java 中的反射机制](docs/basic/object-oriented-programming/reflection/reflection-mechanisms-in-java.md)
-    - [3.1.1 Java 中的动态代理](docs/basic/object-oriented-programming/reflection/dynamic-proxy-in-java.md)
+    - [3.1.1 Java 反射机制](/docs/基础篇/面向对象编程/反射技术/reflect-反射机制.md)
+    - [3.1.1 Java 动态代理](/docs/基础篇/面向对象编程/反射技术/reflect-Jdk动态代理.md)
 
   - **3.2. 集合框架**
-    - [3.2.1. Java 中的集合体系](docs/basic/object-oriented-programming/collection-frame/java-collection-diagram.md)
+    - [3.2.1. Java 中的集合体系](/docs/基础篇/面向对象编程/集合框架/collection-集合体系.md)
   - **3.3. 并发编程** ✏️
 
     - **3.3.1. 多线程**
-      - [3.3.1.1. 多线程基础](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/multi-thread-basic.md)
-      - [3.3.1.2. 线程安全](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/safe.md)
-      - [3.3.1.3. 线程间的通信](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/communication-between-threads.md)
-      - [3.3.1.4. 定时器 Timer 的使用](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/timer.md)
-      - [3.3.1.5. JVM 内存模型](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/jmm-happen-before.md)
-      - [3.3.1.6. 无锁编程扩展](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/unlocked-programming.md)
-      - [3.3.1.7. 多线程与单例模式](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/single-class.md)
-      - [3.3.1.8. 为什么 volatile 关键字不能保证线程安全](docs/basic/object-oriented-programming/concurrent-programming/multi-thread/volatile-unsafe.md)
+      - [3.3.1.1. 多线程基础](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础.md)
+      - [3.3.1.2. 线程安全](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-线程安全.md)
+      - [3.3.1.3. 线程间的通信](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-线程间的通信.md)
+      - [3.3.1.4. Timer 定时器](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-Timer定时器.md)
+      - [3.3.1.5. JVM 内存模型](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-jvm-内存模型.md)
+      - [3.3.1.6. 无锁编程扩展](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-无锁编程扩展.md)
+      - [3.3.1.7. 多线程与单例模式](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程与单例模式.md)
+      - [3.3.1.8. 为什么 volatile 关键字不能保证线程安全](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-volatile-非线程安全.md)
     - **3.3.2. JUC 并发库**
       - [3.3.2.1. 原子类库]
       - [3.3.2.2. 锁与条件]
-      - [3.3.2.3. 并发工具](docs/basic/object-oriented-programming/concurrent-programming/juc/concurrent-tool.md)
+      - [3.3.2.3. 并发工具](/docs/基础篇/面向对象编程/并发编程/JUC并发库/thread-juc-并发工具.md)
       - [3.3.2.4. 并发容器]
       - [3.3.2.5. 线程池]
 
   - **3.4. 文件处理与 IO 流**
 
-    - [✎ 3.4.1. 输入输出流](docs/basic/object-oriented-programming/file-and-io/inputStream-and-outputStream.md)
+    - [✎ 3.4.1. 输入输出流](/docs/基础篇/面向对象编程/文件处理与IO流/io-输入输出流.md)
     - 3.4.2. 字符流
     - 3.4.3. 过滤流(装饰流)
     - 3.4.4. NIO
-    - [3.4.5 Java 中的序列化与反序列化](docs/basic/object-oriented-programming/file-and-io/serialization-and-deserialization-in-java.md)
+    - [3.4.5 Java 中的序列化与反序列化](/docs/基础篇/面向对象编程/文件处理与IO流/io-序列化和反序列化.md)
 
   - **3.5. 函数式编程** 🏷️
 
-    - [3.5.1. Java 中的函数式编程](docs/basic/object-oriented-programming/functional/functional-in-java.md)
-    - [3.5.2. lambda 表达式](docs/basic/object-oriented-programming/functional/functional-with-lambda.md)
-    - [3.5.2. Stream-流处理](docs/basic/object-oriented-programming/functional/functional-with-stream.md)
+    - [3.5.1. 函数式编程](/docs/基础篇/面向对象编程/函数式编程/functional-函数式编程.md)
+    - [3.5.2. Lambda 表达式](/docs/基础篇/面向对象编程/函数式编程/functional-Lambda表达式.md)
+    - [3.5.2. Stream 流处理](/docs/基础篇/面向对象编程/函数式编程/functional-Stream流处理.md)
 
   - **3.6. 异常处理机制** ✏️
   - **3.7. 数据库编程 🏷️**
 
-    - [3.7.1. Java 中使用 JDBC](docs/basic/object-oriented-programming/database-programming/java-use-jdbc.md)
+    - [3.7.1. JDBC 概念基础](/docs/基础篇/面向对象编程/数据库编程/jdbc-概念基础.md)
 
   - **3.8. 网络编程**
 
@@ -95,7 +95,7 @@
 
   - **4.1. JDK 新特性**
 
-    - [4.1.1. jdk-8 新特性一览](docs/basic/extension/feature-of-jdk/feature-of-jdk-8.md)
+    - [4.1.1. Java8 新特性](/docs/基础扩展/Java新特性/basic-新特性-Java8.md)
 
   - **4.2. 命令行工具**
 
@@ -103,20 +103,20 @@
 
   - **4.4. 统一编码方案**
 
-    - [4.4.1. Unicode 编码方式](docs/basic/extension/encoding-and-decoding.md)
+    - [4.4.1. Unicode 编码方式](/docs/基础篇/基础扩展/字符集编码/basic-Unicode编码方式.md)
 
   - **4.5. 正则表达式**
 
-    - [4.5.1. 正则表达式](docs/basic/extension/regular-expression/regex-base.md)
-    - [4.5.2. regex-内联匹配模式](docs/basic/extension/regular-expression/regex-Inline-matching-patterns.md)
+    - [4.5.1. 正则表达式](/docs/基础篇/基础扩展/正则表达式/regex-正则表达式.md)
+    - [4.5.2. regex-内联匹配模式](/docs/基础篇/基础扩展/正则表达式/regex-内联匹配模式s.md)
 
   - **4.6 语言扩展**
 
-    - [4.6.1. java-jar 文件中的 META-INF 目录](docs/basic/extension/jar-meta-inf.md)
-    - [4.6.2. java-控制台输出样式](docs/basic/extension/jar-meta-inf.md)
+    - [4.6.1. java-jar 文件中的 META-INF 目录](/docs/基础篇/基础扩展/语言扩展/basic-jar文件中的META-INF目录.md)
+    - [4.6.2. java-控制台输出样式](/docs/基础篇/基础扩展/语言扩展/basic-控制台输出样式.md)
 
   - **4.7 位运算符的应用**
-    - [4.7.1. 位运算的基本使用](docs/basic/extension/bit-operation/bit-operation-basic.md)
+    - [4.7.1. 位运算的基本使用](/docs/基础篇/基础扩展/语言扩展/位运算/basic-位运算符的应用.md)
 
 </details>
 
