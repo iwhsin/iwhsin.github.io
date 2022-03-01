@@ -8,4 +8,4 @@
 &emsp;&emsp;Java IO体系上按照流的操作方式将流分为了输入流（`InputStream`）和输出流（`OutputStream`）。
 
 <!-- 资源链接 -->
-[io-inherit-class-diagram]: ../../../assets/images/io-inherit-class-diagram.jpg
+[io-inherit-class-diagram]: /docs/assets/images/basic/io-inherit-class-diagram.jpg

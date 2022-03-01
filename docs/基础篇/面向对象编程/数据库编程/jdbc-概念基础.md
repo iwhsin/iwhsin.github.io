@@ -129,4 +129,4 @@
 
 <!-- 资源链接 -->
 
-[java-jdbc-connect]:  ../../../assets/images/java-jdbc-connect.png 'JDBC'
+[java-jdbc-connect]:  /docs/assets/images/basic/java-jdbc-connect.png 'JDBC'

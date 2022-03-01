@@ -79,5 +79,5 @@
 
 
 <!-- 资料链接 -->
-[1]: ../../../assets/images/java-pass-by-value.png
+[1]: /docs/assets/images/basic/java-pass-by-value.png
 [2]: https://www.programcreek.com/2011/08/so-java-passes-object-by-reference-or-by-value/

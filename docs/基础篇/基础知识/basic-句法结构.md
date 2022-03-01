@@ -36,4 +36,4 @@
         - `assert 断言语句;`或`assert 断言语句 : 错误信息`,断言使用中要注意不能有副作用也就是不能对原有数据程序造成影响。
 
 <!-- 资源链接 -->
-[1]: ./../../assets/images/java-statement.png
+[1]: /docs/assets/images/basic/java-statement.png

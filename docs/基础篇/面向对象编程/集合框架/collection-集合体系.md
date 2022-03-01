@@ -17,11 +17,11 @@
 <!-- tabs:start -->
 <!-- tab:集合类继承结构图 -->
 
-![Collection集合类继承结构图](../../../../assets/images/collection-class-diagram.png ":size=60%")
+![Collection集合类继承结构图](/docs/assets/images/basic/collection-class-diagram.png ":size=60%")
 
 <!-- tab:Map集合类继承结构图 -->
 
-![Map集合类继承结构图](../../../../assets/images/map-class-diagram.png ":size=60%")
+![Map集合类继承结构图](/docs/assets/images/basic/map-class-diagram.png ":size=60%")
 
 <!-- tabs:end -->
 
