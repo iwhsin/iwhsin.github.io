@@ -10,19 +10,19 @@
             <a target="_blank" data-theme-name="docsify-themeable/dist/css/theme-simple-dark.css">simple-dark</a>
         </li>
         <li>
-            <a target="_blank" data-theme-name="docsify/themes/vue.css">vue</a>
+            <a target="_blank" data-theme-name="docsify/lib/themes/vue.css">vue</a>
         </li>
         <li>
-            <a target="_blank" data-theme-name="docsify/themes/dark.css">dark</a>
+            <a target="_blank" data-theme-name="docsify/lib/themes/dark.css">dark</a>
         </li>
         <li>
-            <a target="_blank" data-theme-name="docsify/themes/buble.css">buble</a>
+            <a target="_blank" data-theme-name="docsify/lib/themes/buble.css">buble</a>
         </li>
         <li>
-            <a target="_blank" data-theme-name="docsify/themes/dolphin.css">dolphin</a>
+            <a target="_blank" data-theme-name="docsify/lib/themes/dolphin.css">dolphin</a>
         </li>
         <li>
-            <a target="_blank" data-theme-name="docsify/themes/pure.css">pure</a>
+            <a target="_blank" data-theme-name="docsify/lib/themes/pure.css">pure</a>
         </li>
     </ul>
 

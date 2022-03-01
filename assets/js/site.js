@@ -127,10 +127,15 @@ function clickHeart2() {
 // 动态调整背景色
 function bgc() {
     var SL = ', 100%, 5%';
-    var bgc =
-      'linear-gradient(to left bottom, ' +
-      "hsl(" + (Math.floor(Math.random() * 255) + SL) + ") 0%," +
-      "hsl(" + (Math.floor(Math.random() * 255) + SL) + ") 100%)";
-      $("body").css("background", bgc);
-      $(".sidebar").css("background", bgc);
+    $("body").css("background", background(SL));
+    $(".sidebar").css("background", background(SL));
+    setTimeout(() => {
+        $('.app-nav li ul').css("background", background(', 100%, 15%'))
+    }, 1000);;
+}
+
+function background(sl) {
+    return 'linear-gradient(to left bottom, ' +
+        "hsl(" + (Math.floor(Math.random() * 255) + sl) + ") 0%," +
+        "hsl(" + (Math.floor(Math.random() * 255) + sl) + ") 100%)";
 }
