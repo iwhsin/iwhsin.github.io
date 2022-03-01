@@ -587,11 +587,13 @@ section.cover blockquote > p > a:hover {
   color: var(--theme-color, #ea6f5a);
 }
 body {
-  background-color: #3f3f3f;
+  /* background-color: #3f3f3f; */
+  background-color: #141414;
 }
 /* sidebar */
 .sidebar {
-  background-color: #3f3f3f;
+  /* background-color: #3f3f3f; */
+  background-color: #141414;
   color: #c8c8c8;
 }
 .sidebar li {
@@ -825,7 +827,9 @@ pre::after {
   color: #657b83;
 }
 input[type='search'] {
-  background: #4f4f4f;
-  border-color: #4f4f4f;
+  /* background: #4f4f4f; */
+  background: #141414;
+  /* border-color: #4f4f4f; */
+  border-color: #141414;
   color: #c8c8c8;
 }

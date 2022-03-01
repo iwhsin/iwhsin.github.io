@@ -3,6 +3,7 @@
 const COPY_PREVENT = false;
 
 $(function () {
+    bgc();
     // 快速回到顶部
     toTop();
     initCopyAction();
@@ -120,4 +121,16 @@ function clickHeart2() {
                 $i.remove();
             });
     });
+}
+
+
+// 动态调整背景色
+function bgc() {
+    var SL = ', 100%, 5%';
+    var bgc =
+      'linear-gradient(to left bottom, ' +
+      "hsl(" + (Math.floor(Math.random() * 255) + SL) + ") 0%," +
+      "hsl(" + (Math.floor(Math.random() * 255) + SL) + ") 100%)";
+      $("body").css("background", bgc);
+      $(".sidebar").css("background", bgc);
 }

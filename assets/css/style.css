@@ -15,7 +15,11 @@ body.close .markdown-section {
     margin: auto;
 }
 
-.markdown-section h2,h3 {
+.markdown-section h2 {
+    border-top: 1px solid rgb(163, 163, 164) !important;
+}
+
+.markdown-section h3 {
     border-top: 2px solid rgb(163, 163, 164) !important;
 }
 
@@ -57,7 +61,11 @@ body.close .markdown-section {
     height: 100%;
     /* 默认不进行显示 */
     /* transform: translateX(300px); */
-  }
+}
+
+.alert.flat {
+    width: inherit;
+}
 
 /* 添加侧边栏联动,侧边栏显示则不限章节目录 */
 body.close .page_toc {
