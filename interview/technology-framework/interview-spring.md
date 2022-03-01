@@ -17,7 +17,7 @@
 
 &emsp;&emsp;Spring 框架包含组织为约 20 个模块的功能。这些模块分为核心容器，数据访问/集成，Web，AOP（面向方面 ​​ 的编程），监控，消息传递和测试。
 
-![Spring 模块概观图](../assert/images/spring-overview.png "Spring 模块结构图")<br>
+![Spring 模块概观图](/docs/assets/images/spring-overview.png "Spring 模块结构图")<br>
 
 - **核心容器**
 

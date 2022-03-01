@@ -1,6 +1,6 @@
 # Spring 特性总览
 
-## 1.1. 核心特性
+## 核心特性
 
 - **核心特性(Core)**
 
@@ -51,9 +51,9 @@
   - Spring MVC 测试（Spring MVC Test）
   - Web 测试客户端（WebTestClient）
 
-## 1.2. Spring 版本特性
+## Spring 版本特性
 
-### 1.2.1. Java 版本依赖与支持
+### Java 版本依赖与支持
 
 | Spring Framework 版本 | Java 标准版 | Java 企业版           |
 | :-------------------- | :---------- | :-------------------- |
@@ -63,9 +63,9 @@
 | 4.x                   | 6+          | Java EE 6 和 7        |
 | 5.x                   | 8+          | Java EE 7             |
 
-### 1.2.2. Java 特性应用
+### Java 特性应用
 
-#### 1.2.2.1. Java 语言特性应用
+#### Java 语言特性应用
 
 - **Java5 语言特性**
 
@@ -96,7 +96,7 @@
 | :---------- | :-------------- | :---------------------------- |
 | Lambda 语法 | 5.0+            | PropertyEditorRegistrySupport |
 
-#### 1.2.2.2. JDK API 应用
+#### JDK API 应用
 
 - **< Java 5 API 的应用**
   | API 类型 | Spring 支持版本 | 代表实现 |
@@ -138,7 +138,7 @@
   | Stream API（JSR 335） | 4.2+ | StreamConverter |
   | CompletableFuture（J.U.C） | 4.2+ | CompletableToListenableFutureAdapter |
 
-#### 1.2.2.3. Java EE API 应用
+#### Java EE API 应用
 
 - **JavaEE Web 技术的应用**
   | JSR 规范 | Spring 支持版本 | 代表实现 |
@@ -166,7 +166,7 @@
   | Dependency Injection forJava(JSR 330) | 2.5+ | AutowiredAnnotationBeanPostProcessor |
   | Bean Validation(JSR 303) | 3.0+ | LocalValidatorFactoryBean |
 
-### 1.2.3. Spring 版本的主要功能
+### Spring 版本的主要功能
 
 | Spring Framework 版本 | 特性                                                           |
 | :-------------------- | :------------------------------------------------------------- |
@@ -175,15 +175,15 @@
 | Spring 4.0            | 发布于 2013 年。这是第一个完全支持 Java8 的版本                |
 | Spring 5.0            |                 |
 
-## 1.3. Spring 模块化设计
+## Spring 模块化设计
 
 &emsp;&emsp;Spring 从 3.0 开始不再提供一个大的完整包,而是按照模块分为 20 多个组件 jar 包,根据需要选择引入相应的组件。
 
-### 1.3.1. 模块组成
+### 模块组成
 
-![Spring 模块概观图](./image/spring-overview.png "Spring 模块结构图")
+![Spring 模块概观图](/docs/assets/images/spring-overview.png "Spring 模块结构图")
 
-#### 1.3.1.1. 核心容器(Core Container)
+#### 核心容器(Core Container)
 - **spring-beans**<br>
   &emsp;&emsp;所有应用都要用到，它包含访问配置文件，创建和管理 Bean 以及进行反转共控制和依赖注入操作时所需的类
 - **spring-core**<br>
@@ -195,36 +195,36 @@
 - **spring-expression**<br>
   &emsp;&emsp;包含 Spring 表达式语言相关的类，应用使用到 SpEL 时需要添加这个 jar 包。
 
-#### 1.3.1.2. AOP 面向切面编程
+#### AOP 面向切面编程
 
 - **spring-aop**<br>
   &emsp;&emsp;Spring AOP 处理，如动态代理，AOP 字节码提升。
 
-## 1.4. Spring 编程模型
+## Spring 编程模型
 
-### 1.4.1. 面向对象编程
+### 面向对象编程
 
 契约接口：Aware、BeanPostProcessor ...
 设计模式：观察者模式、组合模式、模板模式 ...
 对象继承：Abstract* 类
 
-### 1.4.2. 面向切面编程
+### 面向切面编程
 
 动态代理：JdkDynamicAopProxy
 字节码提升：ASM、CGLib、AspectJ...
 
-### 1.4.3. 面向元编程
+### 面向元编程
 
 注解：模式注解（@Component、@Service、@Respository ...）
 配置：Environment 抽象、PropertySources、BeanDefinition ...
 泛型：GenericTypeResolver、ResolvableType ...
 
-### 1.4.4. 函数驱动
+### 函数驱动
 
 函数接口：ApplicationEventPublisher
 Reactive：Spring WebFlux
 
-### 1.4.5. 模块驱动
+### 模块驱动
 
 Maven Artifacts
 OSGI Bundles
