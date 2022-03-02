@@ -60,7 +60,7 @@ body.close .markdown-section {
     padding: 4% 1% 0 0;
     height: 100%;
     /* 默认不进行显示 */
-    /* transform: translateX(300px); */
+    transform: translateX(300px);
 }
 
 .alert.flat {

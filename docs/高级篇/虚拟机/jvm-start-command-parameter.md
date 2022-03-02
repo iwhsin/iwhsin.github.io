@@ -1,0 +1,17 @@
+# 启动命令参数
+-jar -server –Xms2048m –Xmx4096m -XX:MetaspaceSize=512m -XX:MaxMetaspaceSize=1024m -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/u01/app/imbp/applog/${appname}/heapdump.$$.hprof -XX:ErrorFile=/u01/app/imbp/applog/${appname}/hs_err_pid.$$.log 
+-XX:-UseGCOverheadLimit 
+-XX:+UseConcMarkSweepGC 
+-XX:CMSInitiatingOccupancyFraction=60 
+-XX:CMSInitiatingPermOccupancyFraction=80 
+-XX:+UseParNewGC 
+-XX:+CMSParallelRemarkEnabled 
+-XX:+ExplicitGCInvokesConcurrent 
+-XX:+UseCMSCompactAtFullCollection 
+-XX:CMSFullGCsBeforeCompaction=0 
+-XX:+CMSClassUnloadingEnabled -XX:ParallelGCThreads=4  
+-Xloggc:/u01/app/imbp/applog/${appname}/GC-${appname}.$$.log -XX:+PrintGCDetails  
+-XX:+PrintGCDateStamps 
+-Djava.security.egd=file:/dev/./urandom 
+-Djava.awt.headless=true -Djava.net.preferIPv4Stack=true 
+-XX:-UseGCOverheadLimit

@@ -1,0 +1,95 @@
+# 1. JVM 内存结构
+
+## 1.1. JVM 内存结构
+
+- **内存结构图**<br>
+  ![](/docs/assets/images/jvm-memory-structure/2021-03-06-14-06-44.png ":size=60% JVM 内存结构图")<br>
+  - 从上图可以看出`JVM`内存主要有`虚拟机栈`、`本地方法栈`、`方法区`、`堆`和`程序计数器`五块。<br>
+  - 其中`虚拟机栈`、`本地方法栈`、`程序计数器`是线程私有的，而`堆`和`方法区`是线程共享的。
+
+
+### 1.1.1. 堆（Heap）
+
+&emsp;&emsp;从 JVM 的内存结构图可以看出，其中占用空间最大的一块是`堆`，`堆`中主要存放着线程共享的实例对象，几乎所有的实例独享都是在堆中存放的。<br>
+&emsp;&emsp;在较新版本的 Java（从 Java 6 的某个更新开始）中，由于 `JIT 编译器` 的发展和`逃逸分析`技术的逐渐成熟，栈上分配、标量替换等优化技术使得对象一定分配在堆上这件事情已经变得不那么绝对了。<br>
+&emsp;&emsp;此外，由于`堆`是 JVM 内存中占用空间最大的区域,因此也是 Java 进行垃圾回收的主要区域,从而,`堆`又被称为`GC堆`。
+
+- **堆内存结构图**<br>
+  ![](/docs/assets/images/jvm-memory-structure/2021-03-06-14-31-35.png ":size=60% 堆内存结构图")<br>
+  - 堆的 GC 操作采用分代收集算法
+  - 堆区分了新生代和老年代
+  - 新生代又分为：Eden 空间、From Survivor（S0）空间、To Survivor（S1）空间
+
+> [!NOTE]
+> Java 虚拟机规范规定，Java 堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可。也就是说堆的内存是一块块拼凑起来的。要增加堆空间时，往上“拼凑”（可扩展性）即可，但当堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出 OutOfMemoryError 异常。
+
+### 1.1.2. 方法区（Method Area）
+
+&emsp;&emsp;方法区与堆有很多共性：线程共享、内存不连续、可扩展、可垃圾回收，同样当无法再扩展时会抛出 OutOfMemoryError 异常。<br>
+&emsp;&emsp;正因为如此相像，Java 虚拟机规范把方法区描述为堆的一个逻辑部分，但目前实际上是与 Java 堆分开的（Non-Heap）。<br>
+&emsp;&emsp;方法区中主要存储的是已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。<br>
+&emsp;&emsp;方法区的内存回收目标主要是针对常量池的回收和对类型的卸载，一般来说这个区域的回收“成绩”比较难以令人满意，尤其是类型的卸载，条件相当苛刻，但是回收确实是有必要的。<br>
+
+- **方法区内存结构图**<br>
+  ![](/docs/assets/images/jvm-memory-structure/2021-03-06-14-36-31.png ":size=60% 方法区内存结构图")
+
+### 1.1.3. 程序计数器（Program Counter Register）
+
+&emsp;&emsp;`程序计数器`是 JVM 内存中占用空间最小的一块，同时也是线程私有的，它是唯一没有 OutOfMemoryError 异常的区域。<br>
+&emsp;&emsp;程序计数器的作用可以看做是当前线程所执行的字节码的行号指示器，字节码解释器工作时就是通过改变计数器的值来选取下一条字节码指令。其中，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖计数器来完成。<br>
+&emsp;&emsp;Java 虚拟机的多线程是通过线程轮流切换并分配处理器执行时间的方式来实现的，在任何一个确定的时刻，一个处理器（对于多核处理器来说是一个内核）只会执行一条线程中的指令。
+
+- 程序计数器使用模拟
+  ![](/docs/assets/images/jvm-memory-structure/2021-03-06-14-39-49.png ":size=60% 程序计数器使用模拟")<br>
+  - 为了线程切换后能恢复到正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之间的计数器互不影响，独立存储，我们称这类内存区域为“线程私有”的内存。
+  - 如果线程正在执行的是一个 Java 方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址；如果正在执行的是 Natvie 方法，这个计数器值则为空（Undefined）。
+
+### 1.1.4. 虚拟机栈（JVM Stacks）
+&emsp;&emsp;虚拟机栈线程私有，生命周期与线程相同。<br>
+&emsp;&emsp;栈帧(Stack Frame)是用于支持虚拟机进行方法调用和方法执行的数据结构。栈帧存储了方法的局部变量表、操作数栈、动态连接和方法返回地址等信息。每一个方法从调用至执行完成的过程，都对应着一个栈帧在虚拟机栈里从入栈到出栈的过程。
+
+- **虚拟机栈内存结构图**
+    ![](/docs/assets/images/jvm-memory-structure/2021-03-06-14-42-56.png ":size=60% 虚拟机栈内存结构图")<br>
+    - 局部变量表(Local Variable Table)
+        - 是一组变量值存储空间，用于存放方法参数和方法内定义的局部变量，包括8种基本数据类型、对象引用（reference类型）和returnAddress类型（指向一条字节码指令的地址）。
+        - 其中64位长度的long和double类型的数据会占用2个局部变量空间（Slot），其余的数据类型只占用1个。
+        - 如果线程请求的栈深度大于虚拟机所允许的深度，将抛出StackOverflowError异常；如果虚拟机栈动态扩展时无法申请到足够的内存时会抛出OutOfMemoryError异常。
+    - 操作数栈(Operand Stack)
+        - 也称作操作栈，是一个后入先出栈(LIFO)。
+        - 随着方法执行和字节码指令的执行，会从局部变量表或对象实例的字段中复制常量或变量写入到操作数栈，再随着计算的进行将栈中元素出栈到局部变量表或者返回给方法调用者，也就是出栈/入栈操作。
+    - 动态链接
+        - Java虚拟机栈中，每个栈帧都包含一个指向运行时常量池中该栈所属方法的符号引用，持有这个引用的目的是为了支持方法调用过程中的动态链接(Dynamic Linking)。
+    - 方法返回：无论方法是否正常完成，都需要返回到方法被调用的位置，程序才能继续进行。
+
+### 1.1.5. 本地方法栈（Native Method Stacks）
+&emsp;&emsp;本地方法栈（Native Method Stacks）与虚拟机栈作用相似，也会抛出StackOverflowError和OutOfMemoryError异常。<br>
+&emsp;&emsp;区别在于虚拟机栈为虚拟机执行Java方法（字节码）服务，而本地方法栈是为虚拟机使用到的Native方法服务。
+
+## 1.2. JVM 内存结构变化
+&emsp;&emsp;上述描述的是jdk 1.7及之前的JVM内存结构，其中的方法区位与永久代中。<br>
+&emsp;&emsp;在jdk 1.7将方法区中的常量池移到了堆中。<br>
+&emsp;&emsp;在jdk 1.8后取而代之的是将常量池移到了堆内存中,同时使用元空间代替了方法区,同时元空间存在本地内存中。
+
+- jdk 8 jvm 内存结构图<br>
+    ![](/docs/assets/images/jvm-memory-structure/i59g-20210306155954.png ":size=60%")<br>
+
+### 元空间(Metaspace)
+&emsp;&emsp;在Java8中，元空间(Metaspace)登上舞台，方法区存在于元空间(Metaspace)。同时，元空间不再与堆连续，而且是存在于本地内存（Native memory）。<br>
+&emsp;&emsp;本地内存（Native memory），也称为C-Heap，是供JVM自身进程使用的。当Java Heap空间不足时会触发GC，但Native memory空间不够却不会触发GC。
+
+
+### 为什么永久代被替换了？
+&emsp;&emsp;表面上看是为了避免OOM异常。因为通常使用PermSize和MaxPermSize设置永久代的大小就决定了永久代的上限，但是不是总能知道应该设置为多大合适, 如果使用默认值很容易遇到OOM错误。<br>
+&emsp;&emsp;当使用元空间时，可以加载多少类的元数据就不再由MaxPermSize控制, 而由系统的实际可用空间来控制。
+
+
+<!-- 参考资料 -->
+
+[面试官，JAVA8 JVM 内存结构变了，永久代到元空间](https://www.choupangxia.com/2019/10/22/interview-jvm-gc-02/)<br>
+[面试官，不要再问我“JAVA GC 垃圾回收机制”了](https://www.choupangxia.com/2019/10/20/interview-jvm-gc-01/)<br>
+[JVM 之内存结构详解](http://www.choupangxia.com/2019/10/18/jvm%e4%b9%8b%e5%86%85%e5%ad%98%e7%bb%93%e6%9e%84%e8%af%a6%e8%a7%a3/)<br>
+[Java 堆、栈和方法区](https://blog.csdn.net/dpengwang/article/details/81530296)<br>
+[jvm：内存结构（堆、方法区、程序计数器、本地方法栈、虚拟机栈）](http://www.likecs.com/default/index/show?id=98142)<br>
+[java 虚拟机中的堆（heap）、栈（stack）、方法区(method area)](https://my.oschina.net/u/3847203/blog/1839886)
+
+<!-- 资源链接 -->
