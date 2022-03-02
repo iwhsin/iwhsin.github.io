@@ -147,7 +147,7 @@
     ```
 
   - 展示效果<br>
-    <img style="width:auto;height:400px;" src="./../../../resource/static/image/senior/docsify-sidebar-customized.png"/>
+    <img style="width:auto;height:400px;" src="/docs/assets/images/docsify/docsify-sidebar-customized.png"/>
 
 - **侧边栏配置文件加载顺序说明**<br>
   &emsp;&emsp;配置了侧边栏`loadSidebar`选项，所有的页面侧边导航栏内容会从`_sidebar.md`文件中加载。<br>
@@ -183,7 +183,7 @@
           </script>
           ```
       - 展示示例<br>
-      <img style="width:auto;height:400px;" src="./../../../resource/static/image/senior/docsify-sidebar-customized-with-head.png"/>
+      <img style="width:auto;height:400px;" src="/docs/assets/images/docsify/docsify-sidebar-customized-with-head.png"/>
 
       - 指定文档忽略标题链接的加载展示
           - 指定文档中的指定标题链接不加载显示<br>
@@ -216,7 +216,7 @@
   ```
 
   - 展示示例<br>
-    ![](./../../../resource/static/image/senior/docsify-navbar-customized-with-nav.png)
+    ![](/docs/assets/images/docsify/docsify-navbar-customized-with-nav.png)
 
 - 配置`loadNavbar`选项通过指定文件`_navbar.md`加载站点导航栏<br>
 
@@ -249,7 +249,7 @@
     ```
 
   - 展示示例<br>
-    ![](./../../../resource/static/image/senior/docsify-navbar-customized-with-loadNavbar.png)
+    ![](/docs/assets/images/docsify/docsify-navbar-customized-with-loadNavbar.png)
 
   - **站点导航栏配置文件加载顺序说明**<br>
     &emsp;&emsp;配置了站点导航栏`loadNavbar`选项，所有的页面站点导航栏内容会从`_navbar.md`文件中加载。配置文件的加载顺序和`侧边导航栏的加载顺序`类似。<br>
@@ -1015,4 +1015,4 @@
 [medium-zoom]: https://medium-zoom.francoischalifour.com/
 [prime-supported-language]: https://prismjs.com/#supported-languages
 [prime-language-plugin]: //unpkg.com/prismjs/components/
-[github-pages-publish]: ./../../../resource/static/image/senior/github-pages-publish.png
+[github-pages-publish]: /docs/assets/images/docsify/github-pages-publish.png
