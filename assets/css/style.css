@@ -27,11 +27,6 @@ body.close .markdown-section {
     width: 75% !important;
 }
 
-.sidebar ul li a {
-    color: var(--theme-color, #42b983);
-    font-weight: 600;
-}
-
 .chapter-navigation {
     color: green;
     font-size: larger;
@@ -45,9 +40,9 @@ body.close .markdown-section {
     }
 }
 
-.app-sub-sidebar li::before {
+/* .app-sub-sidebar li::before {
     content: '⤴';
-}
+} */
 
 .page_toc {
     margin-right: -17px;

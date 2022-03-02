@@ -1,11 +1,22 @@
-#sidebar li {
+.sidebar li {
     list-style:none;
+    margin: 0;
 }
 
-#sidebar li a {
+.sidebar .sidebar-nav {
+    line-height: 1.5em;
+}
+
+.sidebar ul li a {
     text-decoration: none;
+    color: var(--theme-color, #42b983);
+    font-weight: 600;
+    overflow: unset;
 }
 
+.sidebar-toggle {
+    background-color: transparent;
+}
 #sidebar details {
     margin-left: 3%;
     margin-bottom: 3px;

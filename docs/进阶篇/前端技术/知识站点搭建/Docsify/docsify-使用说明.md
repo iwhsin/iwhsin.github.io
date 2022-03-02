@@ -235,14 +235,11 @@
 
   - 创建`_navbar.md`文件，docsify 会自动将此文件中的内容加载为全局站点导航栏，导航栏支持多级嵌套配置。
 
-    ```markdown
+    ```html
     - [**首页**](/)
-
     - [**Java 学习**](basic/)
-
       - [基础知识](basic/study)
       - [面向对象编程](basic/oritend-object)
-
     - **Web 开发**
       - [服务器开发](web/server-dev)
       - [微服务架构](microservice-dev)
@@ -290,7 +287,7 @@
 
 - 创建`_coverpage.md`文件，docsify 会自动将此文件中的内容渲染为首页封面，封面内容仅在首页展示。
 
-  ```markdown
+  ```html
   ![logo](/logo.ico)
 
   # Java Owner - 技术小站
@@ -862,7 +859,7 @@
 
 <!-- tab:渲染显示 -->
 
-!> 这是一个普通提示
+!> 这是一个强调提示
 
 <!-- tabs:end -->
 
@@ -905,21 +902,21 @@
 - **图片缩放处理**<br>
 
   - **百分比缩放**：下面是依次缩放到`20%`、`15%`、`10%`，语法为`![](logo.ico ':size=20% 这是缩放到20%')`<br>
-    ![](logo.ico ":size=20% 这是缩放到20%")
-    ![](logo.ico ":size=15% 这是缩放到15%")
-    ![](logo.ico ":size=10% 这是缩放到10%")
+    ![](/assets/images/logo.ico ":size=20% 这是缩放到20%")
+    ![](/assets/images/logo.ico ":size=15% 这是缩放到15%")
+    ![](/assets/images/logo.ico ":size=10% 这是缩放到10%")
   - **指定大小**：下面是依次缩放到`100x100`、`50x80`、`50x50`，语法为`![](logo.ico ':size=50x80 这是缩放到20%')`<br>
-    ![](logo.ico ":size=100 这是缩放到100x100")
-    ![](logo.ico ":size=50x80 这是缩放到50x80")
-    ![](logo.ico ":size=50 这是缩放到50x50")
+    ![](/assets/images/logo.ico ":size=100 这是缩放到100x100")
+    ![](/assets/images/logo.ico ":size=50x80 这是缩放到50x80")
+    ![](/assets/images/logo.ico ":size=50 这是缩放到50x50")
 
 - **设置图片`class`样式**
   &emsp;&emsp;通过属性`':class=imgClass'`设置图片的样式，语法为`![](logo.ico ':class=imgClass 设置图片的class为imgClass')`。<br>
-  ![](logo.ico ":class=imgClass 设置图片的class为imgClass")
+  ![设置图片class](/assets/images/logo.ico ":class=imgClass 设置图片的class为imgClass")
 
 - **设置图片`id`属性**
   &emsp;&emsp;通过属性`':id=imgId'`设置图片的样式，语法为`![](logo.ico ':id=imgId 设置图片的id为imgId')`。<br>
-  ![](logo.ico ":id=imgId 设置图片的id为imgId")
+  ![设置图片id属性](/assets/images/logo.ico ":id=imgId 设置图片的id为imgId")
 
 ### 6.5. 标题的属性设置 :id=title-id
 
@@ -990,7 +987,7 @@
     ```
 
   - 嵌入指定的代码行
-    ```markdown
+    ```html
     [include](include.md ":include :type=code :fragment=part")
     ```
 

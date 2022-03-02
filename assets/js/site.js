@@ -3,7 +3,7 @@
 const COPY_PREVENT = false;
 
 $(function () {
-    // bgc();
+    bgc();
     // 快速回到顶部
     toTop();
     initCopyAction();
