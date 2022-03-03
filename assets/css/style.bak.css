@@ -1,0 +1,190 @@
+.nav {
+    flex: auto !important;
+    max-width: 15%;
+}
+body.close .markdown-section {
+    max-width: 75% !important;
+}
+
+.content .markdown-section p {
+    margin: 0.5em 0;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+}
+
+.markdown-section h2 {
+    border-top: 1px solid rgb(163, 163, 164) !important;
+}
+
+.markdown-section h3 {
+    border-top: 2px solid rgb(163, 163, 164) !important;
+}
+
+.markdown-section {
+    width: 75% !important;
+}
+
+.chapter-navigation {
+    color: green;
+    font-size: larger;
+    /* margin: 30px 0px; */
+    /* text-align: center; */
+}
+
+@media screen and (max-width: 1300px) {
+    .page_toc {
+        display: none;
+    }
+}
+
+/* .app-sub-sidebar li::before {
+    content: '⤴';
+} */
+
+.page_toc {
+    margin-right: -17px;
+    min-width: 10em;
+    max-width: 18em;
+    padding-right: 2em !important;
+    bottom: 0;
+    overflow-y: auto;
+    right: 0;
+    padding: 4% 1% 0 0;
+    height: 100%;
+    /* 默认不进行显示 */
+    transform: translateX(300px);
+    white-space: nowrap;
+}
+
+.alert.flat {
+    width: inherit;
+}
+
+/* 添加侧边栏联动,侧边栏显示则不限章节目录 */
+body.close .page_toc {
+    transform: none;
+}
+
+/* details标签样式美化 --- start */
+
+details {
+    margin-bottom: 8px;
+    margin: 0 0 8px 5%;
+}
+
+details summary {
+    /* 手指样式，可以指定-webkit-zoom-out和-webkit-zoom-in */
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    line-height: 30px;
+    width: auto;
+    /* background: linear-gradient(#fff, #e1e1e1); */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+  }
+  
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::-moz-list-bullet {
+    display: none;
+}
+
+.markdown-section details summary:after {
+    /* content: "➕"; */
+    content: "🔻";
+    float: left;
+    /* width: 20px; */
+    /* height: 1px; */
+    text-align: center;
+    /* font-weight: bold; */
+    /* font-size: 1.5em; */
+}
+
+/* 修改detail标签前面的三角形 */
+details summary:first-of-type {
+    list-style: none;
+}
+
+details[open] {
+    /* background-color: #f3f3f3; */
+    border-radius: 5px;
+    /* box-shadow: 0 3px 3px 0 rgba(0,0,0,.3); */
+}
+
+details[open] summary {
+    /* background: #e1e1e1; */
+    border: none;
+}
+
+.markdown-section details[open] summary::after {
+    /* content: "➖"; */
+    content: "🔺";
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+details ul {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 2px 0;
+    animation: fadeInDown 0.1s linear;
+  }
+/* details ---- end */
+
+/* 分栏样式控制 */
+:root{
+        --docsify-example-panels-left-panel-width : 40%;
+        --docsify-example-panels-right-panel-width : 60%;
+    }
+
+/* 文章页面显示浮动图片  -- start */
+.floating-img {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    height: 360px;
+    z-index: 1000;
+
+    -webkit-filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.6));
+
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-img img {
+    position: fixed;
+}
+
+@keyframes float {
+    0% {
+    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+    transform: translatey(0px);
+    }
+    50% {
+    box-shadow: drop-shadow(0px 25px 10px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 25px 10px rgba(0, 0, 0, 0.2));
+    transform: translatey(-20px);
+    }
+    100% {
+    box-shadow: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+    transform: translatey(0px);
+    }
+}
+/* 文章页面显示浮动图片  -- end */
