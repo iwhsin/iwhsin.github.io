@@ -37,4 +37,7 @@
         <li>
             <a href="#/interview/sidebar">面试突击</a>
         </li>
+        <li>
+            <a href="#/laboratory/sidebar>实验室</a>
+        </li>
     </ul>

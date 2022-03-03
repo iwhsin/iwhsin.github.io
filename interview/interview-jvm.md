@@ -2,6 +2,13 @@
 
 ## 基础概念
 
+<!-- panels:start -->
+<!-- div:title-panel -->
+# Git 基本介绍和配置
+![](/docs/assets/images/interview-jvm/20220303102958.png ':size=80% :class=img-center')
+<!-- panels:end -->
+
+
 ### 说一下 JVM 的内存结构?
 
 - **JVM 内存结构划分**<br>
