@@ -71,10 +71,7 @@
       <title>Document</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta name="description" content="Description" />
-      <meta
-        name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      />
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
       <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
     </head>
 
@@ -305,7 +302,7 @@
   ```
 
 - **封面背景样式设置**
-  &emsp;&emsp;`docsify`默认渲染首页封面颜色为随机生成的渐变色，可以通过自定义配置背景颜色和背景图片，要想使配置生效必须放在文档的最后一行。 - `_coverpage.md`配置自定义背景图片
+  &emsp;&emsp;`docsify` - `_coverpage.md`配置自定义背景图片
   `markdown <!-- 自定义背景图片 --> ![](background.png) ` - `_coverpage.md`配置自定义背景颜色
   `markdown <!-- 自定义背景颜色 --> ![color](white) `
 
