@@ -1,0 +1,5 @@
+@import "variables";
+
+@mixin bg($color:$gray-base) {
+  background-color: $color;
+}

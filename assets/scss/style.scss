@@ -1,0 +1,213 @@
+@import "variables";
+
+img {
+  &.center {
+    display: block;
+    margin: auto;
+  }
+  &.flip {
+    transform: rotateY(180deg);
+  }
+  &.introduce {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+#cover-logo {
+  @extend img.flip;
+  margin-top: -10%;
+}
+
+.clear {
+  clear: both;
+}
+
+// 全局定义hr用于清除浮动
+hr {
+  @extend .clear;
+}
+
+// 自定义全局样式
+.markdown-section {
+  strong {
+    color: $col-important;
+  }
+  > div > img {
+    box-shadow: 2px 2px 20px 6px rgb(255, 255, 255) !important;
+  }
+  pre {
+    background-color: #212121 !important;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 6px rgb(255, 255, 255) !important;
+    &::before {
+      content: "";
+      display: block;
+      background: url(/assets/images/ico/omit.ico);
+      height: 30px;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-color: #1c1c1c;
+      background-position: 10px 10px;
+    }
+    > code {
+      color: #c0c3c1 !important;
+      font-family: "Inconsolata", consolas, "PingFang SC", "Microsoft YaHei",
+        monospace !important;
+      background-color: #212121 !important; //#accfff  #282c34
+      font-size: 15px !important;
+      white-space: pre !important;
+      line-height: 1.5 !important;
+      -moz-tab-size: 4 !important;
+      -o-tab-size: 4 !important;
+      tab-size: 4 !important;
+      padding: 1.5em 5px;
+    }
+  }
+
+  code {
+    background-color: #f8f8f8;
+    border-radius: 2px;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB",
+      "Microsoft YaHei", Arial, sans-serif;
+    font-size: 16px !important;
+    margin: 0 2px;
+    padding: 3px 5px;
+    white-space: nowrap;
+    border: 1px solid #282c34;
+    color: #e512c1;
+  }
+  .docsify-copy-code-button {
+    background: #00a1d6 !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+  }
+}
+
+// 代码块颜色配置
+.token {
+  &.keyword {
+    color: #c678dd !important;
+  }
+  &.comment {
+    color: #737c8b !important;
+  }
+  &.tag {
+    color: #a589ad !important;
+  }
+  &.attr-name {
+    color: #de916c !important;
+  }
+  &.attr-value {
+    color: #4faee2 !important;
+  }
+  &.macro.property {
+    color: #4faee2 !important;
+  }
+  &.function {
+    color: #e6b456 !important;
+  }
+  &.string {
+    color: #98b755 !important;
+  }
+  &.punctuation {
+    color: #c0c3c1 !important;
+  }
+  &.number {
+    color: #c0c3c1 !important;
+  }
+}
+
+//  导航栏配置
+.app-nav {
+  position: fixed;
+  margin: 0px;
+  padding: 15px 25px 15px 0; /*上、右、下、左*/
+  width: calc(100% - 300px);
+  background-color: #fff;
+  height: 55px;
+  border-bottom: 1px solid #eee;
+}
+
+body.close .app-nav {
+  width: 100%;
+}
+
+// 右上角访问地址配置
+.github-corner {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  z-index: 999;
+  opacity: 0.7;
+}
+
+// 侧边栏配置
+.sidebar {
+  padding-top: 5px;
+  .search {
+    height: 50px;
+  }
+  ul li {
+    margin: 0;
+    position: relative;
+    ul {
+      margin: 6px 0;
+    }
+    p {
+      padding-left: 22px;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    a {
+      line-height: 35px;
+      font-size: 14px;
+      padding: 3px 0 3px 22px;
+    }
+    &:active {
+      > a {
+        font-size: 16px !important;
+        &::before {
+          content: "" !important;
+          position: absolute !important;
+          margin: 0 !important;
+          width: 10px !important;
+          height: 10px !important;
+          top: 15px !important;
+          left: 0px !important;
+          border-radius: 50% !important;
+          background-color: #fed24a !important;
+          box-shadow: 0 0 0 3px rgba(254, 210, 74, 0.4) !important;
+        }
+      }
+    }
+  }
+}
+
+.swal-title {
+  color: #575757;
+}
+
+.swal-text {
+  color: #797979;
+}
+
+h1 span {
+  display: inline-block;
+  background: rgb(66, 185, 131);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+}
+
+// 滚动栏配置
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #33a9dc;
+  background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #ac155e);
+  border-radius: 2em;
+}

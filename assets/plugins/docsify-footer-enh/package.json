@@ -1,0 +1,75 @@
+{
+  "_from": "docsify-footer-enh",
+  "_id": "docsify-footer-enh@0.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-ip2yJBweQm9aHaFqU9Ncj0d/QPmqr6nUHOi5p2DuXWfx3A94p7StloImEVjh9kvmotQMz9SmcmDilBgbdOj1sg==",
+  "_location": "/docsify-footer-enh",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-footer-enh",
+    "name": "docsify-footer-enh",
+    "escapedName": "docsify-footer-enh",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmmirror.com/docsify-footer-enh/-/docsify-footer-enh-0.0.6.tgz",
+  "_shasum": "2f9f3663a25617ed60fb57252472ee599cca6bdc",
+  "_spec": "docsify-footer-enh",
+  "_where": "C:\\Users\\xin.wang5",
+  "author": {
+    "name": "Erick JA"
+  },
+  "bugs": {
+    "url": "https://github.com/erickjx/docsify-footer-enh/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A simple Footer plugin for Docsify",
+  "devDependencies": {
+    "docsify-cli": "^4.4.1",
+    "license-checker": "latest",
+    "npm-check-updates": "latest",
+    "prettier": "2.1.2",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "homepage": "https://github.com/erickjx/docsify-footer-enh#readme",
+  "keywords": [
+    "Docsify",
+    "Footer"
+  ],
+  "license": "Apache-2.0",
+  "main": "src",
+  "name": "docsify-footer-enh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickjx/docsify-footer-enh.git"
+  },
+  "scripts": {
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "webpack src/index.js -o dist/docsify-footer-enh.js --mode=development && webpack src/index.js -o example/docsify-footer-enh.js --mode=development",
+    "build:prod": "webpack src/index.js -o dist/docsify-footer-enh.min.js --mode=production",
+    "example": "npm run build && npx docsify serve example --open",
+    "lib-chk": "npx ncu",
+    "lib-chk-up": "npx ncu -u",
+    "lic-chk": "npx license-checker",
+    "prettier:check": "npx prettier --list-different \"{,src/**/,example/**/}*.{md,json,js,ts,html,css,scss,yml}\" ",
+    "prettier:format": "npx prettier --write \"{,src/**/,example/**/}*.{md,json,js,ts,html,css,scss,yml}\""
+  },
+  "version": "0.0.6"
+}

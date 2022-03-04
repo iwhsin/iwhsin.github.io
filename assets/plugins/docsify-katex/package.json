@@ -1,0 +1,62 @@
+{
+  "_from": "docsify-katex",
+  "_id": "docsify-katex@1.4.3",
+  "_inBundle": false,
+  "_integrity": "sha512-3wAwgETtTjZkMF749tRRqS2yJe7RcVMBcjRVNIMgUki22wetZRF2gmPu5w6rPi6JPbyPXE5M7+rUZUloRVomZg==",
+  "_location": "/docsify-katex",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "docsify-katex",
+    "name": "docsify-katex",
+    "escapedName": "docsify-katex",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmmirror.com/docsify-katex/-/docsify-katex-1.4.3.tgz",
+  "_shasum": "f397651d5d4587962ce409445131f2fdebad1d41",
+  "_spec": "docsify-katex",
+  "_where": "C:\\Users\\xin.wang5",
+  "author": {
+    "name": "upupming"
+  },
+  "bugs": {
+    "url": "https://github.com/upupming/docsify-katex/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "katex": "^0.11.1"
+  },
+  "deprecated": false,
+  "description": "KaTeX support for docsify",
+  "devDependencies": {
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.3.0"
+  },
+  "homepage": "https://github.com/upupming/docsify-katex#readme",
+  "keywords": [
+    "KaTeX",
+    "docsify",
+    "MathJax",
+    "math",
+    "LaTeX"
+  ],
+  "license": "MIT",
+  "main": "dist/docsify-katex.js",
+  "name": "docsify-katex",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upupming/docsify-katex.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack -w --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.3"
+}

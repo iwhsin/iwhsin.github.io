@@ -1,4 +1,4 @@
-![logo](/assets/images/stray.gif ':size=20% :class=img-flip :id=cover-logo')
+![logo](/assets/images/stray.gif ':size=20% :id=cover-logo')
 
 # **就是这么嘚儿**
 ## **俺啥也不知道,啥也不敢说~**
@@ -12,8 +12,7 @@
     | 🚴‍♂️ 本站总访客数：<span id="busuanzi_value_site_uv"></span> 人
 </span>
 
-[GitHub](https://gitee.com/whsin/javaOwner)
-[开始阅读](sidebar)
+[GitHub](https://gitee.com/whsin/javaOwner) [开始阅读](sidebar)
 
 
 <!-- 自定义背景图片 -->
