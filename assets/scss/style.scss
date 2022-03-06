@@ -16,7 +16,6 @@ img {
   }
 }
 
-
 #cover-logo {
   @extend img.flip;
   // margin-top: -10%;
@@ -49,8 +48,57 @@ i {
   color: $col-important;
 }
 .title {
-  color: var(--theme-color, #42b983);
+  // color: var(--theme-color, #42b983);
   font-weight: 600 !important;
+}
+
+.details {
+  /* 手指样式，可以指定-webkit-zoom-out和-webkit-zoom-in */
+  cursor: pointer;
+  // 不可选中
+  user-select: none;
+  // 修改detail标签前面的三角形
+  list-style: none;
+  // &:hover {
+  //   // background-image: linear-gradient(#cb6196, #c76262);
+  // }
+}
+
+/* details标签样式美化 --- start */
+details {
+  width: 30em;
+  margin: 0 2em;
+  summary {
+    /* 手指样式，可以指定-webkit-zoom-out和-webkit-zoom-in */
+    cursor: pointer;
+    // 不可选中
+    user-select: none;
+    // 修改detail标签前面的三角形
+    list-style: none;
+    &:hover {
+      // background-color: #00a1d6;
+      background-image: linear-gradient(#cb6196, #c76262);
+      text-decoration: none;
+      list-style: none;
+      // background-size: 30em;
+      // width: 30em;
+    }
+  }
+
+  &[open] {
+    // background-color: #f3f3f3;
+    border-left: 1px solid rgba(14, 85, 151, 0.3);
+    // border-bottom: 1px dashed rgba(14, 85, 151, 0.3);
+    summary {
+      text-align: center;
+      width: 30em;
+      background-image: linear-gradient(#cb6196, #c76262);
+      display: unset;
+    }
+    ul {
+      margin: 0 auto;
+    }
+  }
 }
 
 // 自定义全局样式
@@ -59,8 +107,15 @@ i {
     color: $col-important;
   }
   a {
-    &:not(:hover) {
+    font-weight: 500;
+    // &:not(:hover) {
+    //   text-decoration: none;
+    // }
+    text-decoration: none;
+    &:hover {
       text-decoration: none;
+      background-image: linear-gradient(#cb6196, #c76262);
+      // background-color: var(--theme-color, #42b983);
     }
   }
   h1 {
@@ -173,8 +228,8 @@ i {
     }
   }
   &.no-badge {
-      margin: 0;
-    }
+    margin: 0;
+  }
 }
 
 body.close .app-nav {
@@ -216,6 +271,10 @@ body.close .app-nav {
       line-height: 35px;
       font-size: 14px;
       padding: 3px 0 3px 22px;
+      &:hover {
+        text-decoration: none;
+        color: var(--theme-color, #42b983);
+      }
     }
     &:active {
       > a {
@@ -248,6 +307,7 @@ body.close .app-nav {
 // 滚动栏配置
 ::-webkit-scrollbar {
   width: 5px;
+  height: 2px;
 }
 ::-webkit-scrollbar-thumb {
   background: #33a9dc;

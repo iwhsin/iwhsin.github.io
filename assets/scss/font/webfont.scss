@@ -28,6 +28,709 @@
   }
 }
 
+// 物品类
+.emoji- {
+  &glasses:before {
+    content: '👓';
+  }
+  &sunglasses:before {
+    content: '🕶️';
+  }
+  &goggles:before {
+    content: '🥽';
+  }
+  &lab-coat:before {
+    content: '🥼';
+  }
+  &safety-vest:before {
+    content: '🦺';
+  }
+  &necktie:before {
+    content: '👔';
+  }
+  &t-shirt:before {
+    content: '👕';
+  }
+  &jeans:before {
+    content: '👖';
+  }
+  &scarf:before {
+    content: '🧣';
+  }
+  &gloves:before {
+    content: '🧤';
+  }
+  &coat:before {
+    content: '🧥';
+  }
+  &socks:before {
+    content: '🧦';
+  }
+  &dress:before {
+    content: '👗';
+  }
+  &kimono:before {
+    content: '👘';
+  }
+  &sari:before {
+    content: '🥻';
+  }
+  &one-piece-swimsuit:before {
+    content: '🩱';
+  }
+  &briefs:before {
+    content: '🩲';
+  }
+  &shorts:before {
+    content: '🩳';
+  }
+  &bikini:before {
+    content: '👙';
+  }
+  &woman’s-clothes:before {
+    content: '👚';
+  }
+  &purse:before {
+    content: '👛';
+  }
+  &handbag:before {
+    content: '👜';
+  }
+  &clutch-bag:before {
+    content: '👝';
+  }
+  &shopping-bags:before {
+    content: '🛍️';
+  }
+  &backpack:before {
+    content: '🎒';
+  }
+  &man’s-shoe:before {
+    content: '👞';
+  }
+  &running-shoe:before {
+    content: '👟';
+  }
+  &hiking-boot:before {
+    content: '🥾';
+  }
+  &flat-shoe:before {
+    content: '🥿';
+  }
+  &high-heeled-shoe:before {
+    content: '👠';
+  }
+  &woman’s-sandal:before {
+    content: '👡';
+  }
+  &ballet-shoes:before {
+    content: '🩰';
+  }
+  &woman’s-boot:before {
+    content: '👢';
+  }
+  &crown:before {
+    content: '👑';
+  }
+  &woman’s-hat:before {
+    content: '👒';
+  }
+  &top-hat:before {
+    content: '🎩';
+  }
+  &graduation-cap:before {
+    content: '🎓';
+  }
+  &billed-cap:before {
+    content: '🧢';
+  }
+  &rescue-worker’s-helmet:before {
+    content: '⛑️';
+  }
+  &prayer-beads:before {
+    content: '📿';
+  }
+  &lipstick:before {
+    content: '💄';
+  }
+  &ring:before {
+    content: '💍';
+  }
+  &gem-stone:before {
+    content: '💎';
+  }
+  &muted-speaker:before {
+    content: '🔇';
+  }
+  &speaker-low-volume:before {
+    content: '🔈';
+  }
+  &speaker-medium-volume:before {
+    content: '🔉';
+  }
+  &speaker-high-volume:before {
+    content: '🔊';
+  }
+  &loudspeaker:before {
+    content: '📢';
+  }
+  &megaphone:before {
+    content: '📣';
+  }
+  &postal-horn:before {
+    content: '📯';
+  }
+  &bell:before {
+    content: '🔔';
+  }
+  &bell-with-slash:before {
+    content: '🔕';
+  }
+  &musical-score:before {
+    content: '🎼';
+  }
+  &musical-note:before {
+    content: '🎵';
+  }
+  &musical-notes:before {
+    content: '🎶';
+  }
+  &studio-microphone:before {
+    content: '🎙️';
+  }
+  &level-slider:before {
+    content: '🎚️';
+  }
+  &control-knobs:before {
+    content: '🎛️';
+  }
+  &microphone:before {
+    content: '🎤';
+  }
+  &headphone:before {
+    content: '🎧';
+  }
+  &radio:before {
+    content: '📻';
+  }
+  &saxophone:before {
+    content: '🎷';
+  }
+  &guitar:before {
+    content: '🎸';
+  }
+  &musical-keyboard:before {
+    content: '🎹';
+  }
+  &trumpet:before {
+    content: '🎺';
+  }
+  &violin:before {
+    content: '🎻';
+  }
+  &banjo:before {
+    content: '🪕';
+  }
+  &drum:before {
+    content: '🥁';
+  }
+  &mobile-phone:before {
+    content: '📱';
+  }
+  &mobile-phone-with-arrow:before {
+    content: '📲';
+  }
+  &telephone:before {
+    content: '☎️';
+  }
+  &telephone-receiver:before {
+    content: '📞';
+  }
+  &pager:before {
+    content: '📟';
+  }
+  &fax-machine:before {
+    content: '📠';
+  }
+  &battery:before {
+    content: '🔋';
+  }
+  &electric-plug:before {
+    content: '🔌';
+  }
+  &laptop-computer:before {
+    content: '💻';
+  }
+  &desktop-computer:before {
+    content: '🖥️';
+  }
+  &printer:before {
+    content: '🖨️';
+  }
+  &keyboard:before {
+    content: '⌨️';
+  }
+  &computer-mouse:before {
+    content: '🖱️';
+  }
+  &trackball:before {
+    content: '🖲️';
+  }
+  &computer-disk:before {
+    content: '💽';
+  }
+  &floppy-disk:before {
+    content: '💾';
+  }
+  &optical-disk:before {
+    content: '💿';
+  }
+  &dvd:before {
+    content: '📀';
+  }
+  &abacus:before {
+    content: '🧮';
+  }
+  &movie-camera:before {
+    content: '🎥';
+  }
+  &film-frames:before {
+    content: '🎞️';
+  }
+  &film-projector:before {
+    content: '📽️';
+  }
+  &clapper-board:before {
+    content: '🎬';
+  }
+  &television:before {
+    content: '📺';
+  }
+  &camera:before {
+    content: '📷';
+  }
+  &camera-with-flash:before {
+    content: '📸';
+  }
+  &video-camera:before {
+    content: '📹';
+  }
+  &videocassette:before {
+    content: '📼';
+  }
+  &magnifying-glass-tilted-left:before {
+    content: '🔍';
+  }
+  &magnifying-glass-tilted-right:before {
+    content: '🔎';
+  }
+  &candle:before {
+    content: '🕯️';
+  }
+  &light-bulb:before {
+    content: '💡';
+  }
+  &flashlight:before {
+    content: '🔦';
+  }
+  &red-paper-lantern:before {
+    content: '🏮';
+  }
+  &diya-lamp:before {
+    content: '🪔';
+  }
+  &notebook-with-decorative-cover:before {
+    content: '📔';
+  }
+  &closed-book:before {
+    content: '📕';
+  }
+  &open-book:before {
+    content: '📖';
+  }
+  &green-book:before {
+    content: '📗';
+  }
+  &blue-book:before {
+    content: '📘';
+  }
+  &orange-book:before {
+    content: '📙';
+  }
+  &books:before {
+    content: '📚';
+  }
+  &notebook:before {
+    content: '📓';
+  }
+  &ledger:before {
+    content: '📒';
+  }
+  &page-with-curl:before {
+    content: '📃';
+  }
+  &scroll:before {
+    content: '📜';
+  }
+  &page-facing-up:before {
+    content: '📄';
+  }
+  &newspaper:before {
+    content: '📰';
+  }
+  &rolled-up-newspaper:before {
+    content: '🗞️';
+  }
+  &bookmark-tabs:before {
+    content: '📑';
+  }
+  &bookmark:before {
+    content: '🔖';
+  }
+  &label:before {
+    content: '🏷️';
+  }
+  &money-bag:before {
+    content: '💰';
+  }
+  &yen-banknote:before {
+    content: '💴';
+  }
+  &dollar-banknote:before {
+    content: '💵';
+  }
+  &euro-banknote:before {
+    content: '💶';
+  }
+  &pound-banknote:before {
+    content: '💷';
+  }
+  &money-with-wings:before {
+    content: '💸';
+  }
+  &credit-card:before {
+    content: '💳';
+  }
+  &receipt:before {
+    content: '🧾';
+  }
+  &chart-increasing-with-yen:before {
+    content: '💹';
+  }
+  &currency-exchange:before {
+    content: '💱';
+  }
+  &heavy-dollar-sign:before {
+    content: '💲';
+  }
+  &envelope:before {
+    content: '✉️';
+  }
+  &e-mail:before {
+    content: '📧';
+  }
+  &incoming-envelope:before {
+    content: '📨';
+  }
+  &envelope-with-arrow:before {
+    content: '📩';
+  }
+  &outbox-tray:before {
+    content: '📤';
+  }
+  &inbox-tray:before {
+    content: '📥';
+  }
+  &package:before {
+    content: '📦';
+  }
+  &closed-mailbox-with-raised-flag:before {
+    content: '📫';
+  }
+  &closed-mailbox-with-lowered-flag:before {
+    content: '📪';
+  }
+  &open-mailbox-with-raised-flag:before {
+    content: '📬';
+  }
+  &open-mailbox-with-lowered-flag:before {
+    content: '📭';
+  }
+  &postbox:before {
+    content: '📮';
+  }
+  &ballot-box-with-ballot:before {
+    content: '🗳️';
+  }
+  &pencil:before {
+    content: '✏️';
+  }
+  &black-nib:before {
+    content: '✒️';
+  }
+  &fountain-pen:before {
+    content: '🖋️';
+  }
+  &pen:before {
+    content: '🖊️';
+  }
+  &paintbrush:before {
+    content: '🖌️';
+  }
+  &crayon:before {
+    content: '🖍️';
+  }
+  &memo:before {
+    content: '📝';
+  }
+  &briefcase:before {
+    content: '💼';
+  }
+  &file-folder:before {
+    content: '📁';
+  }
+  &open-file-folder:before {
+    content: '📂';
+  }
+  &card-index-dividers:before {
+    content: '🗂️';
+  }
+  &calendar:before {
+    content: '📅';
+  }
+  &tear-off-calendar:before {
+    content: '📆';
+  }
+  &spiral-notepad:before {
+    content: '🗒️';
+  }
+  &spiral-calendar:before {
+    content: '🗓️';
+  }
+  &card-index:before {
+    content: '📇';
+  }
+  &chart-increasing:before {
+    content: '📈';
+  }
+  &chart-decreasing:before {
+    content: '📉';
+  }
+  &bar-chart:before {
+    content: '📊';
+  }
+  &clipboard:before {
+    content: '📋';
+  }
+  &pushpin:before {
+    content: '📌';
+  }
+  &round-pushpin:before {
+    content: '📍';
+  }
+  &paperclip:before {
+    content: '📎';
+  }
+  &linked-paperclips:before {
+    content: '🖇️';
+  }
+  &straight-ruler:before {
+    content: '📏';
+  }
+  &triangular-ruler:before {
+    content: '📐';
+  }
+  &scissors:before {
+    content: '✂️';
+  }
+  &card-file-box:before {
+    content: '🗃️';
+  }
+  &file-cabinet:before {
+    content: '🗄️';
+  }
+  &wastebasket:before {
+    content: '🗑️';
+  }
+  &locked:before {
+    content: '🔒';
+  }
+  &unlocked:before {
+    content: '🔓';
+  }
+  &locked-with-pen:before {
+    content: '🔏';
+  }
+  &locked-with-key:before {
+    content: '🔐';
+  }
+  &key:before {
+    content: '🔑';
+  }
+  &old-key:before {
+    content: '🗝️';
+  }
+  &hammer:before {
+    content: '🔨';
+  }
+  &axe:before {
+    content: '🪓';
+  }
+  &pick:before {
+    content: '⛏️';
+  }
+  &hammer-and-pick:before {
+    content: '⚒️';
+  }
+  &hammer-and-wrench:before {
+    content: '🛠️';
+  }
+  &dagger:before {
+    content: '🗡️';
+  }
+  &crossed-swords:before {
+    content: '⚔️';
+  }
+  &pistol:before {
+    content: '🔫';
+  }
+  &bow-and-arrow:before {
+    content: '🏹';
+  }
+  &shield:before {
+    content: '🛡️';
+  }
+  &wrench:before {
+    content: '🔧';
+  }
+  &nut-and-bolt:before {
+    content: '🔩';
+  }
+  &gear:before {
+    content: '⚙️';
+  }
+  &clamp:before {
+    content: '🗜️';
+  }
+  &balance-scale:before {
+    content: '⚖️';
+  }
+  &probing-cane:before {
+    content: '🦯';
+  }
+  &link:before {
+    content: '🔗';
+  }
+  &chains:before {
+    content: '⛓️';
+  }
+  &toolbox:before {
+    content: '🧰';
+  }
+  &magnet:before {
+    content: '🧲';
+  }
+  &alembic:before {
+    content: '⚗️';
+  }
+  &test-tube:before {
+    content: '🧪';
+  }
+  &petri-dish:before {
+    content: '🧫';
+  }
+  &dna:before {
+    content: '🧬';
+  }
+  &microscope:before {
+    content: '🔬';
+  }
+  &telescope:before {
+    content: '🔭';
+  }
+  &satellite-antenna:before {
+    content: '📡';
+  }
+  &syringe:before {
+    content: '💉';
+  }
+  &drop-of-blood:before {
+    content: '🩸';
+  }
+  &pill:before {
+    content: '💊';
+  }
+  &adhesive-bandage:before {
+    content: '🩹';
+  }
+  &stethoscope:before {
+    content: '🩺';
+  }
+  &door:before {
+    content: '🚪';
+  }
+  &bed:before {
+    content: '🛏️';
+  }
+  &couch-and-lamp:before {
+    content: '🛋️';
+  }
+  &chair:before {
+    content: '🪑';
+  }
+  &toilet:before {
+    content: '🚽';
+  }
+  &shower:before {
+    content: '🚿';
+  }
+  &bathtub:before {
+    content: '🛁';
+  }
+  &razor:before {
+    content: '🪒';
+  }
+  &lotion-bottle:before {
+    content: '🧴';
+  }
+  &safety-pin:before {
+    content: '🧷';
+  }
+  &broom:before {
+    content: '🧹';
+  }
+  &basket:before {
+    content: '🧺';
+  }
+  &roll-of-paper:before {
+    content: '🧻';
+  }
+  &soap:before {
+    content: '🧼';
+  }
+  &sponge:before {
+    content: '🧽';
+  }
+  &fire-extinguisher:before {
+    content: '🧯';
+  }
+  &shopping-cart:before {
+    content: '🛒';
+  }
+  &cigarette:before {
+    content: '🚬';
+  }
+  &coffin:before {
+    content: '⚰️';
+  }
+  &funeral-urn:before {
+    content: '⚱️';
+  }
+  &moai:before {
+    content: '🗿';
+  }
+}
+
 .emoji- {
   &tree:before {
     content: '🌲';

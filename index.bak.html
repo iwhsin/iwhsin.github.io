@@ -361,8 +361,8 @@
     }
     
     var tits = document.getElementsByClassName('button mb1');
-    var divs =  document.getElementsByClassName('clearfix');
-    str = ''
+    var divs = document.getElementsByClassName('clearfix');
+    var str = ''
     // for (let index = 0; index < tits.length; index++) {
     //   const element = tits[index];
     //   str += '- '+ element.innerHTML+'\n';
@@ -373,21 +373,58 @@
     //   }
     //   str += text +'\n';
     // }
+    var count =0;
+
+    var mdText = "";
     for (let index = 0; index < tits.length; index++) {
         const element = tits[index];
         var eles = divs[index].getElementsByClassName('emoji left mr2 h1');
         var text = '';
+        mdText += "\n### " + element.textContent + "\n| 图标 | 标识符 |  中文描述  |\n| :------------- | :------------- | : ---- |\n";
         for (let ele of eles) {
-          var enName = ele.nextElementSibling.getElementsByClassName('name-en')[0].textContent;
-          console.info("enName:" + enName + "  eleText:" + ele.innerHTML)
-          str+='&'+enName.replace(/\s/g, "-")+':before {\n' + 'content: \'' + ele.innerHTML +'\';\n}\n'
+            var siblingEle = ele.nextElementSibling;
+            var enName = siblingEle.getElementsByClassName('name-en')[0].textContent.replace(/\s/g, "-");
+            str+='&amp;'+enName+':before {\n content: \'' + ele.innerHTML +'\';\n}\n'
+            mdText+="| " + ele.innerHTML + "| " + enName + "| " + siblingEle.firstElementChild.textContent + "|\n"
+            count++;
         }
-      }
+    }
 
-    console.log(str)
-    var eles = document.getElementsByClassName('emoji left mr2 h1'); var str = ''; for (let ele of eles) {
-        str += ' ' + ele.innerHTML
+    // console.log(str);
+    // console.log(mdText);
+    console.info(count);
+    var divEle1 = document.createElement("div");
+    divEle1.style.maringLeft = "200px";
+    var divEle2 = document.createElement("div");
+    divEle2.style.maringLeft = "200px";
+    
+
+    var pele = document.createElement("p");
+    pele.innerHTML = "================";
+    document.body.prepend(divEle2);
+    document.body.prepend(pele);
+    document.body.prepend(divEle1);
+    divEle1.innerHTML += str;
+    divEle2.innerHTML += mdText;
+    
+  </script>
+
+  <script type="text/javascript">
+    $(h3).click(function(){
+      var details = this.next()[0];
+      toggleDetails(details);
+    })
+
+    function isDetails(nodeName){
+      return 'DETAILS' == nodeName;
+    }
+
+    function toggleDetails(details){
+      if(!isDetails(details)) {
+        return;
       }
+      details.open = !details.open;
+    }
   </script>
 </body>
 

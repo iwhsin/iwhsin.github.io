@@ -11,6 +11,938 @@
   padding-right: 5px;
 }
 
+.emoji-glasses:before {
+  content: '👓';
+}
+
+.emoji-sunglasses:before {
+  content: '🕶️';
+}
+
+.emoji-goggles:before {
+  content: '🥽';
+}
+
+.emoji-lab-coat:before {
+  content: '🥼';
+}
+
+.emoji-safety-vest:before {
+  content: '🦺';
+}
+
+.emoji-necktie:before {
+  content: '👔';
+}
+
+.emoji-t-shirt:before {
+  content: '👕';
+}
+
+.emoji-jeans:before {
+  content: '👖';
+}
+
+.emoji-scarf:before {
+  content: '🧣';
+}
+
+.emoji-gloves:before {
+  content: '🧤';
+}
+
+.emoji-coat:before {
+  content: '🧥';
+}
+
+.emoji-socks:before {
+  content: '🧦';
+}
+
+.emoji-dress:before {
+  content: '👗';
+}
+
+.emoji-kimono:before {
+  content: '👘';
+}
+
+.emoji-sari:before {
+  content: '🥻';
+}
+
+.emoji-one-piece-swimsuit:before {
+  content: '🩱';
+}
+
+.emoji-briefs:before {
+  content: '🩲';
+}
+
+.emoji-shorts:before {
+  content: '🩳';
+}
+
+.emoji-bikini:before {
+  content: '👙';
+}
+
+.emoji-woman’s-clothes:before {
+  content: '👚';
+}
+
+.emoji-purse:before {
+  content: '👛';
+}
+
+.emoji-handbag:before {
+  content: '👜';
+}
+
+.emoji-clutch-bag:before {
+  content: '👝';
+}
+
+.emoji-shopping-bags:before {
+  content: '🛍️';
+}
+
+.emoji-backpack:before {
+  content: '🎒';
+}
+
+.emoji-man’s-shoe:before {
+  content: '👞';
+}
+
+.emoji-running-shoe:before {
+  content: '👟';
+}
+
+.emoji-hiking-boot:before {
+  content: '🥾';
+}
+
+.emoji-flat-shoe:before {
+  content: '🥿';
+}
+
+.emoji-high-heeled-shoe:before {
+  content: '👠';
+}
+
+.emoji-woman’s-sandal:before {
+  content: '👡';
+}
+
+.emoji-ballet-shoes:before {
+  content: '🩰';
+}
+
+.emoji-woman’s-boot:before {
+  content: '👢';
+}
+
+.emoji-crown:before {
+  content: '👑';
+}
+
+.emoji-woman’s-hat:before {
+  content: '👒';
+}
+
+.emoji-top-hat:before {
+  content: '🎩';
+}
+
+.emoji-graduation-cap:before {
+  content: '🎓';
+}
+
+.emoji-billed-cap:before {
+  content: '🧢';
+}
+
+.emoji-rescue-worker’s-helmet:before {
+  content: '⛑️';
+}
+
+.emoji-prayer-beads:before {
+  content: '📿';
+}
+
+.emoji-lipstick:before {
+  content: '💄';
+}
+
+.emoji-ring:before {
+  content: '💍';
+}
+
+.emoji-gem-stone:before {
+  content: '💎';
+}
+
+.emoji-muted-speaker:before {
+  content: '🔇';
+}
+
+.emoji-speaker-low-volume:before {
+  content: '🔈';
+}
+
+.emoji-speaker-medium-volume:before {
+  content: '🔉';
+}
+
+.emoji-speaker-high-volume:before {
+  content: '🔊';
+}
+
+.emoji-loudspeaker:before {
+  content: '📢';
+}
+
+.emoji-megaphone:before {
+  content: '📣';
+}
+
+.emoji-postal-horn:before {
+  content: '📯';
+}
+
+.emoji-bell:before {
+  content: '🔔';
+}
+
+.emoji-bell-with-slash:before {
+  content: '🔕';
+}
+
+.emoji-musical-score:before {
+  content: '🎼';
+}
+
+.emoji-musical-note:before {
+  content: '🎵';
+}
+
+.emoji-musical-notes:before {
+  content: '🎶';
+}
+
+.emoji-studio-microphone:before {
+  content: '🎙️';
+}
+
+.emoji-level-slider:before {
+  content: '🎚️';
+}
+
+.emoji-control-knobs:before {
+  content: '🎛️';
+}
+
+.emoji-microphone:before {
+  content: '🎤';
+}
+
+.emoji-headphone:before {
+  content: '🎧';
+}
+
+.emoji-radio:before {
+  content: '📻';
+}
+
+.emoji-saxophone:before {
+  content: '🎷';
+}
+
+.emoji-guitar:before {
+  content: '🎸';
+}
+
+.emoji-musical-keyboard:before {
+  content: '🎹';
+}
+
+.emoji-trumpet:before {
+  content: '🎺';
+}
+
+.emoji-violin:before {
+  content: '🎻';
+}
+
+.emoji-banjo:before {
+  content: '🪕';
+}
+
+.emoji-drum:before {
+  content: '🥁';
+}
+
+.emoji-mobile-phone:before {
+  content: '📱';
+}
+
+.emoji-mobile-phone-with-arrow:before {
+  content: '📲';
+}
+
+.emoji-telephone:before {
+  content: '☎️';
+}
+
+.emoji-telephone-receiver:before {
+  content: '📞';
+}
+
+.emoji-pager:before {
+  content: '📟';
+}
+
+.emoji-fax-machine:before {
+  content: '📠';
+}
+
+.emoji-battery:before {
+  content: '🔋';
+}
+
+.emoji-electric-plug:before {
+  content: '🔌';
+}
+
+.emoji-laptop-computer:before {
+  content: '💻';
+}
+
+.emoji-desktop-computer:before {
+  content: '🖥️';
+}
+
+.emoji-printer:before {
+  content: '🖨️';
+}
+
+.emoji-keyboard:before {
+  content: '⌨️';
+}
+
+.emoji-computer-mouse:before {
+  content: '🖱️';
+}
+
+.emoji-trackball:before {
+  content: '🖲️';
+}
+
+.emoji-computer-disk:before {
+  content: '💽';
+}
+
+.emoji-floppy-disk:before {
+  content: '💾';
+}
+
+.emoji-optical-disk:before {
+  content: '💿';
+}
+
+.emoji-dvd:before {
+  content: '📀';
+}
+
+.emoji-abacus:before {
+  content: '🧮';
+}
+
+.emoji-movie-camera:before {
+  content: '🎥';
+}
+
+.emoji-film-frames:before {
+  content: '🎞️';
+}
+
+.emoji-film-projector:before {
+  content: '📽️';
+}
+
+.emoji-clapper-board:before {
+  content: '🎬';
+}
+
+.emoji-television:before {
+  content: '📺';
+}
+
+.emoji-camera:before {
+  content: '📷';
+}
+
+.emoji-camera-with-flash:before {
+  content: '📸';
+}
+
+.emoji-video-camera:before {
+  content: '📹';
+}
+
+.emoji-videocassette:before {
+  content: '📼';
+}
+
+.emoji-magnifying-glass-tilted-left:before {
+  content: '🔍';
+}
+
+.emoji-magnifying-glass-tilted-right:before {
+  content: '🔎';
+}
+
+.emoji-candle:before {
+  content: '🕯️';
+}
+
+.emoji-light-bulb:before {
+  content: '💡';
+}
+
+.emoji-flashlight:before {
+  content: '🔦';
+}
+
+.emoji-red-paper-lantern:before {
+  content: '🏮';
+}
+
+.emoji-diya-lamp:before {
+  content: '🪔';
+}
+
+.emoji-notebook-with-decorative-cover:before {
+  content: '📔';
+}
+
+.emoji-closed-book:before {
+  content: '📕';
+}
+
+.emoji-open-book:before {
+  content: '📖';
+}
+
+.emoji-green-book:before {
+  content: '📗';
+}
+
+.emoji-blue-book:before {
+  content: '📘';
+}
+
+.emoji-orange-book:before {
+  content: '📙';
+}
+
+.emoji-books:before {
+  content: '📚';
+}
+
+.emoji-notebook:before {
+  content: '📓';
+}
+
+.emoji-ledger:before {
+  content: '📒';
+}
+
+.emoji-page-with-curl:before {
+  content: '📃';
+}
+
+.emoji-scroll:before {
+  content: '📜';
+}
+
+.emoji-page-facing-up:before {
+  content: '📄';
+}
+
+.emoji-newspaper:before {
+  content: '📰';
+}
+
+.emoji-rolled-up-newspaper:before {
+  content: '🗞️';
+}
+
+.emoji-bookmark-tabs:before {
+  content: '📑';
+}
+
+.emoji-bookmark:before {
+  content: '🔖';
+}
+
+.emoji-label:before {
+  content: '🏷️';
+}
+
+.emoji-money-bag:before {
+  content: '💰';
+}
+
+.emoji-yen-banknote:before {
+  content: '💴';
+}
+
+.emoji-dollar-banknote:before {
+  content: '💵';
+}
+
+.emoji-euro-banknote:before {
+  content: '💶';
+}
+
+.emoji-pound-banknote:before {
+  content: '💷';
+}
+
+.emoji-money-with-wings:before {
+  content: '💸';
+}
+
+.emoji-credit-card:before {
+  content: '💳';
+}
+
+.emoji-receipt:before {
+  content: '🧾';
+}
+
+.emoji-chart-increasing-with-yen:before {
+  content: '💹';
+}
+
+.emoji-currency-exchange:before {
+  content: '💱';
+}
+
+.emoji-heavy-dollar-sign:before {
+  content: '💲';
+}
+
+.emoji-envelope:before {
+  content: '✉️';
+}
+
+.emoji-e-mail:before {
+  content: '📧';
+}
+
+.emoji-incoming-envelope:before {
+  content: '📨';
+}
+
+.emoji-envelope-with-arrow:before {
+  content: '📩';
+}
+
+.emoji-outbox-tray:before {
+  content: '📤';
+}
+
+.emoji-inbox-tray:before {
+  content: '📥';
+}
+
+.emoji-package:before {
+  content: '📦';
+}
+
+.emoji-closed-mailbox-with-raised-flag:before {
+  content: '📫';
+}
+
+.emoji-closed-mailbox-with-lowered-flag:before {
+  content: '📪';
+}
+
+.emoji-open-mailbox-with-raised-flag:before {
+  content: '📬';
+}
+
+.emoji-open-mailbox-with-lowered-flag:before {
+  content: '📭';
+}
+
+.emoji-postbox:before {
+  content: '📮';
+}
+
+.emoji-ballot-box-with-ballot:before {
+  content: '🗳️';
+}
+
+.emoji-pencil:before {
+  content: '✏️';
+}
+
+.emoji-black-nib:before {
+  content: '✒️';
+}
+
+.emoji-fountain-pen:before {
+  content: '🖋️';
+}
+
+.emoji-pen:before {
+  content: '🖊️';
+}
+
+.emoji-paintbrush:before {
+  content: '🖌️';
+}
+
+.emoji-crayon:before {
+  content: '🖍️';
+}
+
+.emoji-memo:before {
+  content: '📝';
+}
+
+.emoji-briefcase:before {
+  content: '💼';
+}
+
+.emoji-file-folder:before {
+  content: '📁';
+}
+
+.emoji-open-file-folder:before {
+  content: '📂';
+}
+
+.emoji-card-index-dividers:before {
+  content: '🗂️';
+}
+
+.emoji-calendar:before {
+  content: '📅';
+}
+
+.emoji-tear-off-calendar:before {
+  content: '📆';
+}
+
+.emoji-spiral-notepad:before {
+  content: '🗒️';
+}
+
+.emoji-spiral-calendar:before {
+  content: '🗓️';
+}
+
+.emoji-card-index:before {
+  content: '📇';
+}
+
+.emoji-chart-increasing:before {
+  content: '📈';
+}
+
+.emoji-chart-decreasing:before {
+  content: '📉';
+}
+
+.emoji-bar-chart:before {
+  content: '📊';
+}
+
+.emoji-clipboard:before {
+  content: '📋';
+}
+
+.emoji-pushpin:before {
+  content: '📌';
+}
+
+.emoji-round-pushpin:before {
+  content: '📍';
+}
+
+.emoji-paperclip:before {
+  content: '📎';
+}
+
+.emoji-linked-paperclips:before {
+  content: '🖇️';
+}
+
+.emoji-straight-ruler:before {
+  content: '📏';
+}
+
+.emoji-triangular-ruler:before {
+  content: '📐';
+}
+
+.emoji-scissors:before {
+  content: '✂️';
+}
+
+.emoji-card-file-box:before {
+  content: '🗃️';
+}
+
+.emoji-file-cabinet:before {
+  content: '🗄️';
+}
+
+.emoji-wastebasket:before {
+  content: '🗑️';
+}
+
+.emoji-locked:before {
+  content: '🔒';
+}
+
+.emoji-unlocked:before {
+  content: '🔓';
+}
+
+.emoji-locked-with-pen:before {
+  content: '🔏';
+}
+
+.emoji-locked-with-key:before {
+  content: '🔐';
+}
+
+.emoji-key:before {
+  content: '🔑';
+}
+
+.emoji-old-key:before {
+  content: '🗝️';
+}
+
+.emoji-hammer:before {
+  content: '🔨';
+}
+
+.emoji-axe:before {
+  content: '🪓';
+}
+
+.emoji-pick:before {
+  content: '⛏️';
+}
+
+.emoji-hammer-and-pick:before {
+  content: '⚒️';
+}
+
+.emoji-hammer-and-wrench:before {
+  content: '🛠️';
+}
+
+.emoji-dagger:before {
+  content: '🗡️';
+}
+
+.emoji-crossed-swords:before {
+  content: '⚔️';
+}
+
+.emoji-pistol:before {
+  content: '🔫';
+}
+
+.emoji-bow-and-arrow:before {
+  content: '🏹';
+}
+
+.emoji-shield:before {
+  content: '🛡️';
+}
+
+.emoji-wrench:before {
+  content: '🔧';
+}
+
+.emoji-nut-and-bolt:before {
+  content: '🔩';
+}
+
+.emoji-gear:before {
+  content: '⚙️';
+}
+
+.emoji-clamp:before {
+  content: '🗜️';
+}
+
+.emoji-balance-scale:before {
+  content: '⚖️';
+}
+
+.emoji-probing-cane:before {
+  content: '🦯';
+}
+
+.emoji-link:before {
+  content: '🔗';
+}
+
+.emoji-chains:before {
+  content: '⛓️';
+}
+
+.emoji-toolbox:before {
+  content: '🧰';
+}
+
+.emoji-magnet:before {
+  content: '🧲';
+}
+
+.emoji-alembic:before {
+  content: '⚗️';
+}
+
+.emoji-test-tube:before {
+  content: '🧪';
+}
+
+.emoji-petri-dish:before {
+  content: '🧫';
+}
+
+.emoji-dna:before {
+  content: '🧬';
+}
+
+.emoji-microscope:before {
+  content: '🔬';
+}
+
+.emoji-telescope:before {
+  content: '🔭';
+}
+
+.emoji-satellite-antenna:before {
+  content: '📡';
+}
+
+.emoji-syringe:before {
+  content: '💉';
+}
+
+.emoji-drop-of-blood:before {
+  content: '🩸';
+}
+
+.emoji-pill:before {
+  content: '💊';
+}
+
+.emoji-adhesive-bandage:before {
+  content: '🩹';
+}
+
+.emoji-stethoscope:before {
+  content: '🩺';
+}
+
+.emoji-door:before {
+  content: '🚪';
+}
+
+.emoji-bed:before {
+  content: '🛏️';
+}
+
+.emoji-couch-and-lamp:before {
+  content: '🛋️';
+}
+
+.emoji-chair:before {
+  content: '🪑';
+}
+
+.emoji-toilet:before {
+  content: '🚽';
+}
+
+.emoji-shower:before {
+  content: '🚿';
+}
+
+.emoji-bathtub:before {
+  content: '🛁';
+}
+
+.emoji-razor:before {
+  content: '🪒';
+}
+
+.emoji-lotion-bottle:before {
+  content: '🧴';
+}
+
+.emoji-safety-pin:before {
+  content: '🧷';
+}
+
+.emoji-broom:before {
+  content: '🧹';
+}
+
+.emoji-basket:before {
+  content: '🧺';
+}
+
+.emoji-roll-of-paper:before {
+  content: '🧻';
+}
+
+.emoji-soap:before {
+  content: '🧼';
+}
+
+.emoji-sponge:before {
+  content: '🧽';
+}
+
+.emoji-fire-extinguisher:before {
+  content: '🧯';
+}
+
+.emoji-shopping-cart:before {
+  content: '🛒';
+}
+
+.emoji-cigarette:before {
+  content: '🚬';
+}
+
+.emoji-coffin:before {
+  content: '⚰️';
+}
+
+.emoji-funeral-urn:before {
+  content: '⚱️';
+}
+
+.emoji-moai:before {
+  content: '🗿';
+}
+
 .emoji-tree:before {
   content: '🌲';
 }
@@ -576,16 +1508,62 @@ i {
 }
 
 .title {
-  color: var(--theme-color, #42b983);
   font-weight: 600 !important;
+}
+
+.details {
+  /* 手指样式，可以指定-webkit-zoom-out和-webkit-zoom-in */
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+/* details标签样式美化 --- start */
+details {
+  width: 30em;
+  margin: 0 2em;
+}
+
+details summary {
+  /* 手指样式，可以指定-webkit-zoom-out和-webkit-zoom-in */
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+details summary:hover {
+  background-image: linear-gradient(#cb6196, #c76262);
+  text-decoration: none;
+  list-style: none;
+}
+
+details[open] {
+  border-left: 1px solid rgba(14, 85, 151, 0.3);
+}
+
+details[open] summary {
+  text-align: center;
+  width: 30em;
+  background-image: linear-gradient(#cb6196, #c76262);
+  display: unset;
+}
+
+details[open] ul {
+  margin: 0 auto;
 }
 
 .markdown-section strong {
   color: #ee625d;
 }
 
-.markdown-section a:not(:hover) {
+.markdown-section a {
+  font-weight: 500;
   text-decoration: none;
+}
+
+.markdown-section a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(#cb6196, #c76262);
 }
 
 .markdown-section h1 {
@@ -757,6 +1735,11 @@ body.close .app-nav {
   padding: 3px 0 3px 22px;
 }
 
+.sidebar ul li a:hover {
+  text-decoration: none;
+  color: var(--theme-color, #42b983);
+}
+
 .sidebar ul li:active > a {
   font-size: 16px !important;
 }
@@ -784,6 +1767,7 @@ body.close .app-nav {
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 2px;
 }
 
 ::-webkit-scrollbar-thumb {

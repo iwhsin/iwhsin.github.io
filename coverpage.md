@@ -12,7 +12,7 @@
     | 🚴‍♂️ 本站总访客数：<span id="busuanzi_value_site_uv"></span> 人
 </span>
 
-[关于我](https://gitee.com/whsin/javaOwner) [开始阅读](/sidebar)
+[关于我](https://gitee.com/whsin/javaOwner) [开始阅读](./)
 
 
 <!-- 自定义背景图片 -->
