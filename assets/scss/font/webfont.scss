@@ -12,16 +12,16 @@
   @return unquote('"') + unquote($str) + unquote('"');
 }
 
-[class^='icon-brand-'],
-[class*=' icon-brand-'] {
+[class^='icon-'],
+[class*=' icon-'] {
   &:before {
     font-size: 20px;
     padding-right: 5px;
   }
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^='emoji-'],
+[class*=' emoji-'] {
   &:before {
     font-size: 20px;
     padding-right: 5px;
@@ -394,5 +394,36 @@
   }
   &amphora:before {
     content: '🏺';
+  }
+  &compass:before {
+    content: '🧭';
+  }
+  &droplet:before {
+    content: '💧';
+  }
+  &sparkles:before {
+    content: '✨';
+  }
+  &sparkling-heart:before {
+    content: '💖';
+  }
+
+  &sparkles:before {
+    content: '✨';
+  }
+  &sparkles:before {
+    content: '✨';
+  }
+  &sparkles:before {
+    content: '✨';
+  }
+  &sparkles:before {
+    content: '✨';
+  }
+  &sparkles:before {
+    content: '✨';
+  }
+  &sparkles:before {
+    content: '✨';
   }
 }

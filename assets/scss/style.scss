@@ -40,9 +40,17 @@ hr {
   @extend .clear;
 }
 
+i {
+  font-style: normal;
+}
+
 .font-bold {
   font-size: larger;
   color: $col-important;
+}
+.title {
+  color: var(--theme-color, #42b983);
+  font-weight: 600 !important;
 }
 
 // 自定义全局样式
@@ -160,8 +168,8 @@ hr {
   height: 55px;
   border-bottom: 1px solid #eee;
   a {
-    &:active {
-      border-bottom: none;
+    &.active {
+      border-bottom: none !important;
     }
   }
   &.no-badge {

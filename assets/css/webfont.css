@@ -1,12 +1,12 @@
 @charset "UTF-8";
-[class^='icon-brand-']:before,
-[class*=' icon-brand-']:before {
+[class^='icon-']:before,
+[class*=' icon-']:before {
   font-size: 20px;
   padding-right: 5px;
 }
 
-[class^='icon-']:before,
-[class*=' icon-']:before {
+[class^='emoji-']:before,
+[class*=' emoji-']:before {
   font-size: 20px;
   padding-right: 5px;
 }
@@ -497,4 +497,44 @@
 
 .emoji-amphora:before {
   content: '🏺';
+}
+
+.emoji-compass:before {
+  content: '🧭';
+}
+
+.emoji-droplet:before {
+  content: '💧';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
+}
+
+.emoji-sparkling-heart:before {
+  content: '💖';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
+}
+
+.emoji-sparkles:before {
+  content: '✨';
 }
