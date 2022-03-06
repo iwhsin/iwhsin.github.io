@@ -1,4 +1,5 @@
-@import "variables";
+@import 'variables';
+@import 'font/webfont.scss';
 
 img {
   &.center {
@@ -15,9 +16,19 @@ img {
   }
 }
 
+
 #cover-logo {
   @extend img.flip;
-  margin-top: -10%;
+  // margin-top: -10%;
+  user-select: none; // 禁止图片选中
+}
+
+footer.footer {
+  // position: fixed;
+  // bottom: 10px;
+  // right: 0;
+  // left: 0;
+  text-align: center;
 }
 
 .clear {
@@ -29,10 +40,30 @@ hr {
   @extend .clear;
 }
 
+.font-bold {
+  font-size: larger;
+  color: $col-important;
+}
+
 // 自定义全局样式
 .markdown-section {
   strong {
     color: $col-important;
+  }
+  a {
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
+  h1 {
+    font-size: 1.5em;
+    span {
+      display: inline-block;
+      background: rgb(225, 239, 219);
+      padding: 10px 16px;
+      border-radius: 5px;
+      // box-shadow: 1px 1px 3px black;
+    }
   }
   > div > img {
     box-shadow: 2px 2px 20px 6px rgb(255, 255, 255) !important;
@@ -42,7 +73,7 @@ hr {
     border-radius: 5px;
     box-shadow: 2px 2px 20px 6px rgb(255, 255, 255) !important;
     &::before {
-      content: "";
+      content: '';
       display: block;
       background: url(/assets/images/ico/omit.ico);
       height: 30px;
@@ -53,7 +84,7 @@ hr {
     }
     > code {
       color: #c0c3c1 !important;
-      font-family: "Inconsolata", consolas, "PingFang SC", "Microsoft YaHei",
+      font-family: 'Inconsolata', consolas, 'PingFang SC', 'Microsoft YaHei',
         monospace !important;
       background-color: #212121 !important; //#accfff  #282c34
       font-size: 15px !important;
@@ -69,8 +100,8 @@ hr {
   code {
     background-color: #f8f8f8;
     border-radius: 2px;
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB",
-      "Microsoft YaHei", Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB',
+      'Microsoft YaHei', Arial, sans-serif;
     font-size: 16px !important;
     margin: 0 2px;
     padding: 3px 5px;
@@ -128,6 +159,14 @@ hr {
   background-color: #fff;
   height: 55px;
   border-bottom: 1px solid #eee;
+  a {
+    &:active {
+      border-bottom: none;
+    }
+  }
+  &.no-badge {
+      margin: 0;
+    }
 }
 
 body.close .app-nav {
@@ -147,7 +186,12 @@ body.close .app-nav {
 .sidebar {
   padding-top: 5px;
   .search {
-    height: 50px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    input {
+      padding: 0px;
+    }
   }
   ul li {
     margin: 0;
@@ -169,7 +213,7 @@ body.close .app-nav {
       > a {
         font-size: 16px !important;
         &::before {
-          content: "" !important;
+          content: '' !important;
           position: absolute !important;
           margin: 0 !important;
           width: 10px !important;
@@ -193,15 +237,6 @@ body.close .app-nav {
   color: #797979;
 }
 
-h1 span {
-  display: inline-block;
-  background: rgb(66, 185, 131);
-  color: #ffffff;
-  padding: 10px 16px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px black;
-}
-
 // 滚动栏配置
 ::-webkit-scrollbar {
   width: 5px;
@@ -210,4 +245,15 @@ h1 span {
   background: #33a9dc;
   background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #ac155e);
   border-radius: 2em;
+}
+
+.waifu {
+  cursor: pointer;
+}
+
+#sitetime {
+  color: #000;
+  margin-left: 20px;
+  opacity: 0.8;
+  background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #1e9da5);
 }

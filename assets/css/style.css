@@ -1,4 +1,18 @@
 @charset "UTF-8";
+[class^="icon-brand-"]:before, [class*=" icon-brand-"]:before {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.emoji-tree:before {
+  content: '🌲';
+}
+
 img.center {
   display: block;
   margin: auto;
@@ -15,15 +29,39 @@ img.introduce {
 }
 
 #cover-logo {
-  margin-top: -10%;
+  user-select: none;
+}
+
+footer.footer {
+  text-align: center;
 }
 
 .clear, hr {
   clear: both;
 }
 
+.font-bold {
+  font-size: larger;
+  color: #ee625d;
+}
+
 .markdown-section strong {
   color: #ee625d;
+}
+
+.markdown-section a:not(:hover) {
+  text-decoration: none;
+}
+
+.markdown-section h1 {
+  font-size: 1.5em;
+}
+
+.markdown-section h1 span {
+  display: inline-block;
+  background: #e1efdb;
+  padding: 10px 16px;
+  border-radius: 5px;
 }
 
 .markdown-section > div > img {
@@ -37,7 +75,7 @@ img.introduce {
 }
 
 .markdown-section pre::before {
-  content: "";
+  content: '';
   display: block;
   background: url(/assets/images/ico/omit.ico);
   height: 30px;
@@ -49,7 +87,7 @@ img.introduce {
 
 .markdown-section pre > code {
   color: #c0c3c1 !important;
-  font-family: "Inconsolata", consolas, "PingFang SC", "Microsoft YaHei", monospace !important;
+  font-family: 'Inconsolata', consolas, 'PingFang SC', 'Microsoft YaHei', monospace !important;
   background-color: #212121 !important;
   font-size: 15px !important;
   white-space: pre !important;
@@ -63,7 +101,7 @@ img.introduce {
 .markdown-section code {
   background-color: #f8f8f8;
   border-radius: 2px;
-  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
   font-size: 16px !important;
   margin: 0 2px;
   padding: 3px 5px;
@@ -129,6 +167,14 @@ img.introduce {
   border-bottom: 1px solid #eee;
 }
 
+.app-nav a:active {
+  border-bottom: none;
+}
+
+.app-nav.no-badge {
+  margin: 0;
+}
+
 body.close .app-nav {
   width: 100%;
 }
@@ -146,7 +192,13 @@ body.close .app-nav {
 }
 
 .sidebar .search {
-  height: 50px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar .search input {
+  padding: 0px;
 }
 
 .sidebar ul li {
@@ -175,7 +227,7 @@ body.close .app-nav {
 }
 
 .sidebar ul li:active > a::before {
-  content: "" !important;
+  content: '' !important;
   position: absolute !important;
   margin: 0 !important;
   width: 10px !important;
@@ -195,15 +247,6 @@ body.close .app-nav {
   color: #797979;
 }
 
-h1 span {
-  display: inline-block;
-  background: #42b983;
-  color: #ffffff;
-  padding: 10px 16px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px black;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -212,4 +255,15 @@ h1 span {
   background: #33a9dc;
   background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #ac155e);
   border-radius: 2em;
+}
+
+.waifu {
+  cursor: pointer;
+}
+
+#sitetime {
+  color: #000;
+  margin-left: 20px;
+  opacity: 0.8;
+  background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #1e9da5);
 }

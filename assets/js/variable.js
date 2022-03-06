@@ -1,6 +1,8 @@
 // 全局变量
-var COPY_PREVENT = false;
+const copy_enable = true;
+const live2d_enable = true;
 
 export {
-    COPY_PREVENT
+    copy_enable, 
+    live2d_enable
 };

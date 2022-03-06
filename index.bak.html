@@ -359,6 +359,35 @@
     } else {
       $('.waifu').hide();
     }
+    
+    var tits = document.getElementsByClassName('button mb1');
+    var divs =  document.getElementsByClassName('clearfix');
+    str = ''
+    // for (let index = 0; index < tits.length; index++) {
+    //   const element = tits[index];
+    //   str += '- '+ element.innerHTML+'\n';
+    //   var eles = divs[index].getElementsByClassName('emoji left mr2 h1');
+    //   var text='';
+    //   for (let ele of eles) {
+    //     text += ' ' + ele.innerHTML
+    //   }
+    //   str += text +'\n';
+    // }
+    for (let index = 0; index < tits.length; index++) {
+        const element = tits[index];
+        var eles = divs[index].getElementsByClassName('emoji left mr2 h1');
+        var text = '';
+        for (let ele of eles) {
+          var enName = ele.nextElementSibling.getElementsByClassName('name-en')[0].textContent;
+          console.info("enName:" + enName + "  eleText:" + ele.innerHTML)
+          str+='&'+enName.replace(/\s/g, "-")+':before {\n' + 'content: \'' + ele.innerHTML +'\';\n}\n'
+        }
+      }
+
+    console.log(str)
+    var eles = document.getElementsByClassName('emoji left mr2 h1'); var str = ''; for (let ele of eles) {
+        str += ' ' + ele.innerHTML
+      }
   </script>
 </body>
 

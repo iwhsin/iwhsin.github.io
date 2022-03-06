@@ -1,0 +1,398 @@
+@import '../variables.scss';
+
+@mixin web-icon($content: '') {
+  @extend .webfont;
+  &::before {
+    @extend .font-padding;
+    content: unicode($content);
+  }
+}
+
+@function unicode($str) {
+  @return unquote('"') + unquote($str) + unquote('"');
+}
+
+[class^='icon-brand-'],
+[class*=' icon-brand-'] {
+  &:before {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:before {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+}
+
+.emoji- {
+  &tree:before {
+    content: '🌲';
+  }
+  &grapes:before {
+    content: '🍇';
+  }
+  &melon:before {
+    content: '🍈';
+  }
+  &watermelon:before {
+    content: '🍉';
+  }
+  &tangerine:before {
+    content: '🍊';
+  }
+  &lemon:before {
+    content: '🍋';
+  }
+  &banana:before {
+    content: '🍌';
+  }
+  &pineapple:before {
+    content: '🍍';
+  }
+  &mango:before {
+    content: '🥭';
+  }
+  &red-apple:before {
+    content: '🍎';
+  }
+  &green-apple:before {
+    content: '🍏';
+  }
+  &pear:before {
+    content: '🍐';
+  }
+  &peach:before {
+    content: '🍑';
+  }
+  &cherries:before {
+    content: '🍒';
+  }
+  &strawberry:before {
+    content: '🍓';
+  }
+  &kiwi-fruit:before {
+    content: '🥝';
+  }
+  &tomato:before {
+    content: '🍅';
+  }
+  &coconut:before {
+    content: '🥥';
+  }
+  &avocado:before {
+    content: '🥑';
+  }
+  &eggplant:before {
+    content: '🍆';
+  }
+  &potato:before {
+    content: '🥔';
+  }
+  &carrot:before {
+    content: '🥕';
+  }
+  &ear-of-corn:before {
+    content: '🌽';
+  }
+  &hot-pepper:before {
+    content: '🌶️';
+  }
+  &cucumber:before {
+    content: '🥒';
+  }
+  &leafy-green:before {
+    content: '🥬';
+  }
+  &broccoli:before {
+    content: '🥦';
+  }
+  &garlic:before {
+    content: '🧄';
+  }
+  &onion:before {
+    content: '🧅';
+  }
+  &mushroom:before {
+    content: '🍄';
+  }
+  &peanuts:before {
+    content: '🥜';
+  }
+  &chestnut:before {
+    content: '🌰';
+  }
+  &bread:before {
+    content: '🍞';
+  }
+  &croissant:before {
+    content: '🥐';
+  }
+  &baguette-bread:before {
+    content: '🥖';
+  }
+  &pretzel:before {
+    content: '🥨';
+  }
+  &bagel:before {
+    content: '🥯';
+  }
+  &pancakes:before {
+    content: '🥞';
+  }
+  &waffle:before {
+    content: '🧇';
+  }
+  &cheese-wedge:before {
+    content: '🧀';
+  }
+  &meat-on-bone:before {
+    content: '🍖';
+  }
+  &poultry-leg:before {
+    content: '🍗';
+  }
+  &cut-of-meat:before {
+    content: '🥩';
+  }
+  &bacon:before {
+    content: '🥓';
+  }
+  &hamburger:before {
+    content: '🍔';
+  }
+  &french-fries:before {
+    content: '🍟';
+  }
+  &pizza:before {
+    content: '🍕';
+  }
+  &hot-dog:before {
+    content: '🌭';
+  }
+  &sandwich:before {
+    content: '🥪';
+  }
+  &taco:before {
+    content: '🌮';
+  }
+  &burrito:before {
+    content: '🌯';
+  }
+  &stuffed-flatbread:before {
+    content: '🥙';
+  }
+  &falafel:before {
+    content: '🧆';
+  }
+  &egg:before {
+    content: '🥚';
+  }
+  &cooking:before {
+    content: '🍳';
+  }
+  &shallow-pan-of-food:before {
+    content: '🥘';
+  }
+  &pot-of-food:before {
+    content: '🍲';
+  }
+  &bowl-with-spoon:before {
+    content: '🥣';
+  }
+  &green-salad:before {
+    content: '🥗';
+  }
+  &popcorn:before {
+    content: '🍿';
+  }
+  &butter:before {
+    content: '🧈';
+  }
+  &salt:before {
+    content: '🧂';
+  }
+  &canned-food:before {
+    content: '🥫';
+  }
+  &bento-box:before {
+    content: '🍱';
+  }
+  &rice-cracker:before {
+    content: '🍘';
+  }
+  &rice-ball:before {
+    content: '🍙';
+  }
+  &cooked-rice:before {
+    content: '🍚';
+  }
+  &curry-rice:before {
+    content: '🍛';
+  }
+  &steaming-bowl:before {
+    content: '🍜';
+  }
+  &spaghetti:before {
+    content: '🍝';
+  }
+  &roasted-sweet-potato:before {
+    content: '🍠';
+  }
+  &oden:before {
+    content: '🍢';
+  }
+  &sushi:before {
+    content: '🍣';
+  }
+  &fried-shrimp:before {
+    content: '🍤';
+  }
+  &fish-cake-with-swirl:before {
+    content: '🍥';
+  }
+  &moon-cake:before {
+    content: '🥮';
+  }
+  &dango:before {
+    content: '🍡';
+  }
+  &dumpling:before {
+    content: '🥟';
+  }
+  &fortune-cookie:before {
+    content: '🥠';
+  }
+  &takeout-box:before {
+    content: '🥡';
+  }
+  &crab:before {
+    content: '🦀';
+  }
+  &lobster:before {
+    content: '🦞';
+  }
+  &shrimp:before {
+    content: '🦐';
+  }
+  &squid:before {
+    content: '🦑';
+  }
+  &oyster:before {
+    content: '🦪';
+  }
+  &soft-ice-cream:before {
+    content: '🍦';
+  }
+  &shaved-ice:before {
+    content: '🍧';
+  }
+  &ice-cream:before {
+    content: '🍨';
+  }
+  &doughnut:before {
+    content: '🍩';
+  }
+  &cookie:before {
+    content: '🍪';
+  }
+  &birthday-cake:before {
+    content: '🎂';
+  }
+  &shortcake:before {
+    content: '🍰';
+  }
+  &cupcake:before {
+    content: '🧁';
+  }
+  &pie:before {
+    content: '🥧';
+  }
+  &chocolate-bar:before {
+    content: '🍫';
+  }
+  &candy:before {
+    content: '🍬';
+  }
+  &lollipop:before {
+    content: '🍭';
+  }
+  &custard:before {
+    content: '🍮';
+  }
+  &honey-pot:before {
+    content: '🍯';
+  }
+  &baby-bottle:before {
+    content: '🍼';
+  }
+  &glass-of-milk:before {
+    content: '🥛';
+  }
+  &hot-beverage:before {
+    content: '☕';
+  }
+  &teacup-without-handle:before {
+    content: '🍵';
+  }
+  &sake:before {
+    content: '🍶';
+  }
+  &bottle-with-popping-cork:before {
+    content: '🍾';
+  }
+  &wine-glass:before {
+    content: '🍷';
+  }
+  &cocktail-glass:before {
+    content: '🍸';
+  }
+  &tropical-drink:before {
+    content: '🍹';
+  }
+  &beer-mug:before {
+    content: '🍺';
+  }
+  &clinking-beer-mugs:before {
+    content: '🍻';
+  }
+  &clinking-glasses:before {
+    content: '🥂';
+  }
+  &tumbler-glass:before {
+    content: '🥃';
+  }
+  &cup-with-straw:before {
+    content: '🥤';
+  }
+  &beverage-box:before {
+    content: '🧃';
+  }
+  &mate:before {
+    content: '🧉';
+  }
+  &ice:before {
+    content: '🧊';
+  }
+  &chopsticks:before {
+    content: '🥢';
+  }
+  &fork-and-knife-with-plate:before {
+    content: '🍽️';
+  }
+  &fork-and-knife:before {
+    content: '🍴';
+  }
+  &spoon:before {
+    content: '🥄';
+  }
+  &kitchen-knife:before {
+    content: '🔪';
+  }
+  &amphora:before {
+    content: '🏺';
+  }
+}

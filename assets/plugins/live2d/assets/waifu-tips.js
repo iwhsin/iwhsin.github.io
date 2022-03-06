@@ -128,7 +128,7 @@ function initModel(waifuPath, type) {
     /* 加载看板娘样式 */
     live2d_settings.waifuSize = live2d_settings.waifuSize.split('x');
     live2d_settings.waifuTipsSize = live2d_settings.waifuTipsSize.split('x');
-    live2d_settings.waifuEdgeSide = live2d_settings.waifuEdgeSide.split(':');
+    live2d_settings.waifuEdgeSide = live2d_settings.waifuEdgeSide.split(',');
     
     $("#live2d").attr("width",live2d_settings.waifuSize[0]);
     $("#live2d").attr("height",live2d_settings.waifuSize[1]);
@@ -138,9 +138,13 @@ function initModel(waifuPath, type) {
     $(".waifu-tips").css("font-size",live2d_settings.waifuFontSize);
     $(".waifu-tool").css("font-size",live2d_settings.waifuToolFont);
     $(".waifu-tool span").css("line-height",live2d_settings.waifuToolLine);
+    live2d_settings.waifuEdgeSide.forEach(edge => {
+        var style = edge.split(':');
+        if (style[0] == 'left') $(".waifu").css("left", style[1] + 'px');
+        else if (style[0] == 'right') $(".waifu").css("right", style[1] + 'px');
+        else if (style[0] == 'bottom') $(".waifu").css("bottom", style[1] + 'px');
+    });
     
-    if (live2d_settings.waifuEdgeSide[0] == 'left') $(".waifu").css("left",live2d_settings.waifuEdgeSide[1]+'px');
-    else if (live2d_settings.waifuEdgeSide[0] == 'right') $(".waifu").css("right",live2d_settings.waifuEdgeSide[1]+'px');
     
     window.waifuResize = function() { $(window).width() <= Number(live2d_settings.waifuMinWidth.replace('px','')) ? $(".waifu").hide() : $(".waifu").show(); };
     if (live2d_settings.waifuMinWidth != 'disable') { waifuResize(); $(window).resize(function() {waifuResize()}); }

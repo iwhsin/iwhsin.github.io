@@ -1,0 +1,500 @@
+@charset "UTF-8";
+[class^='icon-brand-']:before,
+[class*=' icon-brand-']:before {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.emoji-tree:before {
+  content: '🌲';
+}
+
+.emoji-grapes:before {
+  content: '🍇';
+}
+
+.emoji-melon:before {
+  content: '🍈';
+}
+
+.emoji-watermelon:before {
+  content: '🍉';
+}
+
+.emoji-tangerine:before {
+  content: '🍊';
+}
+
+.emoji-lemon:before {
+  content: '🍋';
+}
+
+.emoji-banana:before {
+  content: '🍌';
+}
+
+.emoji-pineapple:before {
+  content: '🍍';
+}
+
+.emoji-mango:before {
+  content: '🥭';
+}
+
+.emoji-red-apple:before {
+  content: '🍎';
+}
+
+.emoji-green-apple:before {
+  content: '🍏';
+}
+
+.emoji-pear:before {
+  content: '🍐';
+}
+
+.emoji-peach:before {
+  content: '🍑';
+}
+
+.emoji-cherries:before {
+  content: '🍒';
+}
+
+.emoji-strawberry:before {
+  content: '🍓';
+}
+
+.emoji-kiwi-fruit:before {
+  content: '🥝';
+}
+
+.emoji-tomato:before {
+  content: '🍅';
+}
+
+.emoji-coconut:before {
+  content: '🥥';
+}
+
+.emoji-avocado:before {
+  content: '🥑';
+}
+
+.emoji-eggplant:before {
+  content: '🍆';
+}
+
+.emoji-potato:before {
+  content: '🥔';
+}
+
+.emoji-carrot:before {
+  content: '🥕';
+}
+
+.emoji-ear-of-corn:before {
+  content: '🌽';
+}
+
+.emoji-hot-pepper:before {
+  content: '🌶️';
+}
+
+.emoji-cucumber:before {
+  content: '🥒';
+}
+
+.emoji-leafy-green:before {
+  content: '🥬';
+}
+
+.emoji-broccoli:before {
+  content: '🥦';
+}
+
+.emoji-garlic:before {
+  content: '🧄';
+}
+
+.emoji-onion:before {
+  content: '🧅';
+}
+
+.emoji-mushroom:before {
+  content: '🍄';
+}
+
+.emoji-peanuts:before {
+  content: '🥜';
+}
+
+.emoji-chestnut:before {
+  content: '🌰';
+}
+
+.emoji-bread:before {
+  content: '🍞';
+}
+
+.emoji-croissant:before {
+  content: '🥐';
+}
+
+.emoji-baguette-bread:before {
+  content: '🥖';
+}
+
+.emoji-pretzel:before {
+  content: '🥨';
+}
+
+.emoji-bagel:before {
+  content: '🥯';
+}
+
+.emoji-pancakes:before {
+  content: '🥞';
+}
+
+.emoji-waffle:before {
+  content: '🧇';
+}
+
+.emoji-cheese-wedge:before {
+  content: '🧀';
+}
+
+.emoji-meat-on-bone:before {
+  content: '🍖';
+}
+
+.emoji-poultry-leg:before {
+  content: '🍗';
+}
+
+.emoji-cut-of-meat:before {
+  content: '🥩';
+}
+
+.emoji-bacon:before {
+  content: '🥓';
+}
+
+.emoji-hamburger:before {
+  content: '🍔';
+}
+
+.emoji-french-fries:before {
+  content: '🍟';
+}
+
+.emoji-pizza:before {
+  content: '🍕';
+}
+
+.emoji-hot-dog:before {
+  content: '🌭';
+}
+
+.emoji-sandwich:before {
+  content: '🥪';
+}
+
+.emoji-taco:before {
+  content: '🌮';
+}
+
+.emoji-burrito:before {
+  content: '🌯';
+}
+
+.emoji-stuffed-flatbread:before {
+  content: '🥙';
+}
+
+.emoji-falafel:before {
+  content: '🧆';
+}
+
+.emoji-egg:before {
+  content: '🥚';
+}
+
+.emoji-cooking:before {
+  content: '🍳';
+}
+
+.emoji-shallow-pan-of-food:before {
+  content: '🥘';
+}
+
+.emoji-pot-of-food:before {
+  content: '🍲';
+}
+
+.emoji-bowl-with-spoon:before {
+  content: '🥣';
+}
+
+.emoji-green-salad:before {
+  content: '🥗';
+}
+
+.emoji-popcorn:before {
+  content: '🍿';
+}
+
+.emoji-butter:before {
+  content: '🧈';
+}
+
+.emoji-salt:before {
+  content: '🧂';
+}
+
+.emoji-canned-food:before {
+  content: '🥫';
+}
+
+.emoji-bento-box:before {
+  content: '🍱';
+}
+
+.emoji-rice-cracker:before {
+  content: '🍘';
+}
+
+.emoji-rice-ball:before {
+  content: '🍙';
+}
+
+.emoji-cooked-rice:before {
+  content: '🍚';
+}
+
+.emoji-curry-rice:before {
+  content: '🍛';
+}
+
+.emoji-steaming-bowl:before {
+  content: '🍜';
+}
+
+.emoji-spaghetti:before {
+  content: '🍝';
+}
+
+.emoji-roasted-sweet-potato:before {
+  content: '🍠';
+}
+
+.emoji-oden:before {
+  content: '🍢';
+}
+
+.emoji-sushi:before {
+  content: '🍣';
+}
+
+.emoji-fried-shrimp:before {
+  content: '🍤';
+}
+
+.emoji-fish-cake-with-swirl:before {
+  content: '🍥';
+}
+
+.emoji-moon-cake:before {
+  content: '🥮';
+}
+
+.emoji-dango:before {
+  content: '🍡';
+}
+
+.emoji-dumpling:before {
+  content: '🥟';
+}
+
+.emoji-fortune-cookie:before {
+  content: '🥠';
+}
+
+.emoji-takeout-box:before {
+  content: '🥡';
+}
+
+.emoji-crab:before {
+  content: '🦀';
+}
+
+.emoji-lobster:before {
+  content: '🦞';
+}
+
+.emoji-shrimp:before {
+  content: '🦐';
+}
+
+.emoji-squid:before {
+  content: '🦑';
+}
+
+.emoji-oyster:before {
+  content: '🦪';
+}
+
+.emoji-soft-ice-cream:before {
+  content: '🍦';
+}
+
+.emoji-shaved-ice:before {
+  content: '🍧';
+}
+
+.emoji-ice-cream:before {
+  content: '🍨';
+}
+
+.emoji-doughnut:before {
+  content: '🍩';
+}
+
+.emoji-cookie:before {
+  content: '🍪';
+}
+
+.emoji-birthday-cake:before {
+  content: '🎂';
+}
+
+.emoji-shortcake:before {
+  content: '🍰';
+}
+
+.emoji-cupcake:before {
+  content: '🧁';
+}
+
+.emoji-pie:before {
+  content: '🥧';
+}
+
+.emoji-chocolate-bar:before {
+  content: '🍫';
+}
+
+.emoji-candy:before {
+  content: '🍬';
+}
+
+.emoji-lollipop:before {
+  content: '🍭';
+}
+
+.emoji-custard:before {
+  content: '🍮';
+}
+
+.emoji-honey-pot:before {
+  content: '🍯';
+}
+
+.emoji-baby-bottle:before {
+  content: '🍼';
+}
+
+.emoji-glass-of-milk:before {
+  content: '🥛';
+}
+
+.emoji-hot-beverage:before {
+  content: '☕';
+}
+
+.emoji-teacup-without-handle:before {
+  content: '🍵';
+}
+
+.emoji-sake:before {
+  content: '🍶';
+}
+
+.emoji-bottle-with-popping-cork:before {
+  content: '🍾';
+}
+
+.emoji-wine-glass:before {
+  content: '🍷';
+}
+
+.emoji-cocktail-glass:before {
+  content: '🍸';
+}
+
+.emoji-tropical-drink:before {
+  content: '🍹';
+}
+
+.emoji-beer-mug:before {
+  content: '🍺';
+}
+
+.emoji-clinking-beer-mugs:before {
+  content: '🍻';
+}
+
+.emoji-clinking-glasses:before {
+  content: '🥂';
+}
+
+.emoji-tumbler-glass:before {
+  content: '🥃';
+}
+
+.emoji-cup-with-straw:before {
+  content: '🥤';
+}
+
+.emoji-beverage-box:before {
+  content: '🧃';
+}
+
+.emoji-mate:before {
+  content: '🧉';
+}
+
+.emoji-ice:before {
+  content: '🧊';
+}
+
+.emoji-chopsticks:before {
+  content: '🥢';
+}
+
+.emoji-fork-and-knife-with-plate:before {
+  content: '🍽️';
+}
+
+.emoji-fork-and-knife:before {
+  content: '🍴';
+}
+
+.emoji-spoon:before {
+  content: '🥄';
+}
+
+.emoji-kitchen-knife:before {
+  content: '🔪';
+}
+
+.emoji-amphora:before {
+  content: '🏺';
+}

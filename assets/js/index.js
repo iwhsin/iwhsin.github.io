@@ -1,8 +1,10 @@
-import * as $Var from './variable.js';
+import * as $env from './variable.js';
 
-$(function() {
+$(function () {
     toTop();
-    initCopyAction();
+    siteTime();
+    // initCopyAction(!$env.copy_enable);
+    signboard($env.live2d_enable);
     clickHeart1();
     // clickHeart2();
     // bgc();
@@ -13,12 +15,12 @@ function toTop() {
     $.goup({
         location: 'right', //default right
         trigger: 100,//在向下滚动多少像素后，必须显示按钮(绕过alwaysVisible)
-        bottomOffset: 52, // 按钮与屏幕底部边缘相距多少像素
-        locationOffset: 32,// 根据设置的位置，按钮距屏幕边缘多少像素
-        containerSize: 40, // 按钮的宽度和高度（最小为20）
-        containerRadius: 33,// 让您将正方形变换成圆形
-        // containerColor: '#525252',// 容器的颜色（十六进制格式）
-        arrowColor: '#42b983',//箭头的颜色（十六进制格式）
+        bottomOffset: 50, // 按钮与屏幕底部边缘相距多少像素
+        locationOffset: 30,// 根据设置的位置，按钮距屏幕边缘多少像素
+        // containerSize: 40, // 按钮的宽度和高度（最小为20）
+        // containerRadius: 33,// 让您将正方形变换成圆形
+        containerColor: '#36bc98',// 容器的颜色（十六进制格式）
+        // arrowColor: '#36bc98',//箭头的颜色（十六进制格式）
         // alwaysVisible: true,//始终可见
         title: '回到顶部',
         // titleAsText: true,//如果为true，则悬停标题将变为按钮下的真实文本
@@ -26,10 +28,7 @@ function toTop() {
 }
 
 // 拷贝监听
-function initCopyAction() {
-
-    var prevent = $Var.COPY_PREVENT;
-
+function initCopyAction(prevent) {
     if (prevent) {
         // 禁止内容复制，清空剪切板
         document.body.onbeforecopy = function () {
@@ -47,6 +46,27 @@ function initCopyAction() {
         }
 
     };
+}
+
+// 看板娘
+function signboard(live2d) {
+    if (live2d) {
+        $('.waifu').show();
+        live2d_settings['modelId'] = 1;
+        live2d_settings['modelTexturesId'] = 2;
+        live2d_settings['showToolMenu'] = false;
+        live2d_settings['modelStorage'] = false;
+        live2d_settings['waifuSize'] = '180x150';
+        live2d_settings['waifuTipsSize'] = '145x45';
+        live2d_settings['showCopyMessage'] = true;//内容被复制触发提醒，true | false
+        live2d_settings['waifuMinWidth'] = '768px';//面页小于 指定宽度 隐藏看板娘，例如 'disable' (停用)，'768px'
+        live2d_settings['waifuEdgeSide'] = 'right:0,bottom:40';//看板娘贴边方向，例如 'left:0' (靠左 0px)，'right:30' (靠右 30px)
+        live2d_settings['waifuDraggable'] = 'unlimited';//拖拽样式，可选 'disable' (禁用)，'axis-x' (只能水平拖拽)，'unlimited' (自由拖拽)
+        live2d_settings['waifuDraggableRevert'] = 'true';//松开鼠标还原拖拽位置
+        initModel("assets/plugins/live2d/assets/waifu-tips.json")
+    } else {
+        $('.waifu').hide();
+    }
 }
 
 
@@ -121,4 +141,43 @@ function background(sl) {
     return 'linear-gradient(to left bottom, ' +
         "hsl(" + (Math.floor(Math.random() * 255) + sl) + ") 0%," +
         "hsl(" + (Math.floor(Math.random() * 255) + sl) + ") 100%)";
+}
+
+// 站点运行时间统计
+function siteTime() {
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth() + 1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2020, 5, 21, 13, 14, 0);
+    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+    var diff = t2 - t1;
+    var diffYears = Math.floor(diff / years);
+    var diffDays = Math.floor((diff / days) - diffYears * 365);
+    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+    var span = document.getElementById("sitetime");
+    if (span) {
+        span.innerHTML = " 本站已安全运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分 " + diffSeconds + " 秒 ";
+    }
+    window.setTimeout(function () {
+        siteTime()
+    }, 1000);
 }

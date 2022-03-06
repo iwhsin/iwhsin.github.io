@@ -1,43 +1,11 @@
-- 👘**主题切换**
-    <ul class="theme-skin">
-        <li>
-            <a target="_blank" data-theme-name="docsify-themeable/dist/css/theme-defaults.css">defaults</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify-themeable/dist/css/theme-simple.css">simple</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify-themeable/dist/css/theme-simple-dark.css">simple-dark</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify/lib/themes/vue.css">vue</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify/lib/themes/dark.css">dark</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify/lib/themes/buble.css">buble</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify/lib/themes/dolphin.css">dolphin</a>
-        </li>
-        <li>
-            <a target="_blank" data-theme-name="docsify/lib/themes/pure.css">pure</a>
-        </li>
-    </ul>
+- [技术小站](/docs/sidebar ':class=icon-brand-skyliner')
 
-- 📚**站内导航**
-    <ul>
-        <li>
-            <a href="#/docs/sidebar">技术小站</a>
-        </li>
-        <li>
-            <a href="#/books/sidebar">书籍阅读</a>
-        </li>
-        <li>
-            <a href="#/interview/sidebar">面试突击</a>
-        </li>
-        <li>
-            <a href="#/laboratory/sidebar>实验室</a>
-        </li>
-    </ul>
+- [技术专题](/technology/sidebar ':class=icon-brand-keybase')
+    - [Java 虚拟机](/technology/tech-java-jvm ':class=icon-brand-topcoder')
+
+- [书籍阅读](/books/sidebar ':class=icon-brand-leetcode')
+
+- [资源分享](/repos/sidebar ':class=icon-brand-icloud')
+
+- [实验室](/laboratory/sidebar ':class=icon-brand-docker')
+    - [Brand Font](/assets/scss/font/font-brand/demo.html ':class=icon-brand-apacheairflow')

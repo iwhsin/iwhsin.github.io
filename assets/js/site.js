@@ -17,12 +17,12 @@ function toTop() {
     $.goup({
         location: 'right', //default right
         trigger: 100,//在向下滚动多少像素后，必须显示按钮(绕过alwaysVisible)
-        bottomOffset: 32, // 按钮与屏幕底部边缘相距多少像素
-        locationOffset: 32,// 根据设置的位置，按钮距屏幕边缘多少像素
-        containerSize: 40, // 按钮的宽度和高度（最小为20）
-        containerRadius: 33,// 让您将正方形变换成圆形
-        containerColor: '#525252f2',// 容器的颜色（十六进制格式）
-        arrowColor: '#42b983',//箭头的颜色（十六进制格式）
+        bottomOffset: 50, // 按钮与屏幕底部边缘相距多少像素
+        locationOffset: 25,// 根据设置的位置，按钮距屏幕边缘多少像素
+        // containerSize: 40, // 按钮的宽度和高度（最小为20）
+        // containerRadius: 33,// 让您将正方形变换成圆形
+        // containerColor: '#525252',// 容器的颜色（十六进制格式）
+        // arrowColor: '#42b983',//箭头的颜色（十六进制格式）
         // alwaysVisible: true,//始终可见
         title: '回到顶部',
         // titleAsText: true,//如果为true，则悬停标题将变为按钮下的真实文本
