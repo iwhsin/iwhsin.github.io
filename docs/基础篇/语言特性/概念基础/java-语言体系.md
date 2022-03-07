@@ -1,7 +1,9 @@
 # Java语言体系
 ## 1.1. 语言体系概念图
-- Java体系概念图（[Description of Java Conceptual Diagram][2]）
-![][1]
+- Java体系概念图
+![](/docs/assets/images/basic/java-conceptual-diagram.png)
+
+?> 参考: [Java Platform Standard Edition 8 Documentation](https://docs.oracle.com/javase/8/docs/index.html)
 
 ## 1.2. Java语言发展简史
 ![Java语言发展简史][5]
@@ -10,23 +12,15 @@
 ## 1.3. 语言特性
 &emsp;&emsp;Java 作为一种高级编程语言，有着很多优秀的特性，比如：`面向对象`、`跨平台`、`分布式`可以参考官网的 [Java 白皮书][3] 和 [Java 语言特性介绍][4]。
 
-- 简单：<br>
-&emsp;&emsp;Java 语言对于开发人员是友好的，可以很容易学习上手。
-
-- 面向对象<br>
-&emsp;&emsp;Java 语言中，把一切都当为对象（万物皆对象），将事物的特征和行为封装在对象中，对象提供了基本属性和访问接口。
-
-- 分布式<br>
-&emsp;&emsp;Java 语言拥有完善的生态体系，集合了很多优化的第三方库和组件，很容易处理像`HTTP`和`FTP`之类的`TCP/IP`协议。
-
-- 健壮性<br>
-&emsp;&emsp;Java 语言的设计目标之一在于使得Java编写的程序具有多方面的可靠性。
-
-- 安全性<br>
-&emsp;&emsp;Java 语言在设计时就考虑了能够防范各种安全攻击，比如下述的几种安全问题：
+- 简单：    Java 语言对于开发人员是友好的，可以很容易学习上手。
+- 面向对象: Java 语言中，把一切都当为对象（万物皆对象），将事物的特征和行为封装在对象中，对象提供了基本属性和访问接口。
+- 分布式:   Java 语言拥有完善的生态体系，集合了很多优化的第三方库和组件，很容易处理像`HTTP`和`FTP`之类的`TCP/IP`协议。
+- 健壮性:   Java 语言的设计目标之一在于使得Java编写的程序具有多方面的可靠性。
+- 安全性:   Java 语言在设计时就考虑了能够防范各种安全攻击，比如下述的几种安全问题：
     - 运行时堆栈溢出。如蠕虫和病毒常用的攻击手段。
     - 破坏自己的进程空间之外的内存。
     - 未经授权读写文件。<br>
+
 > [!NOTE]
 > Java 语言中安全模型的基础是：严格限制字节码所能表述的操作。
 

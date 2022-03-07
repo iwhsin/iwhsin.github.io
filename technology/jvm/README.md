@@ -1,4 +1,9 @@
-### <i class='icon-brand-abbrobotstudio'>Java虚拟机</i>
+### <i class='icon-brand-abbrobotstudio details'></i>
+<details open>
+<summary hidden>
+<i class='emoji-sparkles title'>文章列表</i>
+</summary>
+
 - [概念总览](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [JDK、JRE、JVM](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [JDK 常用工具](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
@@ -36,3 +41,4 @@
 - [性能优化总结](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - <i class='icon-brand-abbrobotstudio title'>参考资料</i>
     - [常见面试题指南](/technology/jvm/tech-java-jvm?id=interview-question-guide ':class=icon-brand-abbrobotstudio')
+</details>
