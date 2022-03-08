@@ -121,10 +121,10 @@
 ### 1.1.6. 乐观锁和悲观锁
 
 - **乐观锁**<br>
-&emsp;&emsp;总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和CAS算法实现。乐观锁适用于多读的应用类型，这样可以提高吞吐量，像数据库提供的类似于write_condition机制，其实都是提供的乐观锁。在Java中java.util.concurrent.atomic包下面的原子变量类就是使用了乐观锁的一种实现方式CAS实现的。
+  &emsp;&emsp;总是假设最好的情况，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号机制和 CAS 算法实现。乐观锁适用于多读的应用类型，这样可以提高吞吐量，像数据库提供的类似于 write_condition 机制，其实都是提供的乐观锁。在 Java 中 java.util.concurrent.atomic 包下面的原子变量类就是使用了乐观锁的一种实现方式 CAS 实现的。
 
 - **悲观锁**<br>
-&emsp;&emsp;总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中synchronized和ReentrantLock等独占锁就是悲观锁思想的实现。
+  &emsp;&emsp;总是假设最坏的情况，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁（共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程）。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java 中 synchronized 和 ReentrantLock 等独占锁就是悲观锁思想的实现。
 
 ## 1.2. 实践应用
 
@@ -136,10 +136,11 @@
 
   ```java
   static class ThreadA extends Thread {
-      @Override
-      public void run(){  // 此方法必须要重写
-          System.out.println(Thread.currentThread().getName());
-      }
+
+    @Override
+    public void run() { // 此方法必须要重写
+      System.out.println(Thread.currentThread().getName());
+    }
   }
   ```
 
@@ -147,10 +148,11 @@
 
   ```java
   static class ThreadB implements Runnable {
-      @Override
-      public void run(){
-          System.out.println(Thread.currentThread().getName());
-      }
+
+    @Override
+    public void run() {
+      System.out.println(Thread.currentThread().getName());
+    }
   }
   ```
 
@@ -160,10 +162,11 @@
   // FutureTask<String> futureTask = new FutureTask<>(() -> Thread.currentThread().getName());
 
   static class ThreadC implements Callable<String> {
-      @Override
-      public String call() throws Exception{
-          return Thread.currentThread().getName();
-      }
+
+    @Override
+    public String call() throws Exception {
+      return Thread.currentThread().getName();
+    }
   }
   ```
 
@@ -208,15 +211,17 @@
   - 线程组统一异常处理器：线程组本身实现了`UncaughtExceptionHandler`接口重写了`uncaughtException`方法。
     ```java
     public class MyThreadGroup extends ThreadGroup {
-        public MyThreadGroup(String name) {
-            super(name);
-        }
-        @Override
-        public void uncaughtException(Thread t, Throwable e) {
-            super.uncaughtException(t, e);
-            // 用于终止当前线程组中的线程
-            this.suspend();
-        }
+
+      public MyThreadGroup(String name) {
+        super(name);
+      }
+
+      @Override
+      public void uncaughtException(Thread t, Throwable e) {
+        super.uncaughtException(t, e);
+        // 用于终止当前线程组中的线程
+        this.suspend();
+      }
     }
     ```
 

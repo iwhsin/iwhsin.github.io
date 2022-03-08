@@ -3,7 +3,7 @@
 !> 🍺 本站主要是平时工作学习中的一些所想所得, 希望能够通过不断地总结, 能构建属于自己的一套完善的知识体系,并提升自己的综合能力!  ✨✨✨💪🏻💪🏻
 
 ---
-# <i class="icon-brand-openstreetmap">站点地图</i> :id=site-map
+# <i class="icon-brand-openstreetmap">站点地图</i> :id=site-map :class=title-title
 ## <i class='icon-brand-skyliner'>技术小站</i> :id=article
 
 ---
@@ -17,8 +17,6 @@
 - [ArrayList、Vector、LinkedList](/technology/basic/ ':class=icon-brand-jabber')
 - [ConcurrentHashMap实现原理](/technology/basic/ ':class=icon-brand-jabber')
 - [动态代理的基本原理](/technology/basic/ ':class=icon-brand-jabber')
-- [动态代理的基本原理](/technology/basic/ ':class=icon-brand-jabber')
-
 
 ---
 ### <i class='icon-brand-abbrobotstudio details'>Java虚拟机</i>
@@ -39,6 +37,7 @@
     - [内存结构](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [内存分配](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [对象创建](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
+    - [对象在内存中的结构](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [内存回收](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [垃圾收集](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [垃圾收集算法](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
@@ -60,6 +59,8 @@
     - [内存交互与交互原则](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [先行发生原则(Happen Before)](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [串行化语义(As If Serial)](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
+    - [安全点](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
+    - [锁升级过程](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [问题故障排查问题](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [性能优化总结](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - <i class='icon-brand-abbrobotstudio title'>参考资料</i>
@@ -96,6 +97,8 @@
     - [同步锁 Synchronized](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础 ':class=emoji-sparkles')
     - [轻量级锁 Volatile](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础 ':class=emoji-sparkles')
     - [什么是锁?](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础 ':class=emoji-sparkles')
+    - [轻量锁、重量锁、偏向锁](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础 ':class=emoji-sparkles')
+    - [锁升级](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础 ':class=emoji-sparkles')
 - <i class='emoji-sparkles title'>线程安全问题</i>
     - [什么是线程安全?](/docs/基础篇/面向对象编程/并发编程/多线程编程/thread-多线程基础 ':class=emoji-sparkles')
 - <i class='emoji-sparkles title'>JMM 线程内存模型</i>
@@ -152,11 +155,19 @@
 
 </details>
 
+### <i class='emoji-sparkles'>技术框架</i> :id=framework
+#### <i class='emoji-sparkles'>Spring</i> :id=spring
+#### <i class='emoji-sparkles'>SpringMVC</i> :id=spring-mvc
+#### <i class='emoji-sparkles'>SpringBoot</i> :id=spring-boot
+#### <i class='emoji-sparkles'>Mybatis</i> :id=mybatis
+#### <i class='emoji-sparkles'>Netty</i> :id=netty
+#### <i class='emoji-sparkles'>Eureka</i> :id=eureka
+#### <i class='emoji-sparkles'>Nacos</i> :id=nacos
+#### <i class='emoji-sparkles'>Zookeeper</i> :id=eureka
+
 ### <i class='icon-brand-mysql'>数据库</i> :id=database
 #### <i class='icon-brand-cloudbees title'>索引</i> :id=index
 - [索引的概念](/technology/database/database ':class=icon-brand-tripadvisor')
-
-
 
 ---
 ### <i class='emoji-sparkles'>中间件</i>
