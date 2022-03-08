@@ -16,6 +16,7 @@
     - [内存结构](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [内存分配](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [对象创建](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
+    - [对象在内存中的结构](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [内存回收](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [垃圾收集](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [垃圾收集算法](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
@@ -37,8 +38,11 @@
     - [内存交互与交互原则](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [先行发生原则(Happen Before)](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
     - [串行化语义(As If Serial)](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
+    - [安全点](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
+    - [锁升级过程](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [问题故障排查问题](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - [性能优化总结](/technology/jvm/tech-java-jvm?id=概念总览 ':class=icon-brand-abbrobotstudio')
 - <i class='icon-brand-abbrobotstudio title'>参考资料</i>
     - [常见面试题指南](/technology/jvm/tech-java-jvm?id=interview-question-guide ':class=icon-brand-abbrobotstudio')
+    
 </details>

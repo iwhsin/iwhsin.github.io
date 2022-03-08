@@ -16,6 +16,12 @@ img {
   }
 }
 
+.color-rainbow {
+  background-image:linear-gradient(to right,orangered, orange,gold,lightgreen);
+  border-radius: 5px;
+  padding: 5px;
+}
+
 #cover-logo {
   @extend img.flip;
   // margin-top: -10%;
@@ -32,6 +38,10 @@ footer.footer {
 
 .clear {
   clear: both;
+}
+
+.hidden {
+  display: none;
 }
 
 // 全局定义hr用于清除浮动
@@ -114,18 +124,32 @@ details {
     text-decoration: none;
     &:hover {
       text-decoration: none;
-      background-image: linear-gradient(#cb6196, #c76262);
+      // background-image: linear-gradient(to right,#feac5e,#c779d0,#4bc0c8);
+      // background-image:  linear-gradient(45deg,#feac5e,#c779d0,#4bc0c8);
+      // background-image: linear-gradient(
+      //   45deg,
+      //   rgba(254, 172, 94, 0.5),
+      //   rgba(199, 121, 208, 0.5),
+      //   rgba(75, 192, 200, 0.5)
+      // );
       // background-color: var(--theme-color, #42b983);
+      background-image: $bg-col-rainbow;
     }
   }
   h1 {
     font-size: 1.5em;
     span {
       display: inline-block;
-      background: rgb(225, 239, 219);
+      // background: rgb(225, 239, 219);
       padding: 10px 16px;
       border-radius: 5px;
       // box-shadow: 1px 1px 3px black;
+      background-image: linear-gradient(
+        45deg,
+        rgba(254, 145, 94, 0.5),
+        rgba(199, 121, 208, 0.5),
+        rgba(75, 192, 200, 0.5)
+      );
     }
   }
   > div > img {
@@ -169,8 +193,13 @@ details {
     margin: 0 2px;
     padding: 3px 5px;
     white-space: nowrap;
-    border: 1px solid #282c34;
-    color: #e512c1;
+    color: #a72c2c;
+  }
+
+  p {
+    > code {
+      border: 1px dashed #b6bcc4;
+    }
   }
   .docsify-copy-code-button {
     background: #00a1d6 !important;
@@ -322,6 +351,6 @@ body.close .app-nav {
 #sitetime {
   color: #000;
   margin-left: 20px;
+  background-image: $bg-col-rainbow;
   opacity: 0.8;
-  background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #1e9da5);
 }

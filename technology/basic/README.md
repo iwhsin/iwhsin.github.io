@@ -1,2 +1,9 @@
 ### <i class='icon-brand-java'>Java 基础</i>
-
+- [语言特性](/technology/basic/ ':class=icon-brand-jabber')
+- [动态代理的基本原理](/technology/basic/ ':class=icon-brand-jabber')
+- [强、软、弱、虚四种引用类型](/technology/basic/ ':class=icon-brand-jabber')
+- [动态代理的基本原理](/technology/basic/ ':class=icon-brand-jabber')
+- [HashMap、HashTable、TreeMap](/technology/basic/ ':class=icon-brand-jabber')
+- [ArrayList、Vector、LinkedList](/technology/basic/ ':class=icon-brand-jabber')
+- [ConcurrentHashMap实现原理](/technology/basic/ ':class=icon-brand-jabber')
+- [动态代理的基本原理](/technology/basic/ ':class=icon-brand-jabber')

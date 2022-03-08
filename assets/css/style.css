@@ -1486,6 +1486,12 @@ img.introduce {
   margin-bottom: 10px;
 }
 
+.color-rainbow {
+  background-image: linear-gradient(to right, orangered, orange, gold, lightgreen);
+  border-radius: 5px;
+  padding: 5px;
+}
+
 #cover-logo {
   user-select: none;
 }
@@ -1496,6 +1502,10 @@ footer.footer {
 
 .clear, hr {
   clear: both;
+}
+
+.hidden {
+  display: none;
 }
 
 i {
@@ -1563,7 +1573,7 @@ details[open] ul {
 
 .markdown-section a:hover {
   text-decoration: none;
-  background-image: linear-gradient(#cb6196, #c76262);
+  background-image: linear-gradient(to right, orangered, orange, gold, lightgreen, cyan, dodgerblue, mediumpurple, hotpink, orangered);
 }
 
 .markdown-section h1 {
@@ -1572,9 +1582,9 @@ details[open] ul {
 
 .markdown-section h1 span {
   display: inline-block;
-  background: #e1efdb;
   padding: 10px 16px;
   border-radius: 5px;
+  background-image: linear-gradient(45deg, rgba(254, 145, 94, 0.5), rgba(199, 121, 208, 0.5), rgba(75, 192, 200, 0.5));
 }
 
 .markdown-section > div > img {
@@ -1619,8 +1629,11 @@ details[open] ul {
   margin: 0 2px;
   padding: 3px 5px;
   white-space: nowrap;
-  border: 1px solid #282c34;
-  color: #e512c1;
+  color: #a72c2c;
+}
+
+.markdown-section p > code {
+  border: 1px dashed #b6bcc4;
 }
 
 .markdown-section .docsify-copy-code-button {
@@ -1783,6 +1796,6 @@ body.close .app-nav {
 #sitetime {
   color: #000;
   margin-left: 20px;
+  background-image: linear-gradient(to right, orangered, orange, gold, lightgreen, cyan, dodgerblue, mediumpurple, hotpink, orangered);
   opacity: 0.8;
-  background-image: linear-gradient(#6db85a, #33a9dc, #cb6196, #1e9da5);
 }
