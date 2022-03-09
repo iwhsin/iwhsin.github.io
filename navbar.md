@@ -2,6 +2,7 @@
 
 - [技术专题](/technology/ ':class=icon-brand-keybase')
     - [Java 虚拟机](/technology/jvm/tech-java-jvm ':class=icon-brand-topcoder')
+    - [并发编程](/technology/concurrent/ ':class=icon-brand-java')
 
 - [书籍阅读](/books/ ':class=emoji-books')
     - [:green_book: 编程思想 第五版][think-in-java-chinese-5th]
