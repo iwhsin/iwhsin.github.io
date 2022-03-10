@@ -1,5 +1,9 @@
 # JVM 内存模型 :id=java-memory-mod
 
+?> 为了明确定义在多线程场景下，什么时候可以重排序，什么时候不能重排序，Java引入了JMM（Java Memory Model），也就是Java内存模型。
+这个模型就是一套规范，对上，是JVM和开发者之间的协定；对下，是JVM和编译器、CPU之间的协定。
+Java内存模型规定和指引Java程序在不同的内存架构、CPU和操作系统间有确定性地行为。
+
 ## 1. 内存可见性 :id=memory-visibility
 
 - 缓存布局(Cache Layout)
@@ -61,16 +65,16 @@
 
 ## 4. happen-before 语义 :id=happen-before
 
-?> 为了明确定义在多线程场景下，什么时候可以重排序，什么时候不能重排序，Java 引入了 JMM（Java Memory Model），也就是 Java 内存模型。
-这个模型就是一套规范，对上，是 JVM 和开发者之间的协定；对下，是 JVM 和编译器、CPU 之间的协定。
+?> Java内存模型对一个线程所做的变动能被其它线程可见提供了保证，它们之间是先行发生关系。这个关系定义了一些规则让程序员在并发编程时思路更清晰。
 为了描述这个规范，JMM 引入了 happen-before，使用 happen-before 描述两个操作之间的内存可见性。
 
-- happen-before
-  - 单线程： 任意的操作都先行发生于后续的操作（也就是 as-if-serial 语义保证）。
-  - 多线程： 线程 A 发生于线程 B 之前，则线程 A 的执行结果对线程 B 是可见的也就是`内存可见性`。
-  - volatile 变量： 变量的写入先行发生于对这个变量的先入之前。
-  - synchronized 同步锁：解锁操作先行发生于对这个锁对象的加锁操作之前。
-  - final 变量： 变量的写先行发生于对这个变量的读取之前。
+- Happen Before 语义: 如果一个线程A在线程B之前执行，则需要保证线程A的执行结果对线程B是可见的也就是`内存可见性`。
+
+- happen-before 规定
+  - 单线程： 单线程中的每个操作，happen-before 对应该线程中任意后续操作（也就是as-if-serial语义保证）。
+  - volatile 变量： 对volatile变量的写入，happen-before对应后续对这个变量的读取。
+  - synchronized 同步锁：对synchronized的解锁，happen-before对应后续对这个锁的加锁。
+  - final 变量： 对final变量的写，happen-before于final域对象的读。
 
 > [!NOTE] 对于非 volatile 变量的写入和读取，不在这个承诺之列。通俗来讲，就是 JMM 对编译器和 CPU 来说，volatile 变量不能重排序；非 volatile 变量可以任意重排序。
 
@@ -109,7 +113,7 @@ public native void fullFence();
   - LoadStore：禁止读和写的重排序。 
   - StoreLoad：禁止写和读的重排序。
 
-## 6. 再volatile`关键字实现原理
+## 6. volatile`关键字
 
 - **volatile关键字底层操作规则**
   - 在volatile写操作的前面插入一个StoreStore屏障。保证volatile写操作不会和之前的写操作重排序；
