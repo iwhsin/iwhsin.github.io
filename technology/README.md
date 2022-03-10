@@ -1,5 +1,4 @@
 ## <i class='icon-brand-keybase'>技术专题</i> :id=technical-topic
-[](./jvm/README.md ':include')
 
 ### <i class='emoji-sparkles details'>并发编程</i> :id=concurrent-programming
 <details open>
