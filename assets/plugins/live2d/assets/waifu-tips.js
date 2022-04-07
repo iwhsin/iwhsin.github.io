@@ -360,47 +360,51 @@ function loadTipsMessage(result) {
     }
     
     function showHitokoto() {
-    	switch(live2d_settings.hitokotoAPI) {
-    	    case 'lwl12.com':
-    	        $.getJSON('https://api.lwl12.com/hitokoto/v1?encode=realjson',function(result){
-        	        if (!empty(result.source)) {
-                        var text = waifu_tips.hitokoto_api_message['lwl12.com'][0];
-                        if (!empty(result.author)) text += waifu_tips.hitokoto_api_message['lwl12.com'][1];
-                        text = text.render({source: result.source, creator: result.author});
-                        window.setTimeout(function() {showMessage(text+waifu_tips.hitokoto_api_message['lwl12.com'][2], 3000, true);}, 5000);
-                    } showMessage(result.text, 5000, true);
-                });break;
-    	    case 'fghrsh.net':
-    	        $.getJSON('https://api.fghrsh.net/hitokoto/rand/?encode=jsc&uid=3335',function(result){
-            	    if (!empty(result.source)) {
-                        var text = waifu_tips.hitokoto_api_message['fghrsh.net'][0];
-                        text = text.render({source: result.source, date: result.date});
-                        window.setTimeout(function() {showMessage(text, 3000, true);}, 5000);
-                        showMessage(result.hitokoto, 5000, true);
-            	    }
-                });break;
-            case 'jinrishici.com':
-                $.ajax({
-                    url: 'https://v2.jinrishici.com/one.json',
-                    xhrFields: {withCredentials: true},
-                    success: function (result, status) {
-                        if (!empty(result.data.origin.title)) {
-                            var text = waifu_tips.hitokoto_api_message['jinrishici.com'][0];
-                            text = text.render({title: result.data.origin.title, dynasty: result.data.origin.dynasty, author:result.data.origin.author});
+    	try {
+            switch(live2d_settings.hitokotoAPI) {
+                case 'lwl12.com':
+                    $.getJSON('https://api.lwl12.com/hitokoto/v1?encode=realjson',function(result){
+                        if (!empty(result.source)) {
+                            var text = waifu_tips.hitokoto_api_message['lwl12.com'][0];
+                            if (!empty(result.author)) text += waifu_tips.hitokoto_api_message['lwl12.com'][1];
+                            text = text.render({source: result.source, creator: result.author});
+                            window.setTimeout(function() {showMessage(text+waifu_tips.hitokoto_api_message['lwl12.com'][2], 3000, true);}, 5000);
+                        } showMessage(result.text, 5000, true);
+                    });break;
+                case 'fghrsh.net':
+                    $.getJSON('https://api.fghrsh.net/hitokoto/rand/?encode=jsc&uid=3335',function(result){
+                        if (!empty(result.source)) {
+                            var text = waifu_tips.hitokoto_api_message['fghrsh.net'][0];
+                            text = text.render({source: result.source, date: result.date});
                             window.setTimeout(function() {showMessage(text, 3000, true);}, 5000);
-                        } showMessage(result.data.content, 5000, true);
-                    }
-                });break;
-    	    default:
-    	        $.getJSON('https://v1.hitokoto.cn',function(result){
-            	    if (!empty(result.from)) {
-                        var text = waifu_tips.hitokoto_api_message['hitokoto.cn'][0];
-                        text = text.render({source: result.from, creator: result.creator});
-                        window.setTimeout(function() {showMessage(text, 3000, true);}, 5000);
-            	    }
-                    showMessage(result.hitokoto, 5000, true);
-                });
-    	}
+                            showMessage(result.hitokoto, 5000, true);
+                        }
+                    });break;
+                case 'jinrishici.com':
+                    $.ajax({
+                        url: 'https://v2.jinrishici.com/one.json',
+                        xhrFields: {withCredentials: true},
+                        success: function (result, status) {
+                            if (!empty(result.data.origin.title)) {
+                                var text = waifu_tips.hitokoto_api_message['jinrishici.com'][0];
+                                text = text.render({title: result.data.origin.title, dynasty: result.data.origin.dynasty, author:result.data.origin.author});
+                                window.setTimeout(function() {showMessage(text, 3000, true);}, 5000);
+                            } showMessage(result.data.content, 5000, true);
+                        }
+                    });break;
+                default:
+                    $.getJSON('https://v1.hitokoto.cn',function(result){
+                        if (!empty(result.from)) {
+                            var text = waifu_tips.hitokoto_api_message['hitokoto.cn'][0];
+                            text = text.render({source: result.from, creator: result.creator});
+                            window.setTimeout(function() {showMessage(text, 3000, true);}, 5000);
+                        }
+                        showMessage(result.hitokoto, 5000, true);
+                    });
+            }
+        } catch (error) {
+            console.error("loading waifu error.")
+        }
     }
     
     $('.waifu-tool .fui-eye').click(function (){loadOtherModel()});

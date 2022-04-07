@@ -1114,19 +1114,25 @@
   &sparkles:before {
     content: '✨';
   }
-  &sparkles:before {
-    content: '✨';
+  &web-global:before {
+    content: '🌐';
   }
-  &sparkles:before {
-    content: '✨';
+  &web-spider:before {
+    content: '🕸️';
   }
-  &sparkles:before {
-    content: '✨';
+  &thinking-face:before {
+    content: '🧐';
   }
-  &sparkles:before {
-    content: '✨';
-  }
-  &sparkles:before {
-    content: '✨';
+}
+
+.icon-brand- {
+  &zookeeper:before {
+    background-image: url(/assets/images/icon/icon-brand-zookeeper.ico);
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 5px;
   }
 }

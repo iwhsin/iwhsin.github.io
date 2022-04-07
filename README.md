@@ -51,3 +51,6 @@ function toggleDetails(details){
     details.open = !details.open;
 }
 </script>
+
+
+参与对公网银项目的开发与维护升级工作，独立完成安排的的网银功能需求，使用公司的「产品/作品」框架进行功能的开发。

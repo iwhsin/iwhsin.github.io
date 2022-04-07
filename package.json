@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "docsify serve . --port 10000",
-    "convert": "node_modules/.bin/docsify-to-pdf"
+    "convert": "node_modules/.bin/docsify-pdf-converter"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,10 @@
   "author": "whsin",
   "license": "MIT",
   "dependencies": {
+    "sidecar": "^1.0.19",
     "vuepress": "^1.8.2"
+  },
+  "devDependencies": {
+    "docsify-pdf-converter": "^2.0.7"
   }
 }

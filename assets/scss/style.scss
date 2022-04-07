@@ -162,7 +162,7 @@ details {
     &::before {
       content: '';
       display: block;
-      background: url(/assets/images/ico/omit.ico);
+      background: url(/assets/images/icon/omit.ico);
       height: 30px;
       background-size: 40px;
       background-repeat: no-repeat;
@@ -285,6 +285,9 @@ body.close .app-nav {
       padding: 0px;
     }
   }
+  .sidebar-nav {
+    width: min-content;
+  }
   ul li {
     margin: 0;
     position: relative;
@@ -353,4 +356,11 @@ body.close .app-nav {
   margin-left: 20px;
   background-image: $bg-col-rainbow;
   opacity: 0.8;
+}
+
+.CodeMirror-scroll {
+  background-color: rebeccapurple;
+}
+.console-line {
+  display: none;
 }

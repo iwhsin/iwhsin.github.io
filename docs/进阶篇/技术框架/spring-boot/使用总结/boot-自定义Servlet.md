@@ -1,6 +1,6 @@
 # 自定义Servlet
 ## 编程方式注入
-```
+``` java
 // 1. 自定义`Servlet`类
 public class MyServlet extends HttpServlet {
 
@@ -37,6 +37,7 @@ public class StartApplication {
         SpringApplication.run(StartApplication.class);
     }
 }
+
 // 2.在自定义的`Servlet`类中使用`@WebServlet(urlPatterns = "xxxxurl")`
 @WebServlet(urlPatterns = "/myServlet")
 public class MyServlet extends HttpServlet {

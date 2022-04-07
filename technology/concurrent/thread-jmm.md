@@ -32,7 +32,7 @@ Java 内存模型规定和指引 Java 程序在不同的内存架构、CPU 和�
 
 ![](/assets/images/thread-jmm/20220309213523.png ':class=center :size=50% :title=Jvm-Memory-Model')
 
-## 2. 指令重排序 :id=instruction-reordering
+## 2. 重排序 :id=instruction-reordering
 
 ?> Store Buffer 的延迟写入是重排序的一种，称为内存重排序（MemoryOrdering），此外还有编译器和 CPU 指令重排序。
 

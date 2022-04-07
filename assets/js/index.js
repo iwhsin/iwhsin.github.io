@@ -8,6 +8,7 @@ $(function () {
     clickHeart1();
     // clickHeart2();
     // bgc();
+    // sidebarToggle();
 })
 
 // 快速回到顶部

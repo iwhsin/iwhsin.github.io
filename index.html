@@ -117,10 +117,10 @@
             },
 
             // 分页插件
-            // pagination: {
-            //     previousText: '上一篇',
-            //     nextText: '下一篇'
-            // },
+            pagination: {
+                previousText: '上一篇',
+                nextText: '下一篇'
+            },
 
             // 字数统计插件
             count: {
@@ -192,6 +192,7 @@
                         // 每次路由切换时数据全部加载完成后调用，没有参数。
                         // 主题换肤
                         themeSwitchLoader();
+                        sidebarToggle();
                     });
                 }
             ],
@@ -233,6 +234,19 @@
                 themeLink.href = 'assets/plugins/' + name;
             };
             isLoaded = true;
+        }
+
+        function loadCommplete() {
+
+
+        }
+
+        // 侧边栏收缩联动
+        function sidebarToggle() {
+            // $('.sidebar-nav li').next('ul').hide();
+            $('.sidebar-nav li').click(function () {
+                $(this).next('ul').toggle();
+            })
         }
     </script>
     <!--统计访问量插件-->

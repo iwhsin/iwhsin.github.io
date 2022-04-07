@@ -320,6 +320,62 @@
 
 ?> 创建线程要花费昂贵的资源和时间，如果任务来了才创建线程那么响应时间会变长，而且一个进程能创建的线程数有限。为了避免这些问题，在程序启动的时候就创建若干线程来响应处理，它们被称为线程池，里面的线程叫工作线程。从 JDK1.5 开始，Java API 提供了 Executor 框架让你可以创建不同的线程池。比如单线程池，每次处理一个任务；数目固定的线程池或者是缓存线程池（一个适合很多生存期短的任务的程序的可扩展线程池）。
 
+### 线程池的核心组成部分 :id=thread-pool-component
+
+- 线程池管理器
+
+- 工作线程
+
+- 执行任务
+
+- 工作队列
+
+### ThreadPoolExecutor
+
+### 线程池的核心配置参数 :id=thread-pool-config-parameter
+
+- 核心线程数
+
+- 最大线程数
+
+- 线程空闲存活时间
+
+- 线程空闲存活时间单位
+
+- 线程工作队列
+
+- 线程创建工厂
+
+- 线程拒绝策略
+
+### 阻塞队列排队的几种策略 ：id=blocking-queue-policy
+
+- 直接提交：同步阻塞队列
+
+- 无界队列: 线程数始终保持核心线程数
+
+- 有界队列：corePollSize~maxPoolSize
+
+### 阻塞队列的选择 :id=blocking-queue-choose
+
+- 使用直接提交策略，也即 SynchronousQueue
+  - 是由于该 Queue 本身的特性，在某次添加元素后必须等待其他线程取走后才能继续添加。
+
+- 无界队列
+
+- 有界队列
+  - 最大的特点便是可以防止资源耗尽的情况发生
+
+### 线程池的常用拒绝策略 :id=thread-poll-reject-policy
+
+- abort：异常终止
+
+- discard：放弃执行
+
+- discardOldest： 从排队队列中放弃最先未执行的任务，并将此任务插入进去
+
+- callerRunsPolicy：在当前线程直接运行任务
+
 ### 13.1. 四种线程池的区别? :id=thread-poll-executor-difference
 
 通过`Executors`工具类可以创建不同类型的线程池。

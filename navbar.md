@@ -14,3 +14,4 @@
 
 - [实验室](/laboratory/ ':class=icon-brand-docker')
     - [Brand Font](/assets/scss/font/font-brand/demo.html ':class=icon-brand-apacheairflow')
+    - [在线工具](/laboratory/code-runner ':class=icon-brand-java')

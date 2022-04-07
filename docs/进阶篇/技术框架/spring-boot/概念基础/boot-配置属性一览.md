@@ -95,7 +95,6 @@ spring.datasource.name=root
 #数据库登录密码
 spring.datasource.password=root
 ###数据源连接池相关配置微调###
-##Druid相关配置##
 ```
 
 # 2. web 请求相关

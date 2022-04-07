@@ -17,7 +17,7 @@
 
 - <i class='emoji-sparkles title'>线程基础</i>
 
-  - [程序、程序、线程](/technology/concurrent/thread-basic?id=program-process-thread ':class=emoji-sparkles')
+  - [程序、程进程、线程](/technology/concurrent/thread-basic?id=program-process-thread ':class=emoji-sparkles')
   - [守护线程和用户线程](/technology/concurrent/thread-basic?id=daemon-thread ':class=emoji-sparkles')
   - [线程实现的几种方式](/technology/concurrent/thread-basic?id=thread-impl ':class=emoji-sparkles')
   - [线程的几种状态](/technology/concurrent/thread-basic?id=thread-state ':class=emoji-sparkles')
@@ -30,6 +30,7 @@
   - [synchronize 关键字](/technology/concurrent/thread-basic?id=synchronize ':class=emoji-sparkles')
   - [volatile 关键字](/technology/concurrent/thread-basic?id=volatile ':class=emoji-sparkles')
   - [线程阻塞](/technology/concurrent/thread-basic?id=thread-block ':class=emoji-sparkles')
+  - 原子性、可见性和有序性
 
 - <i class='emoji-sparkles title'>线程中的锁</i>
 

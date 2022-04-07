@@ -24,3 +24,5 @@
 	- 没有延迟 :scheduleAtFixedRate是以上一次任务结束的时间+delay执行下一次任务
 ## TimerTask的方法
 - cancel() :将自身从任务队列中清除
+
+

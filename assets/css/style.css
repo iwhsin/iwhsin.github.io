@@ -1451,24 +1451,26 @@
   content: '✨';
 }
 
-.emoji-sparkles:before {
-  content: '✨';
+.emoji-web-global:before {
+  content: '🌐';
 }
 
-.emoji-sparkles:before {
-  content: '✨';
+.emoji-web-spider:before {
+  content: '🕸️';
 }
 
-.emoji-sparkles:before {
-  content: '✨';
+.emoji-thinking-face:before {
+  content: '🧐';
 }
 
-.emoji-sparkles:before {
-  content: '✨';
-}
-
-.emoji-sparkles:before {
-  content: '✨';
+.icon-brand-zookeeper:before {
+  background-image: url(/assets/images/icon/icon-brand-zookeeper.ico);
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 5px;
 }
 
 img.center {
@@ -1600,7 +1602,7 @@ details[open] ul {
 .markdown-section pre::before {
   content: '';
   display: block;
-  background: url(/assets/images/ico/omit.ico);
+  background: url(/assets/images/icon/omit.ico);
   height: 30px;
   background-size: 40px;
   background-repeat: no-repeat;
@@ -1727,6 +1729,10 @@ body.close .app-nav {
   padding: 0px;
 }
 
+.sidebar .sidebar-nav {
+  width: min-content;
+}
+
 .sidebar ul li {
   margin: 0;
   position: relative;
@@ -1798,4 +1804,12 @@ body.close .app-nav {
   margin-left: 20px;
   background-image: linear-gradient(to right, orangered, orange, gold, lightgreen, cyan, dodgerblue, mediumpurple, hotpink, orangered);
   opacity: 0.8;
+}
+
+.CodeMirror-scroll {
+  background-color: rebeccapurple;
+}
+
+.console-line {
+  display: none;
 }
